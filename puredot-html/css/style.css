@@ -1,0 +1,299 @@
+:root {
+    --moov: #662f8f;
+    --cyan: #35c6f3;
+    --blue: #1c75bb;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.bg-login {
+    min-height: 100%;
+    height: auto;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.bg-login .full-bg {
+    /* position: static; */
+    min-height: 100%;
+    width: 50%;
+    min-width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+#login-container .push-bit {
+    margin-bottom: 0px !important;
+}
+
+#login-container .login-title {
+    padding: 0;
+    background: transparent;
+}
+
+#login-container .login-title h1,
+#login-container i {
+    color: var(--cyan);
+}
+
+#login-container .form-actions .btn i {
+    color: inherit;
+}
+
+#login-container .has-error i {
+    color: #e74c3c;
+}
+
+#login-container .logo img {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+}
+
+.btn-primary {
+    background-color: var(--cyan);
+    border-color: var(--cyan);
+}
+
+.sidebar-brand img {
+    height: 100%;
+}
+
+.content-header {
+    padding: 20px;
+}
+
+.content-header .nav-horizontal {
+    padding: 15px 0px 0px;
+}
+
+.content-header .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-header .d-flex .header-datepicker form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.content-header .d-flex .header-datepicker .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content-header .d-flex .header-datepicker .control-label {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.table thead th {
+    background-image: url(../img/jquery.datatables/sort_both.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 19px 19px;
+}
+
+.dataTables_wrapper .table-responsive {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.dataTables_wrapper .table-responsive table {
+    margin-bottom: 0;
+}
+
+.dataTables_wrapper .dataTables_length {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -5px;
+}
+
+.dataTables_wrapper .dataTables_length label {
+    flex: 1 0 auto;
+    padding: 0 5px;
+}
+
+.dataTables_wrapper .dataTables_length label.products_length {
+    max-width: 75px;
+}
+
+.dataTables_wrapper .dataTables_length label select {
+    width: 100%;
+}
+
+.bg-gray {
+    background: #f7f7f7;
+    padding: 15px 20px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.variation-container .close-btn {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.variation-container .variation-content {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.variation-container .variation-content .variation-content-select {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+    width: calc(100% + 10px);
+}
+
+.variation-content-select .chosen-container {
+    width: auto !important;
+    flex: 1 0 auto;
+    padding: 5px;
+}
+
+.variation-content-select .chosen-container-single .chosen-drop {
+    margin: -6px 5px 0;
+}
+
+.variation-container .variation-content .form-group.m-15 {
+    margin: 0 -15px;
+    flex: 1 0 50%;
+    padding: 15px 0 !important;
+    border: 0;
+}
+
+.modal-body .form-bordered.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mfp-bg,
+.mfp-wrap {
+    z-index: 1051;
+}
+
+.fa-shapes {
+    width: 56px;
+}
+
+.daterange-container {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.daterange-container label {
+    flex: 0 0 auto !important;
+}
+
+.status-timeline {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.status-timeline .col {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.status-timeline h4 {
+    font-size: 15px;
+}
+
+a.widget {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .10);
+}
+
+.widget-with-number {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.widget-simple {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.widget-simple:before,
+.widget-simple:after {
+    content: none;
+}
+
+.widget .widget-image, .widget .widget-icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+    #login-container,
+    #login-alt-container {
+        top: 100px;
+    }
+
+    .status-timeline .col {
+        flex: 1 0 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .bg-login {
+        width: 50%;
+    }
+
+    .status-timeline .col {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .bg-login .full-bg {
+        /* width: 55%; */
+        left: auto;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 992px) {
+
+    #login-container,
+    #login-alt-container {
+        width: 400px;
+    }
+}
+
+@media (max-width: 991px) {
+    .bg-login .full-bg {
+        width: 15%;
+    }
+}
+
+@media (max-width: 767px) {
+    .variation-container .variation-content .form-group.m-15 {
+        flex: 1 0 100%;
+    }
+}
