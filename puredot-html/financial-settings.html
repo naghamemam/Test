@@ -373,7 +373,7 @@
                                             <a href="countries.html">countries</a>
                                         </li>
                                         <li>
-                                            <a href="cities.html" class=" active">Cities</a>
+                                            <a href="cities.html">Cities</a>
                                         </li>
                                         <li>
                                             <a href="currencies.html">Currencies</a>
@@ -385,16 +385,10 @@
                                             <a href="banners-2.html">Banners</a>
                                         </li>
                                         <li>
-                                            <a href="products.html">Products</a>
-                                        </li>
-                                        <li>
-                                            <a href="banners.html">Banners</a>
-                                        </li>
-                                        <li>
                                             <a href="banners-2-pending.html">Pending Banners</a>
                                         </li>
                                         <li>
-                                            <a href="financial-settings.html">Financial Settings</a>
+                                            <a href="financial-settings.html" class=" active">Financial Settings</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -570,160 +564,222 @@
 
                     <!-- Page content -->
                     <div id="page-content">
-                        <!-- eCommerce Cities Header -->
+                        <!-- eCommerce Banners Header -->
                         <div class="content-header">
                             <div class="header-section">
                                 <h1>
-                                    <i class="fa fa-building"></i>Cities<br><small>Manage and Edit Cities!</small>
+                                    <i class="fa fa-dollar"></i>Financial Settings<br><small>Manage Financial Settings!</small>
                                 </h1>
                             </div>
                         </div>
-                        <!-- END eCommerce Cities Header -->
+                        <!-- END eCommerce Banners Header -->
 
-                        <!-- Quick Stats -->
-                        <div class="row text-center">
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="#modal-add-city" data-toggle="modal" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background-success">
-                                        <h4 class="widget-content-light"><strong>Add New</strong> city</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 text-success animation-expandOpen"><i class="fa fa-plus"></i></span></div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background-dark">
-                                        <h4 class="widget-content-light"><strong>All</strong> Cities</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">4.982</span></div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END Quick Stats -->
-
-                        <!-- All Cities Block -->
+                        <!-- All Banners Block -->
                         <div class="block full">
-                            <!-- All Cities Title -->
+                            <!-- All Banners Title -->
                             <div class="block-title">
                                 <div class="block-options pull-right">
                                     <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
                                 </div>
-                                <h2><strong>All</strong> Cities</h2>
+                                <h2><strong>All</strong> Financial Settings</h2>
                             </div>
-                            <!-- END All Cities Title -->
+                            <!-- END All Banners Title -->
 
-                            <!-- All Cities Content -->
-                            <div id="ecom-products_wrapper" class="dataTables_wrapper form-inline no-footer">
-                                <div class="row">
-                                    <div class="col-sm-6 col-xs-5">
-                                        <div class="dataTables_length" id="ecom-products_length">
-                                            <label class="products_length">
-                                                <select name="ecom-products_length" aria-controls="ecom-products" class="form-control">
-                                                    <option value="10">10</option>
-                                                    <option value="20">20</option>
-                                                    <option value="30">30</option>
-                                                    <option value="-1">All</option>
-                                                </select>
-                                            </label>
+                            <div class="tabs-container">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#shop">Shop</a></li>
+                                    <li><a data-toggle="tab" href="#driver">Driver</a></li>
+                                    <li><a data-toggle="tab" href="#shipping-co">Shipping Co.</a></li>
+                                    <li><a data-toggle="tab" href="#vat">VAT</a></li>
+                                    <li><a data-toggle="tab" href="#customer">Customer</a></li>
+                                </ul>
+                                
+                                <div class="tab-content">
+                                    <div id="shop" class="tab-pane fade in active">
+                                        <h3>Shop</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div id="driver" class="tab-pane fade">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <form action="offers-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                                    <div class="row row-flex">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="transfer-limit">Transfer to Driver Limit</label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" id="transfer-limit" name="transfer-limit" class="form-control" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="driver-wallet-limit">Driver Wallet Limit</label>
+                                                                <div class="col-md-9 input-with-info">
+                                                                    <input type="text" id="driver-wallet-limit" name="driver-wallet-limit" class="form-control" placeholder="">
+                                                                    <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="left" data-html="true" data-content="<span>Driver won't receive orders if he reach this limit</span><a href='#'>Drivers shoud pay the money to the application first</a>">
+                                                                        <i class="fa fa-info"></i>
+                                                                      </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="app-commision">App Commision</label>
+                                                                <div class="col-md-9">
+                                                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                    <select id="app-commision" name="app-commision" class="select-chosen" data-placeholder="Choose Commision.." style="width: 250px;">
+                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                        <option value="1">Tablets</option>
+                                                                        <option value="2">Laptops</option>
+                                                                        <option value="3">PCs</option>
+                                                                        <option value="4">Consoles</option>
+                                                                        <option value="5">Movies</option>
+                                                                        <option value="6">Books</option>
+                                                                        <option value="7">Cables</option>
+                                                                        <option value="8">Adapters</option>
+                                                                        <option value="9">Office</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="amount">amount</label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" id="amount" name="amount" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="commision-limit">Commision Limit</label>
+                                                                <div class="col-md-9">
+                                                                    <div class="variation-container bg-gray">
+                                                                        <a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a>
+                                                                        <div class="variation-content">
+                                                                            <div class="form-group m-15">
+                                                                                <label class="col-xs-3 control-label" for="order-amount">Order Amount</label>
+                                                                                <div class="col-xs-9">
+                                                                                    <select id="order-amount" name="order-amount" class="select-chosen" data-placeholder="Choose an amount.." style="width: 250px;">
+                                                                                        <option value=""></option>
+                                                                                        <option value="Product 1">Product 1</option>
+                                                                                        <option value="Product 2">Product 2</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group m-15">
+                                                                                <div class="col-xs-12">
+                                                                                    <input type="text" id="order-amount-amount" name="order-amount-amount" class="form-control" placeholder="Amount">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group m-15">
+                                                                                <label class="col-xs-3 col-md-2 control-label" for="Offer-discount">Discount</label>
+                                                                                <div class="col-xs-9 col-md-10">
+                                                                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                                    <select id="Offer-discount" name="Offer-discount" class="select-chosen" data-placeholder="Choose Discount.." style="width: 250px; display: none;">
+                                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                                        <option value="fixed">Fixed</option>
+                                                                                        <option value="Percentage">Percentage</option>
+                                                                                    </select><div class="chosen-container chosen-container-single" style="width: 100%;" title="" id="Offer_discount_chosen"><a class="chosen-single chosen-default"><span>Choose Discount..</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                                                                                    <div class="input-group">
+                                                                                        <div class="input-group-addon">SAR</div>
+                                                                                        <input type="text" id="Offer-discount-value" name="Offer-discount-value" class="form-control" placeholder="0,00">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    
+                                                    
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label" for="Offer-description-ar">Description (AR)</label>
+                                                        <div class="col-md-9">
+                                                            <textarea id="Offer-description-ar" name="Offer-description" class="form-control" rows="3"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label" for="Offer-return">Can Return</label>
+                                                        <div class="col-md-9">
+                                                            <label class="switch switch-primary">
+                                                                <input type="checkbox"><span></span>
+                                                            </label>
+                                                        </div>
+                                                        <label class="col-md-3 control-label" for="Offer-return-days">Return Days</label>
+                                                        <div class="col-md-9">
+                                                            <input type="number" id="Offer-return-days" name="Offer-return-days" class="form-control" placeholder="Enter Offer return days..">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label" for="Offer-category">Category</label>
+                                                        <div class="col-md-9">
+                                                            <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                            <select id="Offer-category" name="Offer-category" class="select-chosen" data-placeholder="Choose Category.." style="width: 250px;">
+                                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                <option value="1">Tablets</option>
+                                                                <option value="2">Laptops</option>
+                                                                <option value="3">PCs</option>
+                                                                <option value="4">Consoles</option>
+                                                                <option value="5">Movies</option>
+                                                                <option value="6">Books</option>
+                                                                <option value="7">Cables</option>
+                                                                <option value="8">Adapters</option>
+                                                                <option value="9">Office</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label" for="Offer-details-en">Detailes (EN)</label>
+                                                        <div class="col-md-9">
+                                                            <!-- CKEditor, you just need to include the plugin (see at the bottom of this page) and add the class 'ckeditor' to your textarea -->
+                                                            <!-- More info can be found at http://ckeditor.com -->
+                                                            <textarea id="Offer-details-en" name="Offer-details" class="ckeditor"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label" for="Offer-details-ar">Detailes (AR)</label>
+                                                        <div class="col-md-9">
+                                                            <!-- CKEditor, you just need to include the plugin (see at the bottom of this page) and add the class 'ckeditor' to your textarea -->
+                                                            <!-- More info can be found at http://ckeditor.com -->
+                                                            <textarea id="Offer-details-ar" name="Offer-details" class="ckeditor"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group form-actions">
+                                                        <div class="col-md-9 col-md-offset-3">
+                                                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                                            <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xs-7">
-                                        <div id="ecom-products_filter" class="dataTables_filter">
-                                            <label>
-                                                <div class="input-group">
-                                                    <input type="search" class="form-control" placeholder="Search" aria-controls="ecom-products">
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-search"></i>
-                                                    </span>
-                                                </div>
-                                            </label>
-                                        </div>
+                                    <div id="shipping-co" class="tab-pane fade">
+                                        <h3>Menu 2</h3>
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                                     </div>
-                                </div>
-                                <div class="table-responsive">
-                                    <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center" style="width: 70px;">ID</th>
-                                                <th>city Name</th>
-                                                <th class="text-center">Country Name</th>
-                                                <th class="text-center">Added</th>
-                                                <th class="text-center">Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="text-center"><a href="#modal-add-city" data-toggle="modal"><strong>1</strong></a></td>
-                                                <td><a href="#modal-add-city" data-toggle="modal">city 1</a></td>
-                                                <td class="text-center">Country Name</td>
-                                                <td class="text-center">03/10/2014</td>
-                                                <td class="text-center">
-                                                    <div class="btn-group btn-group-xs">
-                                                        <a href="#modal-add-city" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-                                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="#modal-add-city" data-toggle="modal"><strong>2</strong></a></td>
-                                                <td><a href="#modal-add-city" data-toggle="modal">city 2</a></td>
-                                                <td class="text-center">Country Name</td>
-                                                <td class="text-center">18/02/2014</td>
-                                                <td class="text-center">
-                                                    <div class="btn-group btn-group-xs">
-                                                        <a href="#modal-add-city" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-                                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="#modal-add-city" data-toggle="modal"><strong>3</strong></a></td>
-                                                <td><a href="#modal-add-city" data-toggle="modal">city 3</a></td>
-                                                <td class="text-center">Country Name</td>
-                                                <td class="text-center">21/08/2014</td>
-                                                <td class="text-center">
-                                                    <div class="btn-group btn-group-xs">
-                                                        <a href="#modal-add-city" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-                                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="#modal-add-city" data-toggle="modal"><strong>4</strong></a></td>
-                                                <td><a href="#modal-add-city" data-toggle="modal">city 4</a></td>
-                                                <td class="text-center">Country Name</td>
-                                                <td class="text-center">18/02/2014</td>
-                                                <td class="text-center">
-                                                    <div class="btn-group btn-group-xs">
-                                                        <a href="#modal-add-city" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-                                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-5 hidden-xs">
-                                        <div class="dataTables_info" id="ecom-products_info" role="status" aria-live="polite">
-                                            <strong>1</strong>-<strong>20</strong> of <strong>60</strong>
-                                        </div>
+                                    <div id="vat" class="tab-pane fade">
+                                        <h3>Menu 3</h3>
+                                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                                     </div>
-                                    <div class="col-sm-7 col-xs-12 clearfix">
-                                        <div class="dataTables_paginate paging_bootstrap" id="ecom-products_paginate">
-                                            <ul class="pagination pagination-sm remove-margin">
-                                                <li class="prev disabled"><a href="javascript:void(0)"><i class="fa fa-chevron-left"></i> </a></li>
-                                                <li class="active"><a href="javascript:void(0)">1</a></li>
-                                                <li><a href="javascript:void(0)">2</a></li><li><a href="javascript:void(0)">3</a></li>
-                                                <li class="next"><a href="javascript:void(0)"> <i class="fa fa-chevron-right"></i></a></li>
-                                            </ul>
-                                        </div>
+                                    <div id="customer" class="tab-pane fade">
+                                        <h3>Menu 3</h3>
+                                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- END All Cities Content -->
                         </div>
-                        <!-- END All Cities Block -->
+                        <!-- END All Banners Block -->
                     </div>
                     <!-- END Page Content -->
 
@@ -814,12 +870,12 @@
         <!-- END User Settings -->
 
         <!-- Add Category Modal -->
-        <div id="modal-add-city" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div id="modal-add-banner" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <!-- Modal Header -->
                     <div class="modal-header text-center">
-                        <h2 class="modal-title"><i class="fa fa-pencil"></i> Add city</h2>
+                        <h2 class="modal-title"><i class="fa fa-pencil"></i> Add Banner</h2>
                     </div>
                     <!-- END Modal Header -->
 
@@ -828,39 +884,60 @@
                         <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered mb-20" onsubmit="return false;">
                             <fieldset>
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="city-text-en">city Name (EN)</label>
+                                    <label class="col-md-4 control-label" for="Banner-text-en">Banner Name (EN)</label>
                                     <div class="col-md-8">
-                                        <input type="text" id="city-text-en" name="city-text-en" class="form-control" placeholder="city Name (EN)">
+                                        <input type="text" id="Banner-text-en" name="Banner-text-en" class="form-control" placeholder="Banner Name (EN)">
                                         <span class="help-block">This is a help text</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="city-text-ar">city Name (AR)</label>
+                                    <label class="col-md-4 control-label" for="Banner-text-ar">Banner Name (AR)</label>
                                     <div class="col-md-8">
-                                        <input type="text" id="city-text-ar" name="city-text-ar" class="form-control" placeholder="city Name (AR)">
+                                        <input type="text" id="Banner-text-ar" name="Banner-text-ar" class="form-control" placeholder="Banner Name (AR)">
                                         <span class="help-block">This is a help text</span>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label" for="city-Country">Country</label>
-                                    <div class="col-md-8">
-                                        <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
-                                        <select id="city-Country" name="city-Country" class="select-chosen" data-placeholder="Choose Country.." style="width: 250px;">
-                                            <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                            <option value="1">Tablets</option>
-                                            <option value="2">Laptops</option>
-                                            <option value="3">PCs</option>
-                                            <option value="4">Consoles</option>
-                                            <option value="5">Movies</option>
-                                            <option value="6">Books</option>
-                                            <option value="7">Cables</option>
-                                            <option value="8">Adapters</option>
-                                            <option value="9">Office</option>
-                                        </select>
                                     </div>
                                 </div>
                             </fieldset>
                         </form>
+
+                        <div class="block-section">
+                            <!-- Dropzone.js, You can check out https://github.com/enyo/dropzone/wiki for usage examples -->
+                            <form action="page_ecom_product_edit.html" class="dropzone"></form>
+                        </div>
+                        <table class="table table-bordered table-striped table-vcenter">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="img/placeholders/photos/photo11.jpg" data-toggle="lightbox-image">
+                                            <img src="img/placeholders/photos/photo11.jpg" alt="" class="img-responsive center-block" style="max-width: 110px;">
+                                        </a>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="img/placeholders/photos/photo13.jpg" data-toggle="lightbox-image">
+                                            <img src="img/placeholders/photos/photo13.jpg" alt="" class="img-responsive center-block" style="max-width: 110px;">
+                                        </a>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="img/placeholders/photos/photo9.jpg" data-toggle="lightbox-image">
+                                            <img src="img/placeholders/photos/photo9.jpg" alt="" class="img-responsive center-block" style="max-width: 110px;">
+                                        </a>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                         <div class="row form-actions">
                             <div class="col-xs-12 text-right">

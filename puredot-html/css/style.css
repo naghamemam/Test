@@ -247,6 +247,38 @@ a.widget {
     font-size: 20px;
 }
 
+.input-with-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.input-with-info input {
+    max-width: calc(100% - 35px);
+}
+
+.input-with-info .btn {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 16px;
+    font-size: inherit;
+}
+
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-flex::before,
+.row-flex::after {
+    content: none;
+}
+
 @media screen and (min-width: 768px) {
 
     #login-container,
