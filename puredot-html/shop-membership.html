@@ -379,7 +379,7 @@
                                             <a href="currencies.html">Currencies</a>
                                         </li>
                                         <li>
-                                            <a href="zipcodes.html" class="active">Zipcodes</a>
+                                            <a href="zipcodes.html">Zipcodes</a>
                                         </li>
                                         <li>
                                             <a href="banners-2.html">Banners</a>
@@ -397,7 +397,7 @@
                                             <a href="financial-settings.html">Financial Settings</a>
                                         </li>
                                         <li>
-                                            <a href="shop-membership.html">Shop Memberships</a>
+                                            <a href="shop-membership.html" class="active">Shop Memberships</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -573,22 +573,22 @@
 
                     <!-- Page content -->
                     <div id="page-content">
-                        <!-- eCommerce zipcode Header -->
+                        <!-- eCommerce Membership Header -->
                         <div class="content-header">
                             <div class="header-section">
                                 <h1>
-                                    <i class="fa fa-map-marker"></i>zipcode<br><small>Manage and Edit zipcode!</small>
+                                    <i class="fa fa-users"></i>Memberships<br><small>Manage and Edit Memberships!</small>
                                 </h1>
                             </div>
                         </div>
-                        <!-- END eCommerce zipcode Header -->
+                        <!-- END eCommerce Membership Header -->
 
                         <!-- Quick Stats -->
                         <div class="row text-center">
                             <div class="col-sm-6 col-lg-3">
-                                <a href="#modal-add-zipcode" data-toggle="modal" class="widget widget-hover-effect2">
+                                <a href="#modal-add-Membership" data-toggle="modal" class="widget widget-hover-effect2">
                                     <div class="widget-extra themed-background-success">
-                                        <h4 class="widget-content-light"><strong>Add New</strong> zipcode</h4>
+                                        <h4 class="widget-content-light"><strong>Add New</strong> Membership</h4>
                                     </div>
                                     <div class="widget-extra-full"><span class="h2 text-success animation-expandOpen"><i class="fa fa-plus"></i></span></div>
                                 </a>
@@ -596,7 +596,25 @@
                             <div class="col-sm-6 col-lg-3">
                                 <a href="javascript:void(0)" class="widget widget-hover-effect2">
                                     <div class="widget-extra themed-background-dark">
-                                        <h4 class="widget-content-light"><strong>All</strong> zipcode</h4>
+                                        <h4 class="widget-content-light"><strong>All</strong> Memberships</h4>
+                                    </div>
+                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">4.982</span></div>
+                                </a>
+                            </div>
+
+                            <div class="col-sm-6 col-lg-3">
+                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
+                                    <div class="widget-extra themed-background-dark">
+                                        <h4 class="widget-content-light"><strong>All</strong> Monthly</h4>
+                                    </div>
+                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">4.982</span></div>
+                                </a>
+                            </div>
+
+                            <div class="col-sm-6 col-lg-3">
+                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
+                                    <div class="widget-extra themed-background-dark">
+                                        <h4 class="widget-content-light"><strong>All</strong> Yearly</h4>
                                     </div>
                                     <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">4.982</span></div>
                                 </a>
@@ -604,18 +622,18 @@
                         </div>
                         <!-- END Quick Stats -->
 
-                        <!-- All zipcode Block -->
+                        <!-- All Memberships Block -->
                         <div class="block full">
-                            <!-- All zipcode Title -->
+                            <!-- All Memberships Title -->
                             <div class="block-title">
                                 <div class="block-options pull-right">
                                     <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
                                 </div>
-                                <h2><strong>All</strong> zipcode</h2>
+                                <h2><strong>All</strong> Memberships</h2>
                             </div>
-                            <!-- END All zipcode Title -->
+                            <!-- END All Memberships Title -->
 
-                            <!-- All zipcode Content -->
+                            <!-- All Memberships Content -->
                             <div id="ecom-products_wrapper" class="dataTables_wrapper form-inline no-footer">
                                 <div class="row">
                                     <div class="col-sm-6 col-xs-5">
@@ -626,6 +644,14 @@
                                                     <option value="20">20</option>
                                                     <option value="30">30</option>
                                                     <option value="-1">All</option>
+                                                </select>
+                                            </label>
+
+                                            <label>
+                                                <select name="ecom-products_status" aria-controls="ecom-products" class="form-control">
+                                                    <option>Subscription types</option>
+                                                    <option value="published">published</option>
+                                                    <option value="hidden">hidden</option>
                                                 </select>
                                             </label>
                                         </div>
@@ -648,62 +674,53 @@
                                         <thead>
                                             <tr>
                                                 <th class="text-center" style="width: 70px;">ID</th>
-                                                <th>Area Name</th>
-                                                <th class="text-center">City Name</th>
-                                                <th class="text-center">Zipcode</th>
-                                                <th class="text-center">Added</th>
+                                                <th>Membership Name</th>
+                                                <th class="text-center">Discription</th>
+                                                <th class="text-center">Type</th>
+                                                <th class="text-center">Amount</th>
+                                                <th class="text-center">Recurring</th>
                                                 <th class="text-center">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="text-center"><a href="#modal-add-zipcode" data-toggle="modal"><strong>1</strong></a></td>
-                                                <td><a href="#modal-add-zipcode" data-toggle="modal">Area Name1</a></td>
-                                                <td class="text-center">City Name</td>
-                                                <td class="text-center">56892</td>
-                                                <td class="text-center">03/10/2014</td>
+                                                <td class="text-center"><a href="#modal-add-Membership" data-toggle="modal"><strong>1</strong></a></td>
+                                                <td><a href="#modal-add-Membership" data-toggle="modal">Monthly subscription</a></td>
+                                                <td class="text-center">text text text text text</td>
+                                                <td class="text-center">fixed</td>
+                                                <td class="text-center">1000 SAR</td>
+                                                <td class="text-center">Monthly</td>
                                                 <td class="text-center">
                                                     <div class="btn-group btn-group-xs">
-                                                        <a href="#modal-add-zipcode" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
+                                                        <a href="#modal-add-Membership" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
                                                         <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center"><a href="#modal-add-zipcode" data-toggle="modal"><strong>2</strong></a></td>
-                                                <td><a href="#modal-add-zipcode" data-toggle="modal">Area Name2</a></td>
-                                                <td class="text-center">City Name</td>
-                                                <td class="text-center">56892</td>
-                                                <td class="text-center">18/02/2014</td>
+                                                <td class="text-center"><a href="#modal-add-Membership" data-toggle="modal"><strong>2</strong></a></td>
+                                                <td><a href="#modal-add-Membership" data-toggle="modal">Yearly subscriptin</a></td>
+                                                <td class="text-center">text text text text text</td>
+                                                <td class="text-center">fixed</td>
+                                                <td class="text-center">4000 SAR</td>
+                                                <td class="text-center">Yearly</td>
                                                 <td class="text-center">
                                                     <div class="btn-group btn-group-xs">
-                                                        <a href="#modal-add-zipcode" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
+                                                        <a href="#modal-add-Membership" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
                                                         <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center"><a href="#modal-add-zipcode" data-toggle="modal"><strong>3</strong></a></td>
-                                                <td><a href="#modal-add-zipcode" data-toggle="modal">Area Name3</a></td>
-                                                <td class="text-center">City Name</td>
-                                                <td class="text-center">56892</td>
-                                                <td class="text-center">21/08/2014</td>
+                                                <td class="text-center"><a href="#modal-add-Membership" data-toggle="modal"><strong>3</strong></a></td>
+                                                <td><a href="#modal-add-Membership" data-toggle="modal">Monthly percentage</a></td>
+                                                <td class="text-center">text text text text text</td>
+                                                <td class="text-center">percentage from earnings</td>
+                                                <td class="text-center">10%</td>
+                                                <td class="text-center">Monthly</td>
                                                 <td class="text-center">
                                                     <div class="btn-group btn-group-xs">
-                                                        <a href="#modal-add-zipcode" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-                                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="#modal-add-zipcode" data-toggle="modal"><strong>4</strong></a></td>
-                                                <td><a href="#modal-add-zipcode" data-toggle="modal">Area Name4</a></td>
-                                                <td class="text-center">City Name</td>
-                                                <td class="text-center">56892</td>
-                                                <td class="text-center">18/02/2014</td>
-                                                <td class="text-center">
-                                                    <div class="btn-group btn-group-xs">
-                                                        <a href="#modal-add-zipcode" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
+                                                        <a href="#modal-add-Membership" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
                                                         <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                                     </div>
                                                 </td>
@@ -729,9 +746,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- END All zipcode Content -->
+                            <!-- END All Membership Content -->
                         </div>
-                        <!-- END All zipcode Block -->
+                        <!-- END All Membership Block -->
                     </div>
                     <!-- END Page Content -->
 
@@ -822,12 +839,12 @@
         <!-- END User Settings -->
 
         <!-- Add Category Modal -->
-        <div id="modal-add-zipcode" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div id="modal-add-Membership" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <!-- Modal Header -->
                     <div class="modal-header text-center">
-                        <h2 class="modal-title"><i class="fa fa-pencil"></i> Add Zipcode</h2>
+                        <h2 class="modal-title"><i class="fa fa-pencil"></i> Add Membership</h2>
                     </div>
                     <!-- END Modal Header -->
 
@@ -836,30 +853,58 @@
                         <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered mb-20" onsubmit="return false;">
                             <fieldset>
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="zipcode-text-en">zipcode Name (EN)</label>
+                                    <label class="col-md-4 control-label" for="Membership-text-en">Membership Name (EN)</label>
                                     <div class="col-md-8">
-                                        <input type="text" id="zipcode-text-en" name="zipcode-text-en" class="form-control" placeholder="zipcode Name (EN)">
+                                        <input type="text" id="Membership-text-en" name="Membership-text-en" class="form-control" placeholder="Membership Name (EN)">
                                         <span class="help-block">This is a help text</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="zipcode-text-ar">zipcode Name (AR)</label>
+                                    <label class="col-md-4 control-label" for="Membership-text-ar">Membership Name (AR)</label>
                                     <div class="col-md-8">
-                                        <input type="text" id="zipcode-text-ar" name="zipcode-text-ar" class="form-control" placeholder="zipcode Name (AR)">
+                                        <input type="text" id="Membership-text-ar" name="Membership-text-ar" class="form-control" placeholder="Membership Name (AR)">
                                         <span class="help-block">This is a help text</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="zipcode-city">City</label>
+                                    <label class="col-md-4 control-label" for="Membership-disc-en">Membership Discription (EN)</label>
                                     <div class="col-md-8">
-                                        <input type="text" id="zipcode-city" name="zipcode-city" class="form-control" placeholder="zipcode city">
+                                        <textarea id="Membership-disc-en" name="Membership-disc-en" class="form-control" rows="6" placeholder="Membership Discription (EN)"></textarea>
                                         <span class="help-block">This is a help text</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="zipcode-num">Zipcode</label>
+                                    <label class="col-md-4 control-label" for="Membership-disc-ar">Membership Discription (AR)</label>
                                     <div class="col-md-8">
-                                        <input type="text" id="zipcode-num" name="zipcode-num" class="form-control" placeholder="zipcode Number">
+                                        <textarea id="Membership-disc-ar" name="Membership-disc-ar" class="form-control" rows="6" placeholder="Membership Discription (AR)"></textarea>
+                                        <span class="help-block">This is a help text</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="membership-cost">Membership Cost</label>
+                                    <div class="col-md-8">
+                                        <select id="membership-cost" name="membership-cost" class="select-chosen" data-placeholder="Choose a Membership Cost.." style="width: 250px;">
+                                            <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                            <option value="United States">United States</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="Afghanistan">Afghanistan</option>
+                                        </select>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">%</div><!-- OR SAR -->
+                                            <input type="text" id="membership-cost-amount" name="membership-cost-amount" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="Membership-Recurring">Recurring</label>
+                                    <div class="col-md-8">
+                                        <select id="Membership-Recurring" name="Membership-Recurring" class="select-chosen" data-placeholder="Choose a Membership Recurring.." style="width: 250px;">
+                                            <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                            <option value="United States">United States</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="Afghanistan">Afghanistan</option>
+                                        </select>
+                                        
                                         <span class="help-block">This is a help text</span>
                                     </div>
                                 </div>

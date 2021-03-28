@@ -177,6 +177,10 @@ body {
     border: 0;
 }
 
+.variation-container.w-100 .variation-content .form-group.m-15 {
+    flex: 1 0 100%;
+}
+
 .modal-body .form-bordered.mb-20 {
     margin-bottom: 20px;
 }
@@ -278,6 +282,47 @@ a.widget {
 .row-flex::after {
     content: none;
 }
+
+.bootstrap-timepicker.input-group {
+    margin: 0;
+}
+
+.timepicker-container {
+    border-radius: 4px;
+}
+
+.timepicker-container .bootstrap-timepicker input {
+    border-radius: 0 !important;
+}
+
+.timepicker-container .bootstrap-timepicker:last-of-type input {
+    border-radius: 0 4px 4px 0 !important;
+}
+
+.timepicker-container .label-primary {
+    color: #fff;
+    border: 0;
+}
+
+.timepicker-container .bootstrap-timepicker:first-of-type .label-primary {
+    border-radius: 4px 0 0 4px;
+}
+
+.popover-content {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 11px;
+}
+
+/* .bootstrap-timepicker .input-timepicker {
+    flex: 0 0 calc(100% - 38px);
+    max-width: calc(100% - 38px);
+}
+
+.bootstrap-timepicker .input-group-btn {
+    flex: 0 0 38px;
+    max-width: 38px;
+} */
 
 @media screen and (min-width: 768px) {
 

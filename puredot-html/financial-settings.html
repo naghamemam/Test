@@ -390,6 +390,9 @@
                                         <li>
                                             <a href="financial-settings.html" class=" active">Financial Settings</a>
                                         </li>
+                                        <li>
+                                            <a href="shop-membership.html">Shop Memberships</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>
@@ -586,145 +589,74 @@
                             <!-- END All Banners Title -->
 
                             <div class="tabs-container">
-                                <ul class="nav nav-tabs">
-                                    <li class="active"><a data-toggle="tab" href="#shop">Shop</a></li>
-                                    <li><a data-toggle="tab" href="#driver">Driver</a></li>
-                                    <li><a data-toggle="tab" href="#shipping-co">Shipping Co.</a></li>
-                                    <li><a data-toggle="tab" href="#vat">VAT</a></li>
-                                    <li><a data-toggle="tab" href="#customer">Customer</a></li>
-                                </ul>
+                                <div class="form-group">
+                                    <ul class="nav nav-pills nav-justified">
+                                        <li class="active"><a data-toggle="tab" href="#shop">Shop</a></li>
+                                        <li><a data-toggle="tab" href="#driver">Driver</a></li>
+                                        <li><a data-toggle="tab" href="#shipping-co">Shipping Co.</a></li>
+                                        <li><a data-toggle="tab" href="#vat">VAT</a></li>
+                                        <li><a data-toggle="tab" href="#customer">Customer</a></li>
+                                    </ul>
+                                </div>
                                 
                                 <div class="tab-content">
                                     <div id="shop" class="tab-pane fade in active">
-                                        <h3>Shop</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <form action="offers-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="transfer-shop-limit">Transfer to Shop Limit</label>
+                                                <div class="col-md-5">
+                                                    <input type="text" id="transfer-shop-limit" name="transfer-shop-limit" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="shop-wallet-limit">Shop Wallet Limit</label>
+                                                <div class="col-md-5 input-with-info">
+                                                    <input type="text" id="shop-wallet-limit" name="shop-wallet-limit" class="form-control" placeholder="">
+                                                    <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="left" data-html="true" data-content="<span>Shop won't receive orders if it reach this limit in case of pickup from the shop.</span><small>[Shop should pay the money to the application first]</small>">
+                                                        <i class="fa fa-info"></i>
+                                                        </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group form-actions">
+                                                <div class="col-md-8 col-md-offset-4">
+                                                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                                    <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div id="driver" class="tab-pane fade">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <form action="offers-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
-                                                    <div class="row row-flex">
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <label class="col-md-3 control-label" for="transfer-limit">Transfer to Driver Limit</label>
-                                                                <div class="col-md-9">
-                                                                    <input type="text" id="transfer-limit" name="transfer-limit" class="form-control" placeholder="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <label class="col-md-3 control-label" for="driver-wallet-limit">Driver Wallet Limit</label>
-                                                                <div class="col-md-9 input-with-info">
-                                                                    <input type="text" id="driver-wallet-limit" name="driver-wallet-limit" class="form-control" placeholder="">
-                                                                    <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="left" data-html="true" data-content="<span>Driver won't receive orders if he reach this limit</span><a href='#'>Drivers shoud pay the money to the application first</a>">
-                                                                        <i class="fa fa-info"></i>
-                                                                      </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <label class="col-md-3 control-label" for="app-commision">App Commision</label>
-                                                                <div class="col-md-9">
-                                                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
-                                                                    <select id="app-commision" name="app-commision" class="select-chosen" data-placeholder="Choose Commision.." style="width: 250px;">
-                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                                        <option value="1">Tablets</option>
-                                                                        <option value="2">Laptops</option>
-                                                                        <option value="3">PCs</option>
-                                                                        <option value="4">Consoles</option>
-                                                                        <option value="5">Movies</option>
-                                                                        <option value="6">Books</option>
-                                                                        <option value="7">Cables</option>
-                                                                        <option value="8">Adapters</option>
-                                                                        <option value="9">Office</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <label class="col-md-3 control-label" for="amount">amount</label>
-                                                                <div class="col-md-9">
-                                                                    <input type="text" id="amount" name="amount" class="form-control">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <label class="col-md-3 control-label" for="commision-limit">Commision Limit</label>
-                                                                <div class="col-md-9">
-                                                                    <div class="variation-container bg-gray">
-                                                                        <a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a>
-                                                                        <div class="variation-content">
-                                                                            <div class="form-group m-15">
-                                                                                <label class="col-xs-3 control-label" for="order-amount">Order Amount</label>
-                                                                                <div class="col-xs-9">
-                                                                                    <select id="order-amount" name="order-amount" class="select-chosen" data-placeholder="Choose an amount.." style="width: 250px;">
-                                                                                        <option value=""></option>
-                                                                                        <option value="Product 1">Product 1</option>
-                                                                                        <option value="Product 2">Product 2</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group m-15">
-                                                                                <div class="col-xs-12">
-                                                                                    <input type="text" id="order-amount-amount" name="order-amount-amount" class="form-control" placeholder="Amount">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group m-15">
-                                                                                <label class="col-xs-3 col-md-2 control-label" for="Offer-discount">Discount</label>
-                                                                                <div class="col-xs-9 col-md-10">
-                                                                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
-                                                                                    <select id="Offer-discount" name="Offer-discount" class="select-chosen" data-placeholder="Choose Discount.." style="width: 250px; display: none;">
-                                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                                                        <option value="fixed">Fixed</option>
-                                                                                        <option value="Percentage">Percentage</option>
-                                                                                    </select><div class="chosen-container chosen-container-single" style="width: 100%;" title="" id="Offer_discount_chosen"><a class="chosen-single chosen-default"><span>Choose Discount..</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
-                                                                                    <div class="input-group">
-                                                                                        <div class="input-group-addon">SAR</div>
-                                                                                        <input type="text" id="Offer-discount-value" name="Offer-discount-value" class="form-control" placeholder="0,00">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            
+                                        <form action="offers-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                            <div class="row row-flex">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label" for="transfer-limit">Transfer to Driver Limit</label>
+                                                        <div class="col-md-5">
+                                                            <input type="text" id="transfer-limit" name="transfer-limit" class="form-control" placeholder="">
                                                         </div>
                                                     </div>
-                                                    
-                                                    
-                                                    
+                                                </div>
+
+                                                <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label" for="Offer-description-ar">Description (AR)</label>
-                                                        <div class="col-md-9">
-                                                            <textarea id="Offer-description-ar" name="Offer-description" class="form-control" rows="3"></textarea>
+                                                        <label class="col-md-4 control-label" for="driver-wallet-limit">Driver Wallet Limit</label>
+                                                        <div class="col-md-5 input-with-info">
+                                                            <input type="text" id="driver-wallet-limit" name="driver-wallet-limit" class="form-control" placeholder="">
+                                                            <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="left" data-html="true" data-content="<span>Driver won't receive orders if he reach this limit</span><a href='#'>Drivers shoud pay the money to the application first</a>">
+                                                                <i class="fa fa-info"></i>
+                                                                </button>
                                                         </div>
                                                     </div>
+                                                </div>
+
+                                                <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label" for="Offer-return">Can Return</label>
-                                                        <div class="col-md-9">
-                                                            <label class="switch switch-primary">
-                                                                <input type="checkbox"><span></span>
-                                                            </label>
-                                                        </div>
-                                                        <label class="col-md-3 control-label" for="Offer-return-days">Return Days</label>
-                                                        <div class="col-md-9">
-                                                            <input type="number" id="Offer-return-days" name="Offer-return-days" class="form-control" placeholder="Enter Offer return days..">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-md-3 control-label" for="Offer-category">Category</label>
-                                                        <div class="col-md-9">
+                                                        <label class="col-md-4 control-label" for="app-commision">App Commision</label>
+                                                        <div class="col-md-5">
                                                             <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
-                                                            <select id="Offer-category" name="Offer-category" class="select-chosen" data-placeholder="Choose Category.." style="width: 250px;">
+                                                            <select id="app-commision" name="app-commision" class="select-chosen" data-placeholder="Choose Commision.." style="width: 250px;">
                                                                 <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
                                                                 <option value="1">Tablets</option>
                                                                 <option value="2">Laptops</option>
@@ -738,43 +670,434 @@
                                                             </select>
                                                         </div>
                                                     </div>
+                                                </div>
+
+                                                <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label" for="Offer-details-en">Detailes (EN)</label>
-                                                        <div class="col-md-9">
-                                                            <!-- CKEditor, you just need to include the plugin (see at the bottom of this page) and add the class 'ckeditor' to your textarea -->
-                                                            <!-- More info can be found at http://ckeditor.com -->
-                                                            <textarea id="Offer-details-en" name="Offer-details" class="ckeditor"></textarea>
+                                                        <label class="col-md-4 control-label" for="amount">amount</label>
+                                                        <div class="col-md-5">
+                                                            
+                                                            <div class="input-group">
+                                                                <div class="input-group-addon">%</div>
+                                                                <input type="text" id="amount" name="amount" class="form-control">
+                                                            </div>
                                                         </div>
                                                     </div>
+                                                </div>
+
+                                                <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label class="col-md-3 control-label" for="Offer-details-ar">Detailes (AR)</label>
-                                                        <div class="col-md-9">
-                                                            <!-- CKEditor, you just need to include the plugin (see at the bottom of this page) and add the class 'ckeditor' to your textarea -->
-                                                            <!-- More info can be found at http://ckeditor.com -->
-                                                            <textarea id="Offer-details-ar" name="Offer-details" class="ckeditor"></textarea>
+                                                        <label class="col-md-4 control-label" for="commision-limit">Commision Limit</label>
+                                                        <div class="col-md-5">
+                                                            <div class="variation-container w-100 bg-gray">
+                                                                <a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a>
+                                                                <div class="variation-content">
+                                                                    <div class="form-group m-15">
+                                                                        <label class="col-xs-3 control-label" for="order-amount">Order Amount</label>
+                                                                        <div class="col-xs-8">
+                                                                            <select id="order-amount" name="order-amount" class="select-chosen" data-placeholder="Choose an amount.." style="width: 250px;">
+                                                                                <option value=""></option>
+                                                                                <option value="Product 1">Product 1</option>
+                                                                                <option value="Product 2">Product 2</option>
+                                                                            </select>
+                                                                            <input type="text" id="order-amount-amount" name="order-amount-amount" class="form-control" placeholder="Amount">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="form-group m-15">
+                                                                        <label class="col-xs-3 control-label" for="order-commision">Commision</label>
+                                                                        <div class="col-xs-8 col-md-8">
+                                                                            <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                            <select id="order-commision" name="order-commision" class="select-chosen" data-placeholder="Choose a commision.." style="width: 250px;">
+                                                                                <option value=""></option>
+                                                                                <option value="Product 1">Product 1</option>
+                                                                                <option value="Product 2">Product 2</option>
+                                                                            </select>
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon">SAR</div>
+                                                                                <input type="text" id="order-commision-value" name="order-commision-value" class="form-control" placeholder="0,00">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="variation-container w-100 bg-gray">
+                                                                <a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a>
+                                                                <div class="variation-content">
+                                                                    <div class="form-group m-15">
+                                                                        <label class="col-xs-3 control-label" for="order-amount">Order Amount</label>
+                                                                        <div class="col-xs-8">
+                                                                            <select id="order-amount" name="order-amount" class="select-chosen" data-placeholder="Choose an amount.." style="width: 250px;">
+                                                                                <option value=""></option>
+                                                                                <option value="Product 1">Product 1</option>
+                                                                                <option value="Product 2">Product 2</option>
+                                                                            </select>
+                                                                            <input type="text" id="order-amount-amount" name="order-amount-amount" class="form-control" placeholder="Amount">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="form-group m-15">
+                                                                        <label class="col-xs-3 control-label" for="order-commision">Commision</label>
+                                                                        <div class="col-xs-8 col-md-8">
+                                                                            <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                            <select id="order-commision" name="order-commision" class="select-chosen" data-placeholder="Choose a commision.." style="width: 250px;">
+                                                                                <option value=""></option>
+                                                                                <option value="Product 1">Product 1</option>
+                                                                                <option value="Product 2">Product 2</option>
+                                                                            </select>
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon">SAR</div>
+                                                                                <input type="text" id="order-commision-value" name="order-commision-value" class="form-control" placeholder="0,00">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="add-new-variation">
+                                                                <a href="#"><i class="fa fa-plus-circle"></i> add new</a>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group form-actions">
-                                                        <div class="col-md-9 col-md-offset-3">
-                                                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
-                                                            <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                                    
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label" for="commition-limit">Commision limit</label>
+                                                        <div class="col-md-5">
+                                                            
+                                                            <div class="input-group">
+                                                                <div class="input-group-addon">SAR</div>
+                                                                <input type="text" id="commition-limit" name="commition-limit" class="form-control">
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </form>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label" for="min-shipping-limit">Min shipping limit</label>
+                                                        <div class="col-md-5">
+                                                            
+                                                            <div class="input-group">
+                                                                <div class="input-group-addon">SAR</div>
+                                                                <input type="text" id="min-shipping-limit" name="min-shipping-limit" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label" for="normal-period-price">Normal Period price</label>
+                                                        <div class="col-md-5">
+                                                            <div class="input-group">
+                                                                <div class="input-group-addon">SAR per KM</div>
+                                                                <input type="text" id="normal-period-price" name="normal-period-price" class="form-control">
+                                                            </div>
+                                                            <div class="input-group timepicker-container">
+                                                                <div class=" bootstrap-timepicker input-group">
+                                                                    <div class="input-group-addon label-primary">From</div>
+                                                                    <input type="text" id="example-timepicker" name="example-timepicker" placeholder="from" class="form-control input-timepicker">
+                                                                </div>
+                                                                <span class="input-group-addon"><i class="fa fa-angle-right"></i></span>
+                                                                <div class=" bootstrap-timepicker input-group">
+                                                                    <div class="input-group-addon label-primary">To</div>
+                                                                    <input type="text" id="example-timepicker1" name="example-timepicker1" class="form-control input-timepicker">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label" for="rush-hour-mid">Rush Hour mid Period</label>
+                                                        <div class="col-md-5">
+                                                            <div class="input-group">
+                                                                <div class="input-group-addon">SAR per KM</div>
+                                                                <input type="text" id="rush-hour-mid" name="rush-hour-mid" class="form-control">
+                                                            </div>
+                                                            <div class="input-group timepicker-container">
+                                                                <div class=" bootstrap-timepicker input-group">
+                                                                    <div class="input-group-addon label-primary">From</div>
+                                                                    <input type="text" id="rush-hour-mid-timepicker" name="rush-hour-mid-timepicker" placeholder="from" class="form-control input-timepicker">
+                                                                </div>
+                                                                <span class="input-group-addon"><i class="fa fa-angle-right"></i></span>
+                                                                <div class=" bootstrap-timepicker input-group">
+                                                                    <div class="input-group-addon label-primary">To</div>
+                                                                    <input type="text" id="rush-hour-mid-timepicker1" name="rush-hour-mid-timepicker1" class="form-control input-timepicker">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label" for="rush-hour-peak">Rush Hour peak Period</label>
+                                                        <div class="col-md-5">
+                                                            <div class="input-group">
+                                                                <div class="input-group-addon">SAR per KM</div>
+                                                                <input type="text" id="rush-hour-peak" name="rush-hour-peak" class="form-control">
+                                                            </div>
+                                                            <div class="input-group timepicker-container">
+                                                                <div class=" bootstrap-timepicker input-group">
+                                                                    <div class="input-group-addon label-primary">From</div>
+                                                                    <input type="text" id="rush-hour-peak-timepicker" name="rush-hour-peak-timepicker" class="form-control input-timepicker">
+                                                                </div>
+                                                                <span class="input-group-addon"><i class="fa fa-angle-right"></i></span>
+                                                                <div class=" bootstrap-timepicker input-group">
+                                                                    <div class="input-group-addon label-primary">To</div>
+                                                                    <input type="text" id="rush-hour-peak-timepicker1" name="rush-hour-peak-timepicker1" class="form-control input-timepicker">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label" for="arrival-to-shop-price">Arrival to shop price</label>
+                                                        <div class="col-md-5">
+                                                            <div class="input-group">
+                                                                <div class="input-group-addon">SAR</div>
+                                                                <input type="text" id="arrival-to-shop-price" name="arrival-to-shop-price" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
+                                            <div class="form-group form-actions">
+                                                <div class="col-md-8 col-md-offset-4">
+                                                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                                    <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div id="shipping-co" class="tab-pane fade">
-                                        <h3>Menu 2</h3>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                                        <form action="offers-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                            <fieldset>
+                                                <legend>
+                                                    <i class="fa fa-angle-right"></i> Shipping Method 1
+                                                </legend>
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label" for="shipping-discount">Shipping Discount</label>
+                                                    <div class="col-md-5">
+                                                        <div class="variation-container w-100 bg-gray">
+                                                            <a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a>
+                                                            <div class="variation-content">
+                                                                <div class="form-group m-15">
+                                                                    <label class="col-xs-3 control-label" for="order-amount">Order Amount</label>
+                                                                    <div class="col-xs-8">
+                                                                        <select id="order-amount" name="order-amount" class="select-chosen" data-placeholder="Choose an amount.." style="width: 250px;">
+                                                                            <option value=""></option>
+                                                                            <option value="Product 1">Product 1</option>
+                                                                            <option value="Product 2">Product 2</option>
+                                                                        </select>
+                                                                        <input type="text" id="order-amount-amount" name="order-amount-amount" class="form-control" placeholder="Amount">
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group m-15">
+                                                                    <label class="col-xs-3 control-label" for="order-commision">Commision</label>
+                                                                    <div class="col-xs-8 col-md-8">
+                                                                        <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                        <select id="order-commision" name="order-commision" class="select-chosen" data-placeholder="Choose a commision.." style="width: 250px;">
+                                                                            <option value=""></option>
+                                                                            <option value="Product 1">Product 1</option>
+                                                                            <option value="Product 2">Product 2</option>
+                                                                        </select>
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon">%</div>
+                                                                            <input type="text" id="order-commision-value" name="order-commision-value" class="form-control" placeholder="0,00">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="variation-container w-100 bg-gray">
+                                                            <a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a>
+                                                            <div class="variation-content">
+                                                                <div class="form-group m-15">
+                                                                    <label class="col-xs-3 control-label" for="order-amount">Order Amount</label>
+                                                                    <div class="col-xs-8">
+                                                                        <select id="order-amount" name="order-amount" class="select-chosen" data-placeholder="Choose an amount.." style="width: 250px;">
+                                                                            <option value=""></option>
+                                                                            <option value="Product 1">Product 1</option>
+                                                                            <option value="Product 2">Product 2</option>
+                                                                        </select>
+                                                                        <input type="text" id="order-amount-amount" name="order-amount-amount" class="form-control" placeholder="Amount">
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group m-15">
+                                                                    <label class="col-xs-3 control-label" for="order-commision">Commision</label>
+                                                                    <div class="col-xs-8 col-md-8">
+                                                                        <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                        <select id="order-commision" name="order-commision" class="select-chosen" data-placeholder="Choose a commision.." style="width: 250px;">
+                                                                            <option value=""></option>
+                                                                            <option value="Product 1">Product 1</option>
+                                                                            <option value="Product 2">Product 2</option>
+                                                                        </select>
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon">%</div>
+                                                                            <input type="text" id="order-commision-value" name="order-commision-value" class="form-control" placeholder="0,00">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="add-new-variation">
+                                                            <a href="#"><i class="fa fa-plus-circle"></i> add new</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label" for="grant-free-shipping">Grant Free Shipping</label>
+                                                    <div class="col-md-5">
+                                                        <div class="variation-container w-100 bg-gray">
+                                                            <a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a>
+                                                            <div class="variation-content">
+                                                                <div class="form-group m-15">
+                                                                    <label class="col-xs-3 control-label" for="shipping-cities">Cities</label>
+                                                                    <div class="col-xs-8">
+                                                                        <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                        <div class="radio-item">
+                                                                            <label class="switch switch-primary">
+                                                                                <input type="radio" name="chooseCities"><span></span>
+                                                                            </label>
+                                                                            <span>All Cities</span>
+                                                                        </div>
+                                                                        <div class="radio-item">
+                                                                            <label class="switch switch-primary">
+                                                                                <input type="radio" name="chooseCities" checked=""><span></span>
+                                                                            </label>
+                                                                            <span>Specific Cities</span>
+                                                                        </div>
+                                                                        
+                                                                        <div class="specific-shipping-methods">
+                                                                            <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                            <select id="discount-chooseCities" name="discount-chooseCities" class="select-chosen" data-placeholder="Choose Cities.." style="width: 250px;" multiple="">
+                                                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                                <option value="Picked from store">Picked from store</option>
+                                                                                <option value="App Delevery">App Delevery</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group m-15">
+                                                                    <label class="col-xs-3 control-label" for="Discount-Shipping">Shipping</label>
+                                                                    <div class="col-xs-8">
+                                                                        <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                        <div class="radio-item">
+                                                                            <label class="switch switch-primary">
+                                                                                <input type="radio" name="shippingMethods"><span></span>
+                                                                            </label>
+                                                                            <span>All Shipping Methods</span>
+                                                                        </div>
+                                                                        <div class="radio-item">
+                                                                            <label class="switch switch-primary">
+                                                                                <input type="radio" name="shippingMethods" checked=""><span></span>
+                                                                            </label>
+                                                                            <span>Specific Shipping Methods</span>
+                                                                        </div>
+                                                                        
+                                                                        <div class="specific-shipping-methods">
+                                                                            <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                            <select id="discount-shippingMethods" name="discount-shippingMethods" class="select-chosen" data-placeholder="Choose Shipping Methods.." style="width: 250px;" multiple="">
+                                                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                                <option value="Picked from store">Picked from store</option>
+                                                                                <option value="App Delevery">App Delevery</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+
+                                            <fieldset>
+                                                <legend>
+                                                    <i class="fa fa-angle-right"></i> Shipping Method 2
+                                                </legend>
+                                            </fieldset>
+                                            <div class="form-group form-actions">
+                                                <div class="col-md-8 col-md-offset-4">
+                                                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                                    <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div id="vat" class="tab-pane fade">
-                                        <h3>Menu 3</h3>
-                                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                        <form action="offers-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="value-added-tax">Value added tax</label>
+                                                <div class="col-md-5">
+                                                    <select id="value-added-tax" name="value-added-tax" class="select-chosen" data-placeholder="Choose a tax.." style="width: 250px;">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                        <option value="United States">United States</option>
+                                                        <option value="United Kingdom">United Kingdom</option>
+                                                        <option value="Afghanistan">Afghanistan</option>
+                                                    </select>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">%</div>
+                                                        <input type="text" id="value-added-tax-amount" name="value-added-tax-amount" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group form-actions">
+                                                <div class="col-md-8 col-md-offset-4">
+                                                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                                    <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div id="customer" class="tab-pane fade">
-                                        <h3>Menu 3</h3>
-                                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                        <form action="offers-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                            <fieldset>
+                                                <legend>
+                                                    <i class="fa fa-angle-right"></i> Reward Settings
+                                                </legend>
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label" for="reward-settings-amount">Amounts</label>
+                                                    <div class="col-md-5">
+                                                        <input type="text" id="reward-settings-amount" name="reward-settings-amount" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label" for="reward-settings-rewards">Rewards</label>
+                                                    <div class="col-md-5">
+                                                        <input type="text" id="reward-settings-rewards" name="reward-settings-rewards" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="zipcode-mandatory">Make Zipcode Mandatory</label>
+                                                <div class="col-md-5">
+                                                    <label class="switch switch-success"><input type="checkbox"><span></span></label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-actions">
+                                                <div class="col-md-8 col-md-offset-4">
+                                                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                                    <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
