@@ -314,6 +314,10 @@ a.widget {
     font-size: 11px;
 }
 
+.fa-sync:before {
+    content: "\f021";
+}
+
 /* .bootstrap-timepicker .input-timepicker {
     flex: 0 0 calc(100% - 38px);
     max-width: calc(100% - 38px);
