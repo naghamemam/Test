@@ -364,10 +364,10 @@
                             <!-- Sidebar Navigation -->
                             <ul class="sidebar-nav">
                                 <li>
-                                    <a href="dashboard.html" class=" active"><i class="gi gi-stopwatch sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+                                    <a href="dashboard-2.html"><i class="gi gi-stopwatch sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-shop_window sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Manage Market</span></a>
+                                    <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-cogs sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">General Settings</span></a>
                                     <ul>
                                         <li>
                                             <a href="countries.html">countries</a>
@@ -401,7 +401,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-users sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Manage Users</span></a>
                                     <ul>
                                         <li>
@@ -414,7 +414,7 @@
                                             <a href="shops-join-request.html">Shop join Request</a>
                                         </li>
                                         <li>
-                                            <a href="shop-owners.html">Shop Owners</a>
+                                            <a href="shop-owners.html" class="active">Shop Owners</a>
                                         </li>
                                         <li>
                                             <a href="page_ecom_products.html">Products</a>
@@ -483,8 +483,6 @@
                                 </a>
                             </li>
                             <!-- END Main Sidebar Toggle Button -->
-
-                            <!-- END Template Options -->
                         </ul>
                         <!-- END Left Header Navigation -->
 
@@ -581,382 +579,228 @@
 
                     <!-- Page content -->
                     <div id="page-content">
-                        <!-- eCommerce Dashboard Header -->
+                        <!-- eCommerce Admin Header -->
                         <div class="content-header">
-                            <div class="d-flex">
-                                <div class="content-title">
-                                    <h1>Dashboard</h1>
-                                </div>
-                                <div class="header-datepicker">
-                                    <form action="">
+                            <div class="header-section">
+                                <h1>
+                                    <i class="gi gi-shop_window"></i>Add new Shop Owner<br><small>Manage and Edit Shop Owner!</small>
+                                </h1>
+                            </div>
+                        </div>
+                        <!-- END eCommerce Admin Header -->
+
+                        <!-- All Admin Block -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!-- General Data Block -->
+                                <div class="block">
+                                    <!-- General Data Title -->
+                                    <div class="block-title">
+                                        <h2><i class="fa fa-pencil"></i> <strong>General</strong> Details</h2>
+                                    </div>
+                                    <!-- END General Data Title -->
+
+                                    <!-- General Data Content --><form action="page_ecom_product_edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
                                         <div class="form-group">
-                                            <select id="shopName" name="shopName" class="select-chosen" data-placeholder="Shop Name" style="width: 250px;">
-                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                <option value="Picked from store">Picked from store</option>
-                                                <option value="App Delevery">App Delevery</option>
-                                            </select>
+                                            <label class="col-md-3 control-label" for="full-name">Full Name</label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="full-name" name="full-name" class="form-control" placeholder="Full Name">
+                                            </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label" for="example-datepicker"><i class="gi gi-calendar"></i></label>
-                                            <div class="">
-                                                <input type="text" id="example-datepicker" name="example-datepicker" class="form-control input-datepicker" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
+                                            <label class="col-md-3 control-label" for="email">Email</label>
+                                            <div class="col-md-9">
+                                                <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="phone-number">Phone Number</label>
+                                            <div class="col-md-9">
+                                                <input type="tel" id="phone-number" name="phone-number" class="form-control" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="date-of-birth">Date of birth</label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="date-of-birth" name="date-of-birth" class="form-control input-datepicker" data-date-format="dd/mm/yy" placeholder="dd/mm/yy">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="gender">Gender</label>
+                                            <div class="col-md-9">
+                                                <select id="gender" name="gender" class="select-chosen" data-placeholder="Choose a Gender.." style="width: 250px;">
+                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                    <option value="United States">United States</option>
+                                                    <option value="United Kingdom">United Kingdom</option>
+                                                    <option value="Zimbabwe">Zimbabwe</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="city">City</label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="city" name="city" class="form-control" placeholder="City">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="profile-image">Profile Image</label>
+                                            <div class="col-md-9">
+                                                <input type="file" id="profile-image" name="profile-image">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="Shop">Shop</label>
+                                            <div class="col-md-9">
+                                                <select id="Shop" name="Shop" class="select-chosen" data-placeholder="Choose a Related Shop.." style="width: 250px;">
+                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                    <option value="United States">United States</option>
+                                                    <option value="United Kingdom">United Kingdom</option>
+                                                    <option value="Zimbabwe">Zimbabwe</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <fieldset>
+                                            <legend>Password</legend>
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="password">Password</label>
+                                                <div class="col-md-9">
+                                                    <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="confirm-password">Confirm Password</label>
+                                                <div class="col-md-9">
+                                                    <input type="password" id="confirm-password" name="confirm-password" class="form-control" placeholder="Confirm Password">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form-group form-actions">
+                                            <div class="col-md-9 col-md-offset-3">
+                                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                                <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
                                             </div>
                                         </div>
                                     </form>
+                                    
+                                    <!-- END General Data Content -->
                                 </div>
-                            </div>
-                            <ul class="nav-horizontal text-center">
-                                <li class="active">
-                                    <a href="page_ecom_dashboard.html"><i class="fa fa-bar-chart"></i> Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_orders.html"><i class="gi gi-shop_window"></i> Orders</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_order_view.html"><i class="gi gi-shopping_cart"></i> Order View</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_products.html"><i class="gi gi-shopping_bag"></i> Products</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_product_edit.html"><i class="gi gi-pencil"></i> Product Edit</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_customer_view.html"><i class="gi gi-user"></i> Customer View</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- END eCommerce Dashboard Header -->
-
-                        <!-- Quick Stats -->
-                        <div class="row text-center status-timeline">
-                            <div class="col">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background">
-                                        <h4 class="widget-content-light"><strong>Delivery</strong> Earning</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 animation-expandOpen">10,000</span></div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background-dark">
-                                        <h4 class="widget-content-light"><strong>Driver</strong> Earning</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">100</span></div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background">
-                                        <h4 class="widget-content-light"><strong>Pending</strong> Commissions</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">16000</span></div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background-dark">
-                                        <h4 class="widget-content-light"><strong>Total</strong> Rides</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">$ 150,000</span></div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background">
-                                        <h4 class="widget-content-light"><strong>Active</strong> Rides</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">$ 150,000</span></div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- END Quick Stats -->
-                        
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="block full">
-                                    <div class="block-title">
-                                        <div class="block-options pull-right">
-                                            <a href="page_ecom_orders.html" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Show All"><i class="fa fa-eye"></i></a>
-                                            <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
-                                        </div>
-                                        <h2><strong>Active</strong> Drivers</h2>
-                                    </div>
-
-                                    <div id="gmap-timeline" class="gmap"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Orders and Products -->
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <!-- Top Products Block -->
-                                <div class="block">
-                                    <!-- Top Products Title -->
-                                    <div class="block-title">
-                                        <div class="block-options pull-right">
-                                            <a href="page_ecom_products.html" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Show All"><i class="fa fa-eye"></i></a>
-                                            <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
-                                        </div>
-                                        <h2><strong>Pending</strong> Delivery</h2>
-                                    </div>
-                                    <!-- END Top Products Title -->
-
-                                    <!-- Top Products Content -->
-                                    <div class="table-responsive">
-                                        <table class="table table-borderless table-striped table-vcenter table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-center">ID</th>
-                                                    <th>Order</th>
-                                                    <th class="text-center">User</th>
-                                                    <th class="text-center">Status</th>
-                                                    <th class="text-center">Cost</th>
-                                                    <th class="text-center">time</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>1</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>2</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>3</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>4</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>5</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>6</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>7</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>8</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>9</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>10</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- END Top Products Content -->
-                                </div>
-                                <!-- END Top Products Block -->
+                                <!-- END General Data Block -->
                             </div>
                             <div class="col-lg-6">
-                                <!-- Latest Orders Block -->
                                 <div class="block">
-                                    <!-- Latest Orders Title -->
+                                    <!-- Stock Title -->
                                     <div class="block-title">
-                                        <div class="block-options pull-right">
-                                            <a href="page_ecom_orders.html" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Show All"><i class="fa fa-eye"></i></a>
-                                            <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
-                                        </div>
-                                        <h2><strong>Latest</strong> Orders</h2>
+                                        <h2><i class="fa fa-newspaper-o"></i> <strong>Subscription</strong> Details</h2>
                                     </div>
-                                    <!-- END Latest Orders Title -->
+                                    <!-- END Stock Title -->
 
-                                    <!-- Latest Orders Content -->
-                                    <div class="widget widget-with-number">
-                                        <h3><b>Total Orders</b></h3>
-                                        <div class="widget-icon pull-left themed-background-lake animation-fadeIn">
-                                            50
+                                    <!-- Stock Content -->
+                                    <form action="page_ecom_product_edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="Subscription">Subscription</label>
+                                            <div class="col-md-9">
+                                                <select id="Subscription" name="Subscription" class="select-chosen" data-placeholder="Choose a Subscription.." style="width: 250px;">
+                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                    <option value="United States">United States</option>
+                                                    <option value="United Kingdom">United Kingdom</option>
+                                                    <option value="Zimbabwe">Zimbabwe</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_comp_charts.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                                        3
-                                                    </div>
-                                                    <h3 class="widget-content text-right animation-pullDown">
-                                                        New <strong>Orders</strong>
-                                                    </h3>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="payment-recurring">Payment recurring</label>
+                                            <div class="col-md-9">
+                                                <select id="payment-recurring" name="payment-recurring" class="select-chosen" data-placeholder="Choose a Payment recurring.." style="width: 250px;">
+                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                    <option value="United States">United States</option>
+                                                    <option value="United Kingdom">United Kingdom</option>
+                                                    <option value="Zimbabwe">Zimbabwe</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label" for="subscription-type">subscription Type</label>
+                                            <div class="col-md-9">
+                                                <select id="subscription-type" name="subscription-type" class="select-chosen" data-placeholder="Choose a subscription Type.." style="width: 250px;">
+                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                    <option value="United States">United States</option>
+                                                    <option value="United Kingdom">United Kingdom</option>
+                                                    <option value="Zimbabwe">Zimbabwe</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <fieldset>
+                                            <legend>Financial Details</legend>
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="bank">Bank</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" id="bank" name="bank" class="form-control" placeholder="Bank Name">
                                                 </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_ready_article.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background-autumn animation-fadeIn">
-                                                        1
-                                                    </div>
-                                                    <h3 class="widget-content text-right animation-pullDown">
-                                                        Pending <strong>Shop</strong>
-                                                    </h3>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="bank-number">Bank Number</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" id="bank-number" name="bank-number" class="form-control" placeholder="Bank Number">
                                                 </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_ready_inbox.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background-flatie animation-fadeIn">
-                                                        4
-                                                    </div>
-                                                    <h3 class="widget-content text-right animation-pullDown">
-                                                        In <strong>Progress</strong>
-                                                    </h3>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <legend>Shop Paper (Commercial Register)</legend>
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="crNumber">C.R.Number</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" id="crNumber" name="crNumber" class="form-control" placeholder="Commercial Register Number">
                                                 </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_comp_gallery.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background-coral animation-fadeIn">
-                                                        3
-                                                    </div>
-                                                    <h3 class="widget-content text-right animation-pullDown">
-                                                        Pending <strong>Delivary</strong>
-                                                    </h3>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="crImage">C.R.Image</label>
+                                                <div class="col-md-9">
+                                                    <input type="file" id="crImage" name="crImage">
                                                 </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_comp_gallery.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                                        2
-                                                    </div>
-                                                    <h3 class="widget-content text-right animation-pullDown">
-                                                        <strong>Assigned</strong>
-                                                    </h3>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="crExpiry">C.R.Expiry</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" id="crExpiry" name="crExpiry" class="form-control input-datepicker" data-date-format="dd/mm/yy" placeholder="dd/mm/yy">
                                                 </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_comp_gallery.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background-dark-lake animation-fadeIn">
-                                                        3
-                                                    </div>
-                                                    <h3 class="widget-content text-right animation-pullDown">
-                                                        Item <strong>Picked</strong>
-                                                    </h3>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="crZakat">Certifcate of Zakat and Income</label>
+                                                <div class="col-md-9">
+                                                    <input type="file" id="crZakat" name="crZakat">
                                                 </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_comp_charts.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background-fire animation-fadeIn">
-                                                        1
-                                                    </div>
-                                                    <h3 class="widget-content animation-pullDown visible-lg">
-                                                        <strong>Canceld</strong>
-                                                    </h3>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="crMunicipal">Municipal License</label>
+                                                <div class="col-md-9">
+                                                    <input type="file" id="crMunicipal" name="crMunicipal">
                                                 </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_widgets_stats.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
-                                                        10
-                                                    </div>
-                                                    <h3 class="widget-content animation-pullDown visible-lg">
-                                                        <strong>Deliverd</strong>
-                                                    </h3>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label" for="shop-type">Shop Type</label>
+                                                <div class="col-md-9">
+                                                    <select id="shop-type" name="shop-type" class="select-chosen" data-placeholder="Choose a Type.." style="width: 250px;">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                        <option value="United States">United States</option>
+                                                        <option value="United Kingdom">United Kingdom</option>
+                                                        <option value="Zimbabwe">Zimbabwe</option>
+                                                    </select>
                                                 </div>
-                                            </a>
-                                            <!-- END Widget -->
+                                            </div>
+                                        </fieldset>
+                                        <div class="form-group form-actions">
+                                            <div class="col-md-9 col-md-offset-3">
+                                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                                <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- END Latest Orders Content -->
+                                    </form>
+                                    <!-- END Stock Content -->
                                 </div>
-                                <!-- END Latest Orders Block -->
                             </div>
                         </div>
-                        <!-- END Orders and Products -->
+                        <!-- END All Admin Block -->
                     </div>
                     <!-- END Page Content -->
 
@@ -1049,21 +893,11 @@
         <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
         <script src="js/vendor/jquery.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        
-
         <script src="js/plugins.js"></script>
         <script src="js/app.js"></script>
-        <!-- Google Maps API Key (you will have to obtain a Google Maps API key to use Google Maps) -->
-        <!-- For more info please have a look at https://developers.google.com/maps/documentation/javascript/get-api-key#key -->
-        <script src="https://maps.googleapis.com/maps/api/js?key="></script>
-        <script src="js/helpers/gmaps.min.js"></script>
 
         <!-- Load and execute javascript code used only in this page -->
-        <!-- <script src="js/pages/ecomDashboard.js"></script>
-        <script>$(function(){ EcomDashboard.init(); });</script> -->
-
-        <!-- Load and execute javascript code used only in this page -->
-        <script src="js/pages/index.js"></script>
-        <script>$(function(){ Index.init(); });</script>
+        <!-- <script src="js/pages/ecomProducts.js"></script>
+        <script>$(function(){ EcomProducts.init(); });</script> -->
     </body>
 </html>

@@ -364,10 +364,10 @@
                             <!-- Sidebar Navigation -->
                             <ul class="sidebar-nav">
                                 <li>
-                                    <a href="dashboard.html" class=" active"><i class="gi gi-stopwatch sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+                                    <a href="dashboard-2.html"><i class="gi gi-stopwatch sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-shop_window sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Manage Market</span></a>
+                                    <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-cogs sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">General Settings</span></a>
                                     <ul>
                                         <li>
                                             <a href="countries.html">countries</a>
@@ -401,7 +401,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-users sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Manage Users</span></a>
                                     <ul>
                                         <li>
@@ -414,10 +414,7 @@
                                             <a href="shops-join-request.html">Shop join Request</a>
                                         </li>
                                         <li>
-                                            <a href="shop-owners.html">Shop Owners</a>
-                                        </li>
-                                        <li>
-                                            <a href="page_ecom_products.html">Products</a>
+                                            <a href="shop-owners.html" class="active">Shop Owners</a>
                                         </li>
                                         <li>
                                             <a href="page_ecom_product_edit.html">Product Edit</a>
@@ -483,8 +480,6 @@
                                 </a>
                             </li>
                             <!-- END Main Sidebar Toggle Button -->
-
-                            <!-- END Template Options -->
                         </ul>
                         <!-- END Left Header Navigation -->
 
@@ -581,382 +576,197 @@
 
                     <!-- Page content -->
                     <div id="page-content">
-                        <!-- eCommerce Dashboard Header -->
+                        <!-- eCommerce Admin Header -->
                         <div class="content-header">
-                            <div class="d-flex">
-                                <div class="content-title">
-                                    <h1>Dashboard</h1>
-                                </div>
-                                <div class="header-datepicker">
-                                    <form action="">
-                                        <div class="form-group">
-                                            <select id="shopName" name="shopName" class="select-chosen" data-placeholder="Shop Name" style="width: 250px;">
-                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                <option value="Picked from store">Picked from store</option>
-                                                <option value="App Delevery">App Delevery</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label" for="example-datepicker"><i class="gi gi-calendar"></i></label>
-                                            <div class="">
-                                                <input type="text" id="example-datepicker" name="example-datepicker" class="form-control input-datepicker" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <ul class="nav-horizontal text-center">
-                                <li class="active">
-                                    <a href="page_ecom_dashboard.html"><i class="fa fa-bar-chart"></i> Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_orders.html"><i class="gi gi-shop_window"></i> Orders</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_order_view.html"><i class="gi gi-shopping_cart"></i> Order View</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_products.html"><i class="gi gi-shopping_bag"></i> Products</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_product_edit.html"><i class="gi gi-pencil"></i> Product Edit</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_customer_view.html"><i class="gi gi-user"></i> Customer View</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- END eCommerce Dashboard Header -->
-
-                        <!-- Quick Stats -->
-                        <div class="row text-center status-timeline">
-                            <div class="col">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background">
-                                        <h4 class="widget-content-light"><strong>Delivery</strong> Earning</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 animation-expandOpen">10,000</span></div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background-dark">
-                                        <h4 class="widget-content-light"><strong>Driver</strong> Earning</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">100</span></div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background">
-                                        <h4 class="widget-content-light"><strong>Pending</strong> Commissions</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">16000</span></div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background-dark">
-                                        <h4 class="widget-content-light"><strong>Total</strong> Rides</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">$ 150,000</span></div>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background">
-                                        <h4 class="widget-content-light"><strong>Active</strong> Rides</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">$ 150,000</span></div>
-                                </a>
+                            <div class="header-section">
+                                <h1>
+                                    <i class="gi gi-shop_window"></i>Shop Owners<br><small>Manage and Edit Shop Owners!</small>
+                                </h1>
                             </div>
                         </div>
-                        <!-- END Quick Stats -->
-                        
+                        <!-- END eCommerce Admin Header -->
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="block full">
-                                    <div class="block-title">
-                                        <div class="block-options pull-right">
-                                            <a href="page_ecom_orders.html" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Show All"><i class="fa fa-eye"></i></a>
-                                            <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+                        <!-- All Admin Block -->
+                        <div class="block full">
+                            <!-- All Admin Title -->
+                            <div class="block-title">
+                                <div class="block-options pull-right">
+                                    <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+                                </div>
+                                <h2><strong>All</strong> Join Requests</h2>
+                            </div>
+                            <!-- END All Admin Title -->
+
+                            <!-- All Admin Content -->
+                            <div id="ecom-products_wrapper" class="dataTables_wrapper form-inline no-footer">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-5">
+                                        <div class="dataTables_length" id="ecom-products_length">
+                                            <label class="products_length">
+                                                <select name="ecom-products_length" aria-controls="ecom-products" class="form-control">
+                                                    <option value="10">10</option>
+                                                    <option value="20">20</option>
+                                                    <option value="30">30</option>
+                                                    <option value="-1">All</option>
+                                                </select>
+                                            </label>
+                                            <label>
+                                                <select name="ecom-products_shop" aria-controls="ecom-products" class="form-control">
+                                                    <option>Shop</option>
+                                                    <option value="published">published</option>
+                                                    <option value="hidden">hidden</option>
+                                                </select>
+                                            </label>
+                                            <label>
+                                                <select name="ecom-products_city" aria-controls="ecom-products" class="form-control">
+                                                    <option>City</option>
+                                                    <option value="Category1">Category1</option>
+                                                    <option value="Category2">Category2</option>
+                                                    <option value="Category3">Category3</option>
+                                                </select>
+                                            </label>
+                                            <label>
+                                                <select name="ecom-products_country" aria-controls="ecom-products" class="form-control">
+                                                    <option>Country</option>
+                                                    <option value="Category1">Category1</option>
+                                                    <option value="Category2">Category2</option>
+                                                    <option value="Category3">Category3</option>
+                                                </select>
+                                            </label>
                                         </div>
-                                        <h2><strong>Active</strong> Drivers</h2>
                                     </div>
-
-                                    <div id="gmap-timeline" class="gmap"></div>
+                                    <div class="col-sm-6 col-xs-7">
+                                        <div id="ecom-products_filter" class="dataTables_filter">
+                                            <label>
+                                                <div class="input-group">
+                                                    <input type="search" class="form-control" placeholder="Search" aria-controls="ecom-products">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center" style="width: 70px;">ID</th>
+                                                <th>Full Name</th>
+                                                <th>Email</th>
+                                                <th class="text-center">Phone</th>
+                                                <th class="text-center">shop</th>
+                                                <th class="text-center">Location</th>
+                                                <th class="text-center">Active</th>
+                                                <th class="text-center">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center"><a href="shop-owner-new.html"><strong>1</strong></a></td>
+                                                <td><a href="shop-owner-new.html">Ahmed Ahmed</a></td>
+                                                <td>ahmed@mail.com</td>
+                                                <td class="text-center">01234567891</td>
+                                                <td class="text-center">Shop1</td>
+                                                <td class="text-center">alexandria - egypt</td>
+                                                <td class="text-center">
+                                                    <label class="switch switch-success">
+                                                        <input type="checkbox" checked><span></span>
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <div class="btn-group btn-group-xs">
+                                                        <a href="" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
+                                                        <a href="shop-owner-new.html" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                                                        <a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"><a href="shop-owner-new.html"><strong>2</strong></a></td>
+                                                <td><a href="shop-owner-new.html">Ahmed Ahmed</a></td>
+                                                <td>ahmed@mail.com</td>
+                                                <td class="text-center">01234567891</td>
+                                                <td class="text-center">Shop1</td>
+                                                <td class="text-center">alexandria - egypt</td>
+                                                <td class="text-center">
+                                                    <label class="switch switch-success">
+                                                        <input type="checkbox" checked><span></span>
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <div class="btn-group btn-group-xs">
+                                                        <a href="" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
+                                                        <a href="shop-owner-new.html" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                                                        <a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"><a href="shop-owner-new.html"><strong>3</strong></a></td>
+                                                <td><a href="shop-owner-new.html">Ahmed Ahmed</a></td>
+                                                <td>ahmed@mail.com</td>
+                                                <td class="text-center">01234567891</td>
+                                                <td class="text-center">Shop1</td>
+                                                <td class="text-center">alexandria - egypt</td>
+                                                <td class="text-center">
+                                                    <label class="switch switch-success">
+                                                        <input type="checkbox" checked><span></span>
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <div class="btn-group btn-group-xs">
+                                                        <a href="" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
+                                                        <a href="shop-owner-new.html" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                                                        <a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"><a href="shop-owner-new.html"><strong>4</strong></a></td>
+                                                <td><a href="shop-owner-new.html">Ahmed Ahmed</a></td>
+                                                <td>ahmed@mail.com</td>
+                                                <td class="text-center">01234567891</td>
+                                                <td class="text-center">Shop1</td>
+                                                <td class="text-center">alexandria - egypt</td>
+                                                <td class="text-center">
+                                                    <label class="switch switch-success">
+                                                        <input type="checkbox" checked><span></span>
+                                                    </label>
+                                                </td>
+                                                <td class="text-center">
+                                                    <div class="btn-group btn-group-xs">
+                                                        <a href="" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
+                                                        <a href="shop-owner-new.html" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                                                        <a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-5 hidden-xs">
+                                        <div class="dataTables_info" id="ecom-products_info" role="status" aria-live="polite">
+                                            <strong>1</strong>-<strong>20</strong> of <strong>60</strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7 col-xs-12 clearfix">
+                                        <div class="dataTables_paginate paging_bootstrap" id="ecom-products_paginate">
+                                            <ul class="pagination pagination-sm remove-margin">
+                                                <li class="prev disabled"><a href="javascript:void(0)"><i class="fa fa-chevron-left"></i> </a></li>
+                                                <li class="active"><a href="javascript:void(0)">1</a></li>
+                                                <li><a href="javascript:void(0)">2</a></li><li><a href="javascript:void(0)">3</a></li>
+                                                <li class="next"><a href="javascript:void(0)"> <i class="fa fa-chevron-right"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- END All Admin Content -->
                         </div>
-
-                        <!-- Orders and Products -->
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <!-- Top Products Block -->
-                                <div class="block">
-                                    <!-- Top Products Title -->
-                                    <div class="block-title">
-                                        <div class="block-options pull-right">
-                                            <a href="page_ecom_products.html" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Show All"><i class="fa fa-eye"></i></a>
-                                            <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
-                                        </div>
-                                        <h2><strong>Pending</strong> Delivery</h2>
-                                    </div>
-                                    <!-- END Top Products Title -->
-
-                                    <!-- Top Products Content -->
-                                    <div class="table-responsive">
-                                        <table class="table table-borderless table-striped table-vcenter table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-center">ID</th>
-                                                    <th>Order</th>
-                                                    <th class="text-center">User</th>
-                                                    <th class="text-center">Status</th>
-                                                    <th class="text-center">Cost</th>
-                                                    <th class="text-center">time</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>1</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>2</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>3</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>4</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>5</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>6</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>7</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>8</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>9</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center"><a href="page_ecom_product_edit.html"><strong>10</strong></a></td>
-                                                    <td><a href="page_ecom_product_edit.html">No.123</a></td>
-                                                    <td class="text-center"><strong>username</strong></td>
-                                                    <td class="hidden-xs text-center"><span class="label label-warning">Pending Delivery</span></td>
-                                                    <td class="text-center">150</td>
-                                                    <td class="text-center">10 mins</td>
-                                                    <td class="text-cent"><span class="label label-primary">Assign</span></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- END Top Products Content -->
-                                </div>
-                                <!-- END Top Products Block -->
-                            </div>
-                            <div class="col-lg-6">
-                                <!-- Latest Orders Block -->
-                                <div class="block">
-                                    <!-- Latest Orders Title -->
-                                    <div class="block-title">
-                                        <div class="block-options pull-right">
-                                            <a href="page_ecom_orders.html" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Show All"><i class="fa fa-eye"></i></a>
-                                            <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
-                                        </div>
-                                        <h2><strong>Latest</strong> Orders</h2>
-                                    </div>
-                                    <!-- END Latest Orders Title -->
-
-                                    <!-- Latest Orders Content -->
-                                    <div class="widget widget-with-number">
-                                        <h3><b>Total Orders</b></h3>
-                                        <div class="widget-icon pull-left themed-background-lake animation-fadeIn">
-                                            50
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_comp_charts.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                                        3
-                                                    </div>
-                                                    <h3 class="widget-content text-right animation-pullDown">
-                                                        New <strong>Orders</strong>
-                                                    </h3>
-                                                </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_ready_article.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background-autumn animation-fadeIn">
-                                                        1
-                                                    </div>
-                                                    <h3 class="widget-content text-right animation-pullDown">
-                                                        Pending <strong>Shop</strong>
-                                                    </h3>
-                                                </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_ready_inbox.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background-flatie animation-fadeIn">
-                                                        4
-                                                    </div>
-                                                    <h3 class="widget-content text-right animation-pullDown">
-                                                        In <strong>Progress</strong>
-                                                    </h3>
-                                                </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_comp_gallery.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background-coral animation-fadeIn">
-                                                        3
-                                                    </div>
-                                                    <h3 class="widget-content text-right animation-pullDown">
-                                                        Pending <strong>Delivary</strong>
-                                                    </h3>
-                                                </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_comp_gallery.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                                        2
-                                                    </div>
-                                                    <h3 class="widget-content text-right animation-pullDown">
-                                                        <strong>Assigned</strong>
-                                                    </h3>
-                                                </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_comp_gallery.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background-dark-lake animation-fadeIn">
-                                                        3
-                                                    </div>
-                                                    <h3 class="widget-content text-right animation-pullDown">
-                                                        Item <strong>Picked</strong>
-                                                    </h3>
-                                                </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_comp_charts.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background-fire animation-fadeIn">
-                                                        1
-                                                    </div>
-                                                    <h3 class="widget-content animation-pullDown visible-lg">
-                                                        <strong>Canceld</strong>
-                                                    </h3>
-                                                </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <!-- Widget -->
-                                            <a href="page_widgets_stats.html" class="widget widget-hover-effect1">
-                                                <div class="widget-simple">
-                                                    <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
-                                                        10
-                                                    </div>
-                                                    <h3 class="widget-content animation-pullDown visible-lg">
-                                                        <strong>Deliverd</strong>
-                                                    </h3>
-                                                </div>
-                                            </a>
-                                            <!-- END Widget -->
-                                        </div>
-                                    </div>
-                                    <!-- END Latest Orders Content -->
-                                </div>
-                                <!-- END Latest Orders Block -->
-                            </div>
-                        </div>
-                        <!-- END Orders and Products -->
+                        <!-- END All Admin Block -->
                     </div>
                     <!-- END Page Content -->
 
@@ -1046,24 +856,111 @@
         </div>
         <!-- END User Settings -->
 
+        <!-- Add Category Modal -->
+        <div id="modal-add-role" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
+                        <h2 class="modal-title"><i class="fa fa-pencil"></i> Add new Role</h2>
+                    </div>
+                    <!-- END Modal Header -->
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered mb-20" onsubmit="return false;">
+                            <fieldset>
+                                <legend>Role Definition</legend>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="role-name-en">Role Name (EN)</label>
+                                    <div class="col-md-8">
+                                        <input type="text" id="role-name-en" name="role-name-en" class="form-control" placeholder="Role Name (EN)">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="role-name-ar">Role Name (AR)</label>
+                                    <div class="col-md-8">
+                                        <input type="text" id="role-name-ar" name="role-name-ar" class="form-control" placeholder="Role Name (AR)">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="role-disc-en">Role Discription (EN)</label>
+                                    <div class="col-md-8">
+                                        <textarea id="role-disc-en" name="role-disc-en" rows="6" class="form-control" placeholder="Discription (EN).."></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="role-disc-ar">Role Discription (AR)</label>
+                                    <div class="col-md-8">
+                                        <textarea id="role-disc-ar" name="role-disc-ar" rows="6" class="form-control" placeholder="Discription (Ar).."></textarea>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Password</legend>
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+                                        </h4>
+                                      </div>
+                                      <div id="collapse1" class="panel-collapse collapse in">
+                                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+                                        </h4>
+                                      </div>
+                                      <div id="collapse2" class="panel-collapse collapse">
+                                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
+                                        </h4>
+                                      </div>
+                                      <div id="collapse3" class="panel-collapse collapse">
+                                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                      </div>
+                                    </div>
+                                </div> 
+                            </fieldset>
+                        </form>
+
+                        <div class="row form-actions">
+                            <div class="col-xs-12 text-right">
+                                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Modal Body -->
+                </div>
+            </div>
+        </div>
+        <!-- END Add Category Modal -->
+
         <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
         <script src="js/vendor/jquery.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        
-
         <script src="js/plugins.js"></script>
         <script src="js/app.js"></script>
-        <!-- Google Maps API Key (you will have to obtain a Google Maps API key to use Google Maps) -->
-        <!-- For more info please have a look at https://developers.google.com/maps/documentation/javascript/get-api-key#key -->
-        <script src="https://maps.googleapis.com/maps/api/js?key="></script>
-        <script src="js/helpers/gmaps.min.js"></script>
 
         <!-- Load and execute javascript code used only in this page -->
-        <!-- <script src="js/pages/ecomDashboard.js"></script>
-        <script>$(function(){ EcomDashboard.init(); });</script> -->
-
-        <!-- Load and execute javascript code used only in this page -->
-        <script src="js/pages/index.js"></script>
-        <script>$(function(){ Index.init(); });</script>
+        <!-- <script src="js/pages/ecomProducts.js"></script>
+        <script>$(function(){ EcomProducts.init(); });</script> -->
     </body>
 </html>

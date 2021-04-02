@@ -318,6 +318,48 @@ a.widget {
     content: "\f021";
 }
 
+.fa-user-tag:before {
+    content: "\f507";
+}
+
+table td .access {
+    display: block;
+}
+
+.panel-heading .accordion-toggle.collapsed:after,
+.panel-heading .accordion-toggle:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f0fe";
+    float: right;
+    color: #fff;
+}
+
+.panel-heading .accordion-toggle[aria-expanded="true"]:after {
+    content: "\f146";
+}
+
+.block-accordion {
+    padding: 20px 20px 0;
+}
+
+.block-accordion .panel-default > .panel-heading {
+    background-color: #394263;
+}
+
+.block-accordion .panel-default > .panel-heading a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.block-accordion .panel-default {
+    border-color: #394263;
+    margin-bottom: 20px;
+}
+
+.checkboxes-group {
+    padding-left: 20px;
+}
+
 /* .bootstrap-timepicker .input-timepicker {
     flex: 0 0 calc(100% - 38px);
     max-width: calc(100% - 38px);
