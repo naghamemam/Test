@@ -360,15 +360,75 @@ table td .access {
     padding-left: 20px;
 }
 
-/* .bootstrap-timepicker .input-timepicker {
-    flex: 0 0 calc(100% - 38px);
-    max-width: calc(100% - 38px);
+/* Rating Style */
+
+.star-rating-and-count-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.bootstrap-timepicker .input-group-btn {
-    flex: 0 0 38px;
-    max-width: 38px;
-} */
+.star-rating-and-count-container .star-rating {
+    overflow: hidden;
+    position: relative;
+    height: 1.618em;
+    line-height: 1.618;
+    font-size: 1em;
+    width: 60px;
+    font-family: FontAwesome;
+    color: #e67e22;
+    margin: 0;
+}
+
+.star-rating-and-count-container .star-rating::before {
+    content: "\f006\f006\f006\f006\f006";
+    top: 0;
+    left: 0;
+    position: absolute;
+    float: left;
+    font-weight: 400;
+}
+
+.star-rating-and-count-container .star-rating span {
+    overflow: hidden;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 1.5em;
+    color: #e67e22;
+}
+
+.star-rating-and-count-container .star-rating span::before {
+    content: "\f005\f005\f005\f005\f005";
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-weight: 400;
+}
+
+.star-rating-and-count-container .star-rating span.product-rating-count {
+    display: none;
+}   
+
+.star-rating-and-count-container .star-rating .product-rating-count {
+    margin-left: 8px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #222;
+}
+        
+.media-body-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.media-body-content p {
+    width: 100%;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -418,5 +478,12 @@ table td .access {
 @media (max-width: 767px) {
     .variation-container .variation-content .form-group.m-15 {
         flex: 1 0 100%;
+    }
+    .star-rating-and-count-container {
+        margin-bottom: 16px;
+    }
+    .star-rating-and-count-container .star-rating .product-rating-count{
+        font-size: 10px;
+        line-height: 14px;
     }
 }
