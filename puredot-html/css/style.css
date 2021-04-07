@@ -430,6 +430,10 @@ table td .access {
     width: 100%;
 }
 
+.specific-shipping-methods {
+    margin-bottom: 5px;
+}
+
 @media screen and (min-width: 768px) {
 
     #login-container,

@@ -413,7 +413,7 @@
                                     <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-comments sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Customer Support</span></a>
                                     <ul>
                                         <li>
-                                            <a href="page_ecom_product_edit.html">My Complaints</a>
+                                            <a href="messages-groups.html">Messages Groups</a>
                                         </li>
                                         <li>
                                             <a href="page_ready_chat.html">Chat</a>
@@ -686,8 +686,7 @@
                                     <form action="Discounts-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
                                         <div class="form-group">
                                             <div class="col-md-12">
-                                                <div class="variation-container bg-gray">
-                                                    <a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a>
+                                                <div class="variation-container w-100 bg-gray">
                                                     <div class="variation-content width-full">
                                                         <div class="form-group m-15">
                                                             <label class="col-xs-3 col-md-2 control-label" for="Discount-Shipping">Shipping</label>
@@ -717,143 +716,62 @@
                                                             </div>
                                                         </div>
                                                         <div class="form-group m-15">
-                                                            <label class="col-xs-3 col-md-2 control-label" for="Discount-Shipping">Shipping</label>
+                                                            <label class="col-xs-3 col-md-2 control-label" for="Discount-Products">Products</label>
                                                             <div class="col-xs-9 col-md-10">
                                                                 <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
                                                                 <div class="radio-item">
                                                                     <label class="switch switch-primary">
-                                                                        <input type="radio" name="shippingMethods"><span></span>
+                                                                        <input type="radio" name="ProductsMethods"><span></span>
                                                                     </label>
                                                                     <span>All Shipping Methods</span>
                                                                 </div>
                                                                 <div class="radio-item">
                                                                     <label class="switch switch-primary">
-                                                                        <input type="radio" name="shippingMethods" checked><span></span>
+                                                                        <input type="radio" name="ProductsMethods" checked><span></span>
                                                                     </label>
-                                                                    <span>Specific Shipping Methods</span>
+                                                                    <span>Specific Shipping</span>
                                                                 </div>
                                                                 
                                                                 <div class="specific-shipping-methods">
                                                                     <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
-                                                                    <select id="discount-shippingMethods" name="discount-shippingMethods" class="select-chosen" data-placeholder="Choose Shipping Methods.." style="width: 250px;" multiple>
+                                                                    <select id="discount-ProductsMethods" name="discount-ProductsMethods" class="select-chosen" data-placeholder="Choose Products.." style="width: 250px;" multiple>
                                                                         <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
                                                                         <option value="Picked from store">Picked from store</option>
                                                                         <option value="App Delevery">App Delevery</option>
                                                                     </select>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group m-15">
-                                                            <label class="col-xs-3 col-md-2 control-label" for="Discount-Shipping">Shipping</label>
-                                                            <div class="col-xs-9 col-md-10">
-                                                                <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
-                                                                <div class="radio-item">
-                                                                    <label class="switch switch-primary">
-                                                                        <input type="radio" name="shippingMethods"><span></span>
-                                                                    </label>
-                                                                    <span>All Shipping Methods</span>
-                                                                </div>
-                                                                <div class="radio-item">
-                                                                    <label class="switch switch-primary">
-                                                                        <input type="radio" name="shippingMethods" checked><span></span>
-                                                                    </label>
-                                                                    <span>Specific Shipping Methods</span>
-                                                                </div>
-                                                                
-                                                                <div class="specific-shipping-methods">
-                                                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
-                                                                    <select id="discount-shippingMethods" name="discount-shippingMethods" class="select-chosen" data-placeholder="Choose Shipping Methods.." style="width: 250px;" multiple>
-                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                                        <option value="Picked from store">Picked from store</option>
-                                                                        <option value="App Delevery">App Delevery</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
 
-                                                <div class="variation-container bg-gray">
-                                                    <a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a>
-                                                    <label class="control-label" for="Discount-product">Select Product</label>
-                                                    <div class="variation-content">
-                                                        <select id="Discount-category" name="Discount-product" class="select-chosen" data-placeholder="Choose a Category.." style="width: 250px;">
-                                                            <option value="Product 1">Product 1</option>
-                                                            <option value="Product 2">Product 2</option>
-                                                        </select>
-                                                        <div class="d-flex variation-content-select">
-                                                            <select id="Discount-add-variation-color" name="Discount-add-variation-color" class="select-chosen" data-placeholder="Choose color.." style="width: 250px;">
-                                                                <option></option>
-                                                                <option value="Red">Red</option>
-                                                                <option value="Blue">Blue</option>
-                                                                <option value="Black">Black</option>
-                                                            </select>
-                                                            <select id="Discount-add-variation-size" name="Discount-add-variation-size" class="select-chosen" data-placeholder="Choose size.." style="width: 250px;">
-                                                                <option></option>
-                                                                <option value="s">S</option>
-                                                                <option value="l">L</option>
-                                                                <option value="xl">XL</option>
-                                                                <option value="xxl">XXL</option>
-                                                            </select>
-                                                            <select id="Discount-add-variation-material" name="Discount-add-variation-material" class="select-chosen" data-placeholder="Choose material.." style="width: 250px;">
-                                                                <option></option>
-                                                                <option value="cotton">Cotton</option>
-                                                                <option value="wool">Wool</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group m-15">
-                                                            <label class="col-xs-3 control-label" for="Discount-variation-price">Price</label>
-                                                            <div class="col-xs-9">
-                                                                <div class="input-group">
-                                                                    <div class="input-group-addon">SAR</div>
-                                                                    <input type="text" id="Discount-variation-price" name="Discount-variation-price" class="form-control" placeholder="0,00">
+                                                                <div class="radio-item">
+                                                                    <label class="switch switch-primary">
+                                                                        <input type="checkbox" name="catMethods" checked><span></span>
+                                                                    </label>
+                                                                    <span>Specific Category</span>
+                                                                </div>
+
+                                                                <div class="specific-shipping-methods">
+                                                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                    <select id="discount-catMethods" name="discount-catMethods" class="select-chosen" data-placeholder="Choose Categories.." style="width: 250px;" multiple>
+                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                        <option value="Picked from store">Picked from store</option>
+                                                                        <option value="App Delevery">App Delevery</option>
+                                                                    </select>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="form-group m-15">
-                                                            <label class="col-xs-3 control-label" for="Discount-variation-qty">Qty</label>
-                                                            <div class="col-xs-9">
-                                                                    <input type="text" id="Discount-variation-qty" name="Discount-variation-qty" class="form-control" placeholder="1">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group m-15">
-                                                            <label class="col-xs-3 col-md-2 control-label" for="Discount-discount">Discount</label>
+                                                            <label class="col-xs-3 col-md-2 control-label" for="allow-for">Allow for</label>
                                                             <div class="col-xs-9 col-md-10">
                                                                 <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
-                                                                <select id="Discount-discount" name="Discount-discount" class="select-chosen" data-placeholder="Choose Discount.." style="width: 250px;">
-                                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                                    <option value="fixed">Fixed</option>
-                                                                    <option value="Percentage">Percentage</option>
-                                                                </select>
-                                                                <div class="input-group">
-                                                                    <div class="input-group-addon">%</div>
-                                                                    <input type="text" id="Discount-discount-value" name="Discount-discount-value" class="form-control" placeholder="0,00">
+                                                                <div class="specific-shipping-methods">
+                                                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                    <select id="allow-for" name="allow-for" class="select-chosen" data-placeholder="Allow for.." style="width: 250px;" multiple>
+                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                        <option value="Picked from store">Picked from store</option>
+                                                                        <option value="App Delevery">App Delevery</option>
+                                                                    </select>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="add-new-variation">
-                                                    <a href="#"><i class="fa fa-plus-circle"></i> add new</a>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-md-3 control-label" for="Discount-variation-price">Price</label>
-                                                    <div class="col-md-9">
-                                                        <div class="input-group">
-                                                            <div class="input-group-addon">SAR</div>
-                                                            <input type="text" id="Discount-variation-price" name="Discount-variation-price" class="form-control" placeholder="0,00">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-md-3 control-label" for="Discount-discount">Discount</label>
-                                                    <div class="col-md-9">
-                                                        <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
-                                                        <select id="Discount-discount" name="Discount-discount" class="select-chosen" data-placeholder="Choose Discount.." style="width: 250px;">
-                                                            <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                            <option value="fixed">Fixed</option>
-                                                            <option value="Percentage">Percentage</option>
-                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -868,75 +786,116 @@
                                     <!-- END Stock Content -->
                                 </div>
                                 <!-- END Stock Block -->
-
-                                <!-- Discount Images Block -->
                                 <div class="block">
-                                    <!-- Discount Images Title -->
+                                    <!-- Stock Title -->
                                     <div class="block-title">
-                                        <h2><i class="fa fa-picture-o"></i> <strong>Discount</strong> Images</h2>
+                                        <h2><i class="gi gi-disk_remove"></i> <strong>Discount</strong> Excluded items</h2>
                                     </div>
-                                    <!-- END Discount Images Title -->
+                                    <!-- END Stock Title -->
 
-                                    <!-- Discount Images Content -->
-                                    <div class="block-section">
-                                        <!-- Dropzone.js, You can check out https://github.com/enyo/dropzone/wiki for usage examples -->
-                                        <form action="Discounts-edit.html" class="dropzone"></form>
-                                    </div>
-                                    <table class="table table-bordered table-striped table-vcenter">
-                                        <tbody>
-                                            <tr>
-                                                <td style="width: 20%;">
-                                                    <a href="img/placeholders/photos/photo11.jpg" data-toggle="lightbox-image">
-                                                        <img src="img/placeholders/photos/photo11.jpg" alt="" class="img-responsive center-block" style="max-width: 110px;">
-                                                    </a>
-                                                </td>
-                                                <td class="text-center">
-                                                    <label class="switch switch-primary">
-                                                        <input type="radio" name="coverImg" checked><span></span>
-                                                    </label>
-                                                    Cover
-                                                </td>
-                                                <td class="text-center">
-                                                    <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="img/placeholders/photos/photo13.jpg" data-toggle="lightbox-image">
-                                                        <img src="img/placeholders/photos/photo13.jpg" alt="" class="img-responsive center-block" style="max-width: 110px;">
-                                                    </a>
-                                                </td>
-                                                <td class="text-center">
-                                                    <label class="switch switch-primary">
-                                                        <input type="radio" name="coverImg"><span></span>
-                                                    </label>
-                                                    Cover
-                                                </td>
-                                                <td class="text-center">
-                                                    <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="img/placeholders/photos/photo9.jpg" data-toggle="lightbox-image">
-                                                        <img src="img/placeholders/photos/photo9.jpg" alt="" class="img-responsive center-block" style="max-width: 110px;">
-                                                    </a>
-                                                </td>
-                                                <td class="text-center">
-                                                    <label class="switch switch-primary">
-                                                        <input type="radio" name="coverImg"><span></span>
-                                                    </label>
-                                                    Cover
-                                                </td>
-                                                <td class="text-center">
-                                                    <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!-- END Discount Images Content -->
+                                    <!-- Stock Content -->
+                                    <form action="Discounts-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <div class="variation-container w-100 bg-gray">
+                                                    <div class="variation-content width-full">
+                                                        <div class="form-group m-15">
+                                                            <label class="col-xs-3 col-md-2 control-label" for="Discount-Shipping">Shipping</label>
+                                                            <div class="col-xs-9 col-md-10">
+                                                                <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                <div class="radio-item">
+                                                                    <label class="switch switch-primary">
+                                                                        <input type="radio" name="shippingMethods"><span></span>
+                                                                    </label>
+                                                                    <span>All Shipping Methods</span>
+                                                                </div>
+                                                                <div class="radio-item">
+                                                                    <label class="switch switch-primary">
+                                                                        <input type="radio" name="shippingMethods" checked><span></span>
+                                                                    </label>
+                                                                    <span>Specific Shipping Methods</span>
+                                                                </div>
+                                                                
+                                                                <div class="specific-shipping-methods">
+                                                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                    <select id="discount-shippingMethods" name="discount-shippingMethods" class="select-chosen" data-placeholder="Choose Shipping Methods.." style="width: 250px;" multiple>
+                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                        <option value="Picked from store">Picked from store</option>
+                                                                        <option value="App Delevery">App Delevery</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group m-15">
+                                                            <label class="col-xs-3 col-md-2 control-label" for="Discount-Products">Products</label>
+                                                            <div class="col-xs-9 col-md-10">
+                                                                <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                <div class="radio-item">
+                                                                    <label class="switch switch-primary">
+                                                                        <input type="radio" name="ProductsMethods"><span></span>
+                                                                    </label>
+                                                                    <span>All Shipping Methods</span>
+                                                                </div>
+                                                                <div class="radio-item">
+                                                                    <label class="switch switch-primary">
+                                                                        <input type="radio" name="ProductsMethods" checked><span></span>
+                                                                    </label>
+                                                                    <span>Specific Shipping</span>
+                                                                </div>
+                                                                
+                                                                <div class="specific-shipping-methods">
+                                                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                    <select id="discount-ProductsMethods" name="discount-ProductsMethods" class="select-chosen" data-placeholder="Choose Products.." style="width: 250px;" multiple>
+                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                        <option value="Picked from store">Picked from store</option>
+                                                                        <option value="App Delevery">App Delevery</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="radio-item">
+                                                                    <label class="switch switch-primary">
+                                                                        <input type="checkbox" name="catMethods" checked><span></span>
+                                                                    </label>
+                                                                    <span>Specific Category</span>
+                                                                </div>
+
+                                                                <div class="specific-shipping-methods">
+                                                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                    <select id="discount-catMethods" name="discount-catMethods" class="select-chosen" data-placeholder="Choose Categories.." style="width: 250px;" multiple>
+                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                        <option value="Picked from store">Picked from store</option>
+                                                                        <option value="App Delevery">App Delevery</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group m-15">
+                                                            <label class="col-xs-3 col-md-2 control-label" for="allow-for">Allow for</label>
+                                                            <div class="col-xs-9 col-md-10">
+                                                                <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                <div class="specific-shipping-methods">
+                                                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                    <select id="allow-for" name="allow-for" class="select-chosen" data-placeholder="Allow for.." style="width: 250px;" multiple>
+                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                        <option value="Picked from store">Picked from store</option>
+                                                                        <option value="App Delevery">App Delevery</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-actions">
+                                            <div class="col-md-9 col-md-offset-3">
+                                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                                <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- END Stock Content -->
                                 </div>
-                                <!-- END Discount Images Block -->
                             </div>
                         </div>
                         <!-- END Discount Edit Content -->

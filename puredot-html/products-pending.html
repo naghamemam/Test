@@ -364,19 +364,92 @@
                             <!-- Sidebar Navigation -->
                             <ul class="sidebar-nav">
                                 <li>
-                                    <a href="dashboard.html" class=" active"><i class="gi gi-stopwatch sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+                                    <a href="dashboard-2.html"><i class="gi gi-stopwatch sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
                                 </li>
                                 <li>
+                                    <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-cogs sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">General Settings</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="countries.html">countries</a>
+                                        </li>
+                                        <li>
+                                            <a href="cities.html">Cities</a>
+                                        </li>
+                                        <li>
+                                            <a href="currencies.html">Currencies</a>
+                                        </li>
+                                        <li>
+                                            <a href="zipcodes.html">Zipcodes</a>
+                                        </li>
+                                        <li>
+                                            <a href="banners-2.html">Banners</a>
+                                        </li>
+                                        <li>
+                                            <a href="banners-2-pending.html">Pending Banners</a>
+                                        </li>
+                                        <li>
+                                            <a href="financial-settings.html">Financial Settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="notification-settings.html">Notifcation Settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-membership.html">Shop Memberships</a>
+                                        </li>
+                                        <li>
+                                            <a href="backup-settings.html">Backup Settings</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-users sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Manage Users</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="admins.html">Admins</a>
+                                        </li>
+                                        <li>
+                                            <a href="roles-permissions.html">Roles & Permissions</a>
+                                        </li>
+                                        <li>
+                                            <a href="shops-join-request.html">Shop join Request</a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-owners.html">Shop Owners</a>
+                                        </li>
+                                        <li>
+                                            <a href="drivers-join-requests.html">Drivers Join Requests</a>
+                                        </li>
+                                        <li>
+                                            <a href="drivers-all.html">Drivers</a>
+                                        </li>
+                                        <li>
+                                            <a href="customers-list.html">Customers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="active">
                                     <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-shop_window sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Manage Market</span></a>
                                     <ul>
                                         <li>
-                                            <a href="categories.html">Categories</a>
+                                            <a href="shop-category.html">Shop Category</a>
                                         </li>
                                         <li>
-                                            <a href="products.html">Products</a>
+                                            <a href="shops.html">Shops</a>
                                         </li>
                                         <li>
-                                            <a href="banners.html">Banners</a>
+                                            <a href="vendors-list.html">Vendors</a>
+                                        </li>
+                                        <li>
+                                            <a href="pending-categories.html">Pending Categories</a>
+                                        </li>
+                                        <li>
+                                            <a href="manage-categories.html">Manage Categories</a>
+                                        </li>
+                                        <li>
+                                            <a href="products-pending.html" class="active">Pending Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="products-2.html">Products</a>
                                         </li>
                                         <li>
                                             <a href="offers.html">Offers</a>
@@ -386,26 +459,6 @@
                                         </li>
                                         <li>
                                             <a href="discounts.html">Discounts</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-shopping_cart sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Manage Orders</span></a>
-                                    <ul>
-                                        <li>
-                                            <a href="page_ecom_orders.html">Orders</a>
-                                        </li>
-                                        <li>
-                                            <a href="page_ecom_order_view.html">Order View</a>
-                                        </li>
-                                        <li>
-                                            <a href="page_ecom_products.html">Products</a>
-                                        </li>
-                                        <li>
-                                            <a href="page_ecom_product_edit.html">Product Edit</a>
-                                        </li>
-                                        <li>
-                                            <a href="page_ecom_customer_view.html">Customer View</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -465,8 +518,6 @@
                                 </a>
                             </li>
                             <!-- END Main Sidebar Toggle Button -->
-
-                            <!-- END Template Options -->
                         </ul>
                         <!-- END Left Header Navigation -->
 
@@ -563,375 +614,177 @@
 
                     <!-- Page content -->
                     <div id="page-content">
-                        <!-- eCommerce Dashboard Header -->
+                        <!-- eCommerce Products Header -->
                         <div class="content-header">
-                            <div class="d-flex">
-                                <div class="content-title">
-                                    <h1>Dashboard</h1>
-                                </div>
-                                <div class="header-datepicker">
-                                    <form action="">
-                                        <div class="form-group">
-                                            <label class="control-label" for="example-datepicker"><i class="gi gi-calendar"></i></label>
-                                            <div class="">
-                                                <input type="text" id="example-datepicker" name="example-datepicker" class="form-control input-datepicker" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <ul class="nav-horizontal text-center">
-                                <li class="active">
-                                    <a href="page_ecom_dashboard.html"><i class="fa fa-bar-chart"></i> Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_orders.html"><i class="gi gi-shop_window"></i> Orders</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_order_view.html"><i class="gi gi-shopping_cart"></i> Order View</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_products.html"><i class="gi gi-shopping_bag"></i> Products</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_product_edit.html"><i class="gi gi-pencil"></i> Product Edit</a>
-                                </li>
-                                <li>
-                                    <a href="page_ecom_customer_view.html"><i class="gi gi-user"></i> Customer View</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- END eCommerce Dashboard Header -->
-
-                        <!-- Quick Stats -->
-                        <div class="row text-center">
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background">
-                                        <h4 class="widget-content-light"><strong>Total</strong> Orders</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 animation-expandOpen">10,000</span></div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background-dark">
-                                        <h4 class="widget-content-light"><strong>All</strong> Customers</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">100</span></div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background-dark">
-                                        <h4 class="widget-content-light"><strong>Sold</strong> Products</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">16000</span></div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                    <div class="widget-extra themed-background-dark">
-                                        <h4 class="widget-content-light"><strong>Net</strong> Profit</h4>
-                                    </div>
-                                    <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">$ 150,000</span></div>
-                                </a>
+                            <div class="header-section">
+                                <h1>
+                                    <i class="gi gi-shopping_bag"></i>Pending Products<br><small>Manage and Edit Pending Products!</small>
+                                </h1>
                             </div>
                         </div>
-                        <!-- END Quick Stats -->
+                        <!-- END eCommerce Products Header -->
 
-                        <!-- eShop Overview Block -->
-
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="block full">
-                                    <!-- Latest Orders Title -->
-                                    <div class="block-title">
-                                        <div class="block-options pull-right">
-                                            <a href="page_ecom_orders.html" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Show All"><i class="fa fa-eye"></i></a>
-                                            <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
-                                        </div>
-                                        <h2><strong>Daily</strong> Orders</h2>
-                                    </div>
-
-                                    <div id="chart-overview" style="height: 350px;"></div>
+                        <!-- All Products Block -->
+                        <div class="block full">
+                            <!-- All Products Title -->
+                            <div class="block-title">
+                                <div class="block-options pull-right">
+                                    <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
                                 </div>
+                                <h2><strong>All</strong> Pending Products</h2>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="block full">
-                                    <!-- Latest Orders Title -->
-                                    <div class="block-title">
-                                        <div class="block-options pull-right">
-                                            <a href="page_ecom_orders.html" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Show All"><i class="fa fa-eye"></i></a>
-                                            <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
-                                        </div>
-                                        <h2><strong>Total</strong> Income</h2>
-                                    </div>
+                            <!-- END All Products Title -->
 
-                                    <div id="chart-overview1" style="height: 350px;"></div>
+                            <!-- All Products Content -->
+                            
+                            <div class="dataTables_wrapper form-inline no-footer">
+                                <div class="row">
+                                    <div class="col-sm-8 col-xs-12">
+                                        <div class="dataTables_length" id="ecom-products_length">
+                                            <label class="products_length">
+                                                <select name="ecom-products_length" aria-controls="ecom-products" class="form-control">
+                                                    <option value="10">10</option>
+                                                    <option value="20">20</option>
+                                                    <option value="30">30</option>
+                                                    <option value="-1">All</option>
+                                                </select>
+                                            </label>
+                                            <label>
+                                                <select name="ecom-products_status" aria-controls="ecom-products" class="form-control">
+                                                    <option>Status</option>
+                                                    <option value="published">published</option>
+                                                    <option value="hidden">hidden</option>
+                                                </select>
+                                            </label>
+                                            <label>
+                                                <select name="ecom-products_category" aria-controls="ecom-products" class="form-control">
+                                                    <option>Category</option>
+                                                    <option value="Category1">Category1</option>
+                                                    <option value="Category2">Category2</option>
+                                                    <option value="Category3">Category3</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-12">
+                                        <div id="ecom-products_filter" class="dataTables_filter">
+                                            <label>
+                                                <div class="input-group">
+                                                    <input type="search" class="form-control" placeholder="Search" aria-controls="ecom-products">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center" style="width: 70px;">ID</th>
+                                            <th>Product Name</th>
+                                            <th class="text-center">Category</th>
+                                            <th class="text-center">Shop Name</th>
+                                            <th class="">Quantity</th>
+                                            <th class="text-center">Price</th>
+                                            <th class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center"><a href="product_edit.html"><strong>PID.8799</strong></a></td>
+                                            <td><a href="product_edit.html">Product #99</a></td>
+                                            <td class="text-center">Category</td>
+                                            <td class="text-center"><strong>Electronics</strong></td>
+                                            <td class="">
+                                                <span class="label label-success">Available (7)</span>
+                                            </td>
+                                            <td class="text-center">150 SAR</td>
+                                            <td class="text-center">
+                                                <div class="btn-group btn-group-xs">
+                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
+                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Approve"><i class="fa fa-check"></i></a>
+                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><a href="product_edit.html"><strong>PID.8798</strong></a></td>
+                                            <td><a href="product_edit.html">Product #98</a></td>
+                                            <td class="text-center">Category</td>
+                                            <td class="text-center"><strong>Electronics</strong></td>
+                                            <td class="">
+                                                <span class="label label-success">Available (227)</span>
+                                            </td>
+                                            <td class="text-center">150 SAR</td>
+                                            <td class="text-center">
+                                                <div class="btn-group btn-group-xs">
+                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
+                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Approve"><i class="fa fa-check"></i></a>
+                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><a href="product_edit.html"><strong>PID.8784</strong></a></td>
+                                            <td><a href="product_edit.html">Product #84</a></td>
+                                            <td class="text-center">Category</td>
+                                            <td class="text-center"><strong>Electronics</strong></td>
+                                            <td class="">
+                                                <span class="label label-danger">Out of Stock</span>
+                                            </td>
+                                            <td class="text-center">150 SAR</td>
+                                            <td class="text-center">
+                                                <div class="btn-group btn-group-xs">
+                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
+                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Approve"><i class="fa fa-check"></i></a>
+                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><a href="product_edit.html"><strong>PID.8789</strong></a></td>
+                                            <td><a href="product_edit.html">Product #99</a></td>
+                                            <td class="text-center">Category</td>
+                                            <td class="text-center"><strong>Electronics</strong></td>
+                                            <td class="">
+                                                <span class="label label-success">Available (7)</span>
+                                            </td>
+                                            <td class="text-center">150 SAR</td>
+                                            <td class="text-center">
+                                                <div class="btn-group btn-group-xs">
+                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
+                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Approve"><i class="fa fa-check"></i></a>
+                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                                <!-- END All Products Content -->
+                                <div class="row">
+                                    <div class="col-sm-5 hidden-xs">
+                                        <div class="dataTables_info" id="ecom-products_info" role="status" aria-live="polite">
+                                            <strong>1</strong>-<strong>20</strong> of <strong>60</strong>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7 col-xs-12 clearfix">
+                                        <div class="dataTables_paginate paging_bootstrap" id="ecom-products_paginate">
+                                            <ul class="pagination pagination-sm remove-margin">
+                                                <li class="prev disabled"><a href="javascript:void(0)"><i class="fa fa-chevron-left"></i> </a></li>
+                                                <li class="active"><a href="javascript:void(0)">1</a></li><li><a href="javascript:void(0)">2</a></li>
+                                                <li><a href="javascript:void(0)">3</a></li>
+                                                <li class="next"><a href="javascript:void(0)"> <i class="fa fa-chevron-right"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- END eShop Overview Block -->
-
-                        <!-- Orders and Products -->
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <!-- Top Products Block -->
-                                <div class="block">
-                                    <!-- Top Products Title -->
-                                    <div class="block-title">
-                                        <div class="block-options pull-right">
-                                            <a href="page_ecom_products.html" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Show All"><i class="fa fa-eye"></i></a>
-                                            <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
-                                        </div>
-                                        <h2><strong>Top</strong> Products</h2>
-                                    </div>
-                                    <!-- END Top Products Title -->
-
-                                    <!-- Top Products Content -->
-                                    <table class="table table-borderless table-striped table-vcenter table-bordered">
-                                        <tbody>
-                                            <tr>
-                                                <td class="text-center" style="width: 100px;"><a href="page_ecom_product_edit.html"><strong>PID.8765</strong></a></td>
-                                                <td><a href="page_ecom_product_edit.html">iPhone 6 Plus 32GB</a></td>
-                                                <td class="text-center"><strong>435</strong> orders</td>
-                                                <td class="hidden-xs text-center">
-                                                    <div class="text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center" style="width: 100px;"><a href="page_ecom_product_edit.html"><strong>PID.8764</strong></a></td>
-                                                <td><a href="page_ecom_product_edit.html">Wii U</a></td>
-                                                <td class="text-center"><strong>502</strong> orders</td>
-                                                <td class="hidden-xs text-center">
-                                                    <div class="text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center" style="width: 100px;"><a href="page_ecom_product_edit.html"><strong>PID.8763</strong></a></td>
-                                                <td><a href="page_ecom_product_edit.html">Samsung Galaxy Note 4 32GB</a></td>
-                                                <td class="text-center"><strong>440</strong> orders</td>
-                                                <td class="hidden-xs text-center">
-                                                    <div class="text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center" style="width: 100px;"><a href="page_ecom_product_edit.html"><strong>PID.8762</strong></a></td>
-                                                <td><a href="page_ecom_product_edit.html">Playstation 4</a></td>
-                                                <td class="text-center"><strong>750</strong> orders</td>
-                                                <td class="hidden-xs text-center">
-                                                    <div class="text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center" style="width: 100px;"><a href="page_ecom_product_edit.html"><strong>PID.8761</strong></a></td>
-                                                <td><a href="page_ecom_product_edit.html">HTC One 32GB</a></td>
-                                                <td class="text-center"><strong>420</strong> orders</td>
-                                                <td class="hidden-xs text-center">
-                                                    <div class="text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center" style="width: 100px;"><a href="page_ecom_product_edit.html"><strong>PID.8760</strong></a></td>
-                                                <td><a href="page_ecom_product_edit.html">Xbox One</a></td>
-                                                <td class="text-center"><strong>650</strong> orders</td>
-                                                <td class="hidden-xs text-center">
-                                                    <div class="text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center" style="width: 100px;"><a href="page_ecom_product_edit.html"><strong>PID.8762</strong></a></td>
-                                                <td><a href="page_ecom_product_edit.html">iPad Mini Retina 64GB</a></td>
-                                                <td class="text-center"><strong>521</strong> orders</td>
-                                                <td class="hidden-xs text-center">
-                                                    <div class="text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center" style="width: 100px;"><a href="page_ecom_product_edit.html"><strong>PID.8761</strong></a></td>
-                                                <td><a href="page_ecom_product_edit.html">LG Tab 10.1</a></td>
-                                                <td class="text-center"><strong>427</strong> orders</td>
-                                                <td class="hidden-xs text-center">
-                                                    <div class="text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center" style="width: 100px;"><a href="page_ecom_product_edit.html"><strong>PID.8760</strong></a></td>
-                                                <td><a href="page_ecom_product_edit.html">Macbook Pro 15' Retina</a></td>
-                                                <td class="text-center"><strong>392</strong> orders</td>
-                                                <td class="hidden-xs text-center">
-                                                    <div class="text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center" style="width: 100px;"><a href="page_ecom_product_edit.html"><strong>PID.8760</strong></a></td>
-                                                <td><a href="page_ecom_product_edit.html">PS Vita</a></td>
-                                                <td class="text-center"><strong>380</strong> orders</td>
-                                                <td class="hidden-xs text-center">
-                                                    <div class="text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!-- END Top Products Content -->
-                                </div>
-                                <!-- END Top Products Block -->
-                            </div>
-                            <div class="col-lg-6">
-                                <!-- Latest Orders Block -->
-                                <div class="block">
-                                    <!-- Latest Orders Title -->
-                                    <div class="block-title">
-                                        <div class="block-options pull-right">
-                                            <a href="page_ecom_orders.html" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Show All"><i class="fa fa-eye"></i></a>
-                                            <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
-                                        </div>
-                                        <h2><strong>Latest</strong> Orders</h2>
-                                    </div>
-                                    <!-- END Latest Orders Title -->
-
-                                    <!-- Latest Orders Content -->
-                                    <table class="table table-borderless table-striped table-vcenter table-bordered">
-                                        <tbody>
-                                            <tr>
-                                                <td class="text-center" style="width: 100px;"><a href="javascript:void(0)"><strong>ORD.685116</strong></a></td>
-                                                <td class="hidden-xs"><a href="javascript:void(0)">Gerald Berry</a></td>
-                                                <td class="hidden-xs">Paypal</td>
-                                                <td class="text-right"><strong>$65,00</strong></td>
-                                                <td class="text-right"><span class="label label-success">Delivered</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="javascript:void(0)"><strong>ORD.685115</strong></a></td>
-                                                <td class="hidden-xs"><a href="javascript:void(0)">Patrick Bates</a></td>
-                                                <td class="hidden-xs">Bank wire</td>
-                                                <td class="text-right"><strong>$268,00</strong></td>
-                                                <td class="text-right"><span class="label label-danger">Canceled</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="javascript:void(0)"><strong>ORD.685114</strong></a></td>
-                                                <td class="hidden-xs"><a href="javascript:void(0)">Ethan Greene</a></td>
-                                                <td class="hidden-xs">Paypal</td>
-                                                <td class="text-right"><strong>$362,00</strong></td>
-                                                <td class="text-right"><span class="label label-success">Delivered</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="javascript:void(0)"><strong>ORD.685113</strong></a></td>
-                                                <td class="hidden-xs"><a href="javascript:void(0)">Bruce Hicks</a></td>
-                                                <td class="hidden-xs">Paypal</td>
-                                                <td class="text-right"><strong>$23,00</strong></td>
-                                                <td class="text-right"><span class="label label-warning">Processing</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="javascript:void(0)"><strong>ORD.685112</strong></a></td>
-                                                <td class="hidden-xs"><a href="javascript:void(0)">Harry Burke</a></td>
-                                                <td class="hidden-xs">Bank wire</td>
-                                                <td class="text-right"><strong>$1360,00</strong></td>
-                                                <td class="text-right"><span class="label label-success">Delivered</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="javascript:void(0)"><strong>ORD.685111</strong></a></td>
-                                                <td class="hidden-xs"><a href="javascript:void(0)">Nancy Rose</a></td>
-                                                <td class="hidden-xs">Bank wire</td>
-                                                <td class="text-right"><strong>$2685,00</strong></td>
-                                                <td class="text-right"><span class="label label-warning">Processing</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="javascript:void(0)"><strong>ORD.685110</strong></a></td>
-                                                <td class="hidden-xs"><a href="javascript:void(0)">Helen Jensen</a></td>
-                                                <td class="hidden-xs">Paypal</td>
-                                                <td class="text-right"><strong>$128,00</strong></td>
-                                                <td class="text-right"><span class="label label-success">Delivered</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="javascript:void(0)"><strong>ORD.685109</strong></a></td>
-                                                <td class="hidden-xs"><a href="javascript:void(0)">Harry Medina</a></td>
-                                                <td class="hidden-xs">Check</td>
-                                                <td class="text-right"><strong>$3150,00</strong></td>
-                                                <td class="text-right"><span class="label label-warning">Processing</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="javascript:void(0)"><strong>ORD.685108</strong></a></td>
-                                                <td class="hidden-xs"><a href="javascript:void(0)">Ryan Hopkins</a></td>
-                                                <td class="hidden-xs">Check</td>
-                                                <td class="text-right"><strong>$750,00</strong></td>
-                                                <td class="text-right"><span class="label label-success">Delivered</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="javascript:void(0)"><strong>ORD.685107</strong></a></td>
-                                                <td class="hidden-xs"><a href="javascript:void(0)">Anthony Franklin</a></td>
-                                                <td class="hidden-xs">Paypal</td>
-                                                <td class="text-right"><strong>$630,00</strong></td>
-                                                <td class="text-right"><span class="label label-danger">Canceled</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!-- END Latest Orders Content -->
-                                </div>
-                                <!-- END Latest Orders Block -->
-                            </div>
-                        </div>
-                        <!-- END Orders and Products -->
+                        <!-- END All Products Block -->
                     </div>
                     <!-- END Page Content -->
 
@@ -1021,6 +874,62 @@
         </div>
         <!-- END User Settings -->
 
+        <!-- Add Product Modal -->
+        <div id="modal-add-category" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
+                        <h2 class="modal-title"><i class="fa fa-pencil"></i> Add Product</h2>
+                    </div>
+                    <!-- END Modal Header -->
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered" onsubmit="return false;">
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="example-text-input">Product Name (EN)</label>
+                                    <div class="col-md-8">
+                                        <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="Product Name (EN)">
+                                        <span class="help-block">This is a help text</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="example-text-input">Product Name (AR)</label>
+                                    <div class="col-md-8">
+                                        <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="Product Name (AR)">
+                                        <span class="help-block">This is a help text</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="example-select2">Shop Product</label>
+                                    <div class="col-md-8">
+                                        <select id="example-select2" name="example-select2" class="select-select2" style="width: 100%;" data-placeholder="Choose one..">
+                                            <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
+                                            <option value="HTML">HTML</option>
+                                            <option value="CSS">CSS</option>
+                                            <option value="Javascript">Javascript</option>
+                                            <option value="PHP">PHP</option>
+                                            <option value="MySQL">MySQL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="form-group form-actions">
+                                <div class="col-xs-12 text-right">
+                                    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- END Modal Body -->
+                </div>
+            </div>
+        </div>
+        <!-- END Add Product Modal -->
+
         <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
         <script src="js/vendor/jquery.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
@@ -1028,7 +937,7 @@
         <script src="js/app.js"></script>
 
         <!-- Load and execute javascript code used only in this page -->
-        <script src="js/pages/ecomDashboard.js"></script>
-        <script>$(function(){ EcomDashboard.init(); });</script>
+        <!-- <script src="js/pages/ecomProducts.js"></script>
+        <script>$(function(){ EcomProducts.init(); });</script> -->
     </body>
 </html>
