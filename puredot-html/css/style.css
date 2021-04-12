@@ -119,7 +119,8 @@ body {
     margin: 0 -5px;
 }
 
-.dataTables_wrapper .dataTables_length label {
+.dataTables_wrapper .dataTables_length label,
+.dataTables_wrapper .dataTables_length .input-group {
     flex: 1 0 auto;
     padding: 0 5px;
 }
@@ -243,7 +244,8 @@ a.widget {
     content: none;
 }
 
-.widget .widget-image, .widget .widget-icon {
+.widget .widget-image,
+.widget .widget-icon {
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -342,11 +344,11 @@ table td .access {
     padding: 20px 20px 0;
 }
 
-.block-accordion .panel-default > .panel-heading {
+.block-accordion .panel-default>.panel-heading {
     background-color: #394263;
 }
 
-.block-accordion .panel-default > .panel-heading a {
+.block-accordion .panel-default>.panel-heading a {
     color: #fff;
     text-decoration: none;
 }
@@ -359,6 +361,7 @@ table td .access {
 .checkboxes-group {
     padding-left: 20px;
 }
+
 
 /* Rating Style */
 
@@ -410,7 +413,7 @@ table td .access {
 
 .star-rating-and-count-container .star-rating span.product-rating-count {
     display: none;
-}   
+}
 
 .star-rating-and-count-container .star-rating .product-rating-count {
     margin-left: 8px;
@@ -418,7 +421,7 @@ table td .access {
     line-height: 20px;
     color: #222;
 }
-        
+
 .media-body-content {
     display: flex;
     flex-wrap: wrap;
@@ -434,15 +437,49 @@ table td .access {
     margin-bottom: 5px;
 }
 
-@media screen and (min-width: 768px) {
+.chatui-people .chatui-header {
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.chatui-people .chatui-header .form-control {
+    flex: 0 0 58%;
+    max-width: 58%;
+}
+
+.chatui-people .chatui-header .chosen-container {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.chatui-people .chatui-header .form-control,
+.chatui-people .chatui-header .chosen-container .chosen-single {
+    border: 1px solid #dbe1e8;
+    background-color: transparent;
+    color: #fff;
+}
+
+.list-group .list-group-item p {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
     #login-container,
     #login-alt-container {
         top: 100px;
     }
-
     .status-timeline .col {
         flex: 1 0 50%;
+    }
+    .chatui-talk,
+    .chatui-input {
+        right: 320px;
+    }
+    .chatui-people {
+        width: 320px;
     }
 }
 
@@ -450,7 +487,6 @@ table td .access {
     .bg-login {
         width: 50%;
     }
-
     .status-timeline .col {
         flex: 0 0 20%;
         max-width: 20%;
@@ -466,7 +502,6 @@ table td .access {
 }
 
 @media (max-width: 1024px) and (min-width: 992px) {
-
     #login-container,
     #login-alt-container {
         width: 400px;
@@ -486,7 +521,7 @@ table td .access {
     .star-rating-and-count-container {
         margin-bottom: 16px;
     }
-    .star-rating-and-count-container .star-rating .product-rating-count{
+    .star-rating-and-count-container .star-rating .product-rating-count {
         font-size: 10px;
         line-height: 14px;
     }
