@@ -466,6 +466,10 @@ table td .access {
     margin-top: 5px;
 }
 
+.transfer-logo img {
+    max-width: 120px;
+}
+
 @media screen and (min-width: 768px) {
     #login-container,
     #login-alt-container {

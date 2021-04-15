@@ -430,7 +430,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-shop_window sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Manage Market</span></a>
                                 <ul>
                                     <li>
@@ -440,7 +440,7 @@
                                         <a href="shops.html">Shops</a>
                                     </li>
                                     <li>
-                                        <a href="vendors-list.html" class="active">Vendors</a>
+                                        <a href="vendors-list.html">Vendors</a>
                                     </li>
                                     <li>
                                         <a href="pending-categories.html">Pending Categories</a>
@@ -475,7 +475,7 @@
                                         <a href="sms-log.html">SMS Log</a>
                                     </li>
                                     <li>
-                                        <a href="send-sms.html">Send SMS</a>
+                                        <a href="view-complains.html">Send SMS</a>
                                     </li>
                                     <li>
                                         <a href="chat.html">Chat</a>
@@ -485,14 +485,14 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-area-chart sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Manage Payments</span></a>
                                 <ul>
                                     <li>
                                         <a href="income-log.html">Income Log</a>
                                     </li>
                                     <li>
-                                        <a href="shop-wallet.html">Shop Wallet</a>
+                                        <a href="shop-wallet.html" class="active">Shop Wallet</a>
                                     </li>
                                     <li>
                                         <a href="shops-payment-log.html">Shop Payment Log</a>
@@ -658,127 +658,110 @@
                     <div class="content-header">
                         <div class="header-section">
                             <h1>
-                                <i class="fa">
-                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-shield" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-user-shield fa-w-20 fa-2x" style="width: 56px;"><path fill="currentColor" d="M622.3 271.1l-115.2-45c-4.1-1.6-12.6-3.7-22.2 0l-115.2 45c-10.7 4.2-17.7 14-17.7 24.9 0 111.6 68.7 188.8 132.9 213.9 9.6 3.7 18 1.6 22.2 0C558.4 489.9 640 420.5 640 296c0-10.9-7-20.7-17.7-24.9zM496 462.4V273.3l95.5 37.3c-5.6 87.1-60.9 135.4-95.5 151.8zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm96 40c0-2.5.8-4.8 1.1-7.2-2.5-.1-4.9-.8-7.5-.8h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c6.8 0 13.3-1.5 19.2-4-54-42.9-99.2-116.7-99.2-212z" class=""></path></svg>
-                                    </i> Add / Edit Vendors<br><small>Manage and Edit Vendors!</small>
+                                <i class="fa fa-money"></i>Transfer Money Receipt<br><small>Manage Transfer Money Receipt!</small>
                             </h1>
                         </div>
                     </div>
                     <!-- END eCommerce Categories Header -->
 
-                    <!-- All Admin Block -->
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <!-- General Data Block -->
-                            <div class="block">
-                                <!-- General Data Title -->
-                                <div class="block-title">
-                                    <h2><i class="fa fa-pencil"></i> <strong>General</strong> Details</h2>
-                                </div>
-                                <!-- END General Data Title -->
-
-                                <!-- General Data Content -->
-                                <form action="page_ecom_product_edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="Vendor-name-en">Vendor Name (EN)</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="Vendor-name-en" name="Vendor-name-en" class="form-control" placeholder="Vendor Name (EN)">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="Vendor-name-ar">Vendor Name (AR)</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="Vendor-name-ar" name="Vendor-name-ar" class="form-control" placeholder="Vendor Name (AR)">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="Vendor-country">Vendor Country</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="Vendor-country" name="Vendor-country" class="form-control" placeholder="Vendor Country">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="Vendor-city">Vendor City</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="Vendor-city" name="Vendor-city" class="form-control" placeholder="Vendor City">
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-actions">
-                                        <div class="col-md-9 col-md-offset-3">
-                                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
-                                            <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <!-- END General Data Content -->
+                    <!-- All Categories Block -->
+                    <div class="block full">
+                        <!-- All Categories Title -->
+                        <div class="block-title">
+                            <div class="block-options pull-right">
+                                <a href="javascript:void(0)" class="btn btn-sm btn-alt btn-default" onclick="App.pagePrint();"><i class="fa fa-file-pdf-o"></i> Export</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-alt btn-default" onclick="App.pagePrint();"><i class="fa fa-file-excel-o"></i> Export</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-alt btn-default" onclick="App.pagePrint();"><i class="fa fa-print"></i> Print</a>
                             </div>
-                            <!-- END General Data Block -->
+                            <h2><strong>Transfer</strong> Money Receipt</h2>
                         </div>
-                        <div class="col-lg-6">
-                            <!-- Stock Block -->
-                            <div class="block">
-                                <!-- Stock Title -->
-                                <div class="block-title">
-                                    <h2><i class="fa fa-user"></i> <strong>Vendor</strong> details</h2>
+                        <!-- END All Categories Title -->
+                        <div class="transfer-logo">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="text-right">
+                                        <img src="img/shop-logo.png" width="120" alt="">
+                                    </div>
                                 </div>
-                                <!-- END Stock Title -->
-
-                                <!-- Stock Content -->
-                                <form action="page_ecom_product_edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="email">Email</label>
-                                        <div class="col-md-9">
-                                            <input type="email" id="email" name="email" class="form-control" placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="phone-number">Phone Number</label>
-                                        <div class="col-md-9">
-                                            <input type="tel" id="phone-number" name="phone-number" class="form-control" placeholder="Phone Number">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="date-of-birth">Date of birth</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="date-of-birth" name="date-of-birth" class="form-control input-datepicker" data-date-format="dd/mm/yy" placeholder="dd/mm/yy">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="gender">Gender</label>
-                                        <div class="col-md-9">
-                                            <select id="gender" name="gender" class="select-chosen" data-placeholder="Choose a Gender.." style="width: 250px;">
-                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                    <option value="United States">United States</option>
-                                                    <option value="United Kingdom">United Kingdom</option>
-                                                    <option value="Zimbabwe">Zimbabwe</option>
-                                                </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="Vendor-category">Product Category</label>
-                                        <div class="col-md-9">
-                                            <select id="Vendor-category" name="Vendor-category" class="select-chosen" data-placeholder="Choose a Category.." style="width: 250px;" multiple>
-                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                    <option value="United States">United States</option>
-                                                    <option value="United Kingdom">United Kingdom</option>
-                                                    <option value="Zimbabwe">Zimbabwe</option>
-                                                </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-actions">
-                                        <div class="col-md-9 col-md-offset-3">
-                                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
-                                            <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <!-- END Stock Content -->
                             </div>
-                            <!-- END Stock Block -->
                         </div>
+
+                        <form action="offers-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Date</label>
+                                <div class="col-md-5">
+                                    <p class="form-control-static">02.02.2021</p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Transfer to</label>
+                                <div class="col-md-5">
+                                    <p class="form-control-static">Mona Ahmed Aly</p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Receipt Number</label>
+                                <div class="col-md-5">
+                                    <p class="form-control-static">#125389</p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="transfer-type">Transfer Type</label>
+                                <div class="col-md-5">
+                                    <select id="transfer-type" name="transfer-type" class="select-chosen" data-placeholder="Choose Type.." style="width: 250px;">
+                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                        <option value="1">Tablets</option>
+                                        <option value="2">Laptops</option>
+                                        <option value="3">PCs</option>
+                                        <option value="4">Consoles</option>
+                                        <option value="5">Movies</option>
+                                        <option value="6">Books</option>
+                                        <option value="7">Cables</option>
+                                        <option value="8">Adapters</option>
+                                        <option value="9">Office</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="transfer-currency">Currency</label>
+                                <div class="col-md-5">
+                                    <select id="transfer-currency" name="transfer-currency" class="select-chosen" data-placeholder="Choose Currency.." style="width: 250px;">
+                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                        <option value="1">Tablets</option>
+                                        <option value="2">Laptops</option>
+                                        <option value="3">PCs</option>
+                                        <option value="4">Consoles</option>
+                                        <option value="5">Movies</option>
+                                        <option value="6">Books</option>
+                                        <option value="7">Cables</option>
+                                        <option value="8">Adapters</option>
+                                        <option value="9">Office</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="transfer-amount">Amount</label>
+                                <div class="col-md-5">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">SAR</div>
+                                        <input type="text" id="transfer-amount" name="transfer-amount" class="form-control" placeholder="0,00">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-actions">
+                                <div class="col-md-8 col-md-offset-4">
+                                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Submit</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <!-- END All Admin Block -->
+                    <!-- END All Categories Block -->
                 </div>
                 <!-- END Page Content -->
 
@@ -869,12 +852,12 @@
     <!-- END User Settings -->
 
     <!-- Add Category Modal -->
-    <div id="modal-add-category" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div id="modal-add-group" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header text-center">
-                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Add Shop Category</h2>
+                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Add Group</h2>
                 </div>
                 <!-- END Modal Header -->
 
@@ -883,19 +866,93 @@
                     <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered" onsubmit="return false;">
                         <fieldset>
                             <div class="form-group">
-                                <label class="col-md-4 control-label" for="example-text-input">Category Name (EN)</label>
+                                <label class="col-md-4 control-label" for="example-text-input">Group Name</label>
                                 <div class="col-md-8">
-                                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="Category Name (EN)">
-                                    <span class="help-block">This is a help text</span>
+                                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="Group Name">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-4 control-label" for="example-text-input">Category Name (AR)</label>
-                                <div class="col-md-8">
-                                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="Category Name (AR)">
-                                    <span class="help-block">This is a help text</span>
+                                <label class="col-md-4 control-label" for="group-users">Group Users</label>
+                                <div class="col-md-6">
+                                    <select id="group-users" name="group-users" class="select-chosen" data-placeholder="Choose Group Users.." style="width: 250px;">
+                                            <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                            <option value="United States">United States</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="Afghanistan">Afghanistan</option>
+                                        </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="checkbox">
+                                        <label for="example-checkbox1">
+                                                <input type="checkbox" id="example-checkbox1" name="example-checkbox1" value="option1"> All
+                                            </label>
+                                    </div>
                                 </div>
                             </div>
+                            <fieldset>
+                                <legend>Filter details</legend>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="example-Gender">Gender</label>
+                                    <div class="col-md-6">
+                                        <select id="example-Gender" name="example-Gender" class="select-select2 select2-hidden-accessible" style="width: 100%;" data-placeholder="Choose one..">
+                                                <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
+                                                <option value="HTML">HTML</option>
+                                                <option value="CSS">CSS</option>
+                                                <option value="Javascript">Javascript</option>
+                                                <option value="PHP">PHP</option>
+                                                <option value="MySQL">MySQL</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="checkbox">
+                                            <label for="example-Gender">
+                                                    <input type="checkbox" id="example-Gender" name="example-Gender" value="option1"> All
+                                                </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="example-location">Location</label>
+                                    <div class="col-md-6">
+                                        <select id="example-location" name="example-location" class="select-select2 select2-hidden-accessible" style="width: 100%;" data-placeholder="Choose one..">
+                                                <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
+                                                <option value="HTML">HTML</option>
+                                                <option value="CSS">CSS</option>
+                                                <option value="Javascript">Javascript</option>
+                                                <option value="PHP">PHP</option>
+                                                <option value="MySQL">MySQL</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="checkbox">
+                                            <label for="example-location1">
+                                                    <input type="checkbox" id="example-location1" name="example-location1" value="option1"> All
+                                                </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="example-order">Orders</label>
+                                    <div class="col-md-6">
+                                        <select id="example-order" name="example-order" class="select-select2 select2-hidden-accessible" style="width: 100%;" data-placeholder="Choose one..">
+                                                <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
+                                                <option value="HTML">HTML</option>
+                                                <option value="CSS">CSS</option>
+                                                <option value="Javascript">Javascript</option>
+                                                <option value="PHP">PHP</option>
+                                                <option value="MySQL">MySQL</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="checkbox">
+                                            <label for="example-order1">
+                                                    <input type="checkbox" id="example-order1" name="example-order1" value="option1"> All
+                                                </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
                         </fieldset>
                         <div class="form-group form-actions">
                             <div class="col-xs-12 text-right">
