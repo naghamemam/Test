@@ -470,6 +470,16 @@ table td .access {
     max-width: 120px;
 }
 
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.store-name {
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media screen and (min-width: 768px) {
     #login-container,
     #login-alt-container {
