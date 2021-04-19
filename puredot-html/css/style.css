@@ -480,6 +480,64 @@ table td .access {
     align-items: center;
 }
 
+table img {
+    max-width: 100%;
+}
+
+table .product-title {
+    margin-top: 0;
+}
+
+table .product-meta p {
+    margin-bottom: 0px;
+}
+
+.driver-details .col {
+    flex: 1 0 auto;
+}
+
+.location-details {
+    padding-top: 10px;
+}
+
+.location-details .d-flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-details .d-flex * {
+    flex: 1 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.location-details .d-flex *:first-of-type {
+    text-align: left;
+}
+
+.location-details .d-flex *:last-of-type {
+    text-align: right;
+}
+
+.order-actions {
+    background: #f9fafc;
+    margin: 0 -20px;
+    padding: 10px 20px;
+}
+
+.user-data img {
+    display: block;
+    max-width: 100%;
+}
+
+.complaints-list .media {
+    padding: 10px 10px 0;
+}
+
+.complaints-list .media:nth-child(odd) {
+    background: #f9f9f9;
+}
+
 @media screen and (min-width: 768px) {
     #login-container,
     #login-alt-container {
