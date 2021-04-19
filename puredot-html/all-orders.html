@@ -811,7 +811,7 @@
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
                                                     <a href="javascript:void(0)" data-toggle="tooltip" title="view" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Assign Driver" class="btn btn-default"><i class="fa fa-truck"></i></a>
+                                                    <a href="#modal-add-driver" data-toggle="modal" data-toggle="tooltip" title="Assign Driver" class="btn btn-default"><i class="fa fa-truck"></i></a>
                                                     <a href="view-order.html" data-toggle="tooltip" title="edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
                                                     <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                                 </div>
@@ -834,7 +834,7 @@
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
                                                     <a href="javascript:void(0)" data-toggle="tooltip" title="view" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Assign Driver" class="btn btn-default"><i class="fa fa-truck"></i></a>
+                                                    <a href="#modal-add-driver" data-toggle="modal" data-toggle="tooltip" title="Assign Driver" class="btn btn-default"><i class="fa fa-truck"></i></a>
                                                     <a href="view-order.html" data-toggle="tooltip" title="edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
                                                     <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                                 </div>
@@ -901,7 +901,7 @@
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
                                                     <a href="javascript:void(0)" data-toggle="tooltip" title="view" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Assign Driver" class="btn btn-default"><i class="fa fa-truck"></i></a>
+                                                    <a href="#modal-add-driver" data-toggle="modal" data-toggle="tooltip" title="Assign Driver" class="btn btn-default"><i class="fa fa-truck"></i></a>
                                                     <a href="view-order.html" data-toggle="tooltip" title="edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
                                                     <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                                 </div>
@@ -1024,12 +1024,12 @@
     <!-- END User Settings -->
 
     <!-- Add Category Modal -->
-    <div id="modal-add-Admin" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div id="modal-add-driver" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header text-center">
-                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Admin Settings</h2>
+                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Assign Driver</h2>
                 </div>
                 <!-- END Modal Header -->
 
@@ -1037,62 +1037,15 @@
                 <div class="modal-body">
                     <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered mb-20" onsubmit="return false;">
                         <fieldset>
-                            <legend>General Details</legend>
                             <div class="form-group">
-                                <label class="col-md-4 control-label" for="admin-name">Full Name</label>
-                                <div class="col-md-8">
-                                    <input type="text" id="admin-name" name="admin-name" class="form-control" placeholder="Full Name">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="admin-email">Email</label>
-                                <div class="col-md-8">
-                                    <input type="email" id="admin-email" name="admin-email" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="admin-phone">Phone</label>
-                                <div class="col-md-8">
-                                    <input type="text" id="admin-phone" name="admin-phone" class="form-control" placeholder="Phone Number">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="admin-username">Username</label>
-                                <div class="col-md-8">
-                                    <input type="text" id="admin-username" name="admin-username" class="form-control" placeholder="Username">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="admin-profile-image">Profile Image</label>
-                                <div class="col-md-8">
-                                    <input type="file" id="admin-profile-image" name="admin-profile-image">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="admin-role">Roles</label>
+                                <label class="col-md-4 control-label" for="assin-driver">Driver</label>
                                 <div class="col-md-8">
                                     <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
-                                    <select id="admin-role" name="admin-role" class="select-chosen" data-placeholder="Choose a Role.." style="width: 250px;">
-                                            <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                            <option value="United States">United States</option>
-                                            <option value="United Kingdom">United Kingdom</option>
-                                        </select>
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>Password</legend>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="admin-password">Password</label>
-                                <div class="col-md-8">
-                                    <input type="password" id="admin-password" name="admin-password" class="form-control" placeholder="Please choose a complex one..">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="admin-re-password">Confirm Password</label>
-                                <div class="col-md-8">
-                                    <input type="password" id="admin-re-password" name="admin-re-password" class="form-control" placeholder="Confirm Password..">
+                                    <select id="assin-driver" name="assin-driver" class="select-chosen" data-placeholder="Choose a Driver.." style="width: 250px;">
+                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                        <option value="United States">Driver 1</option>
+                                        <option value="United Kingdom">Driver 2</option>
+                                    </select>
                                 </div>
                             </div>
                         </fieldset>
