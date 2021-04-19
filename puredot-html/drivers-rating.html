@@ -774,7 +774,7 @@
                                             <td class="text-center"><span class="label label-success">Active</span></td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="#" data-toggle="tooltip" title="View Rate" class="btn btn-xs btn-default" data-original-title="View Rate"><i class="fa fa-eye"></i> Rate</a>
+                                                    <a href="#modal-view-rate" data-toggle="modal" data-toggle="tooltip" title="View Rate" class="btn btn-xs btn-default" data-original-title="View Rate"><i class="fa fa-eye"></i> Rate</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -796,7 +796,7 @@
                                             <td class="text-center"><span class="label label-danger">Ofline</span></td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="#" data-toggle="tooltip" title="View Rate" class="btn btn-xs btn-default" data-original-title="View Rate"><i class="fa fa-eye"></i> Rate</a>
+                                                    <a href="#modal-view-rate" data-toggle="modal" data-toggle="tooltip" title="View Rate" class="btn btn-xs btn-default" data-original-title="View Rate"><i class="fa fa-eye"></i> Rate</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -818,7 +818,7 @@
                                             <td class="text-center"><span class="label label-success">Active</span></td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="#" data-toggle="tooltip" title="View Rate" class="btn btn-xs btn-default" data-original-title="View Rate"><i class="fa fa-eye"></i> Rate</a>
+                                                    <a href="#modal-view-rate" data-toggle="modal" data-toggle="tooltip" title="View Rate" class="btn btn-xs btn-default" data-original-title="View Rate"><i class="fa fa-eye"></i> Rate</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -840,7 +840,7 @@
                                             <td class="text-center"><span class="label label-success">Active</span></td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="#" data-toggle="tooltip" title="View Rate" class="btn btn-xs btn-default" data-original-title="View Rate"><i class="fa fa-eye"></i> Rate</a>
+                                                    <a href="#modal-view-rate" data-toggle="modal" data-toggle="tooltip" title="View Rate" class="btn btn-xs btn-default" data-original-title="View Rate"><i class="fa fa-eye"></i> Rate</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -862,7 +862,7 @@
                                             <td class="text-center"><span class="label label-success">Active</span></td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="#" data-toggle="tooltip" title="View Rate" class="btn btn-xs btn-default" data-original-title="View Rate"><i class="fa fa-eye"></i> Rate</a>
+                                                    <a href="#modal-view-rate" data-toggle="modal" data-toggle="tooltip" title="View Rate" class="btn btn-xs btn-default" data-original-title="View Rate"><i class="fa fa-eye"></i> Rate</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -983,115 +983,25 @@
     <!-- END User Settings -->
 
     <!-- Add Category Modal -->
-    <div id="modal-add-group" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div id="modal-view-rate" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header text-center">
-                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Add Group</h2>
+                    <h2 class="modal-title"><i class="fa fa-star"></i> Rating</h2>
                 </div>
                 <!-- END Modal Header -->
 
                 <!-- Modal Body -->
                 <div class="modal-body">
-                    <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered" onsubmit="return false;">
-                        <fieldset>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="example-text-input">Group Name</label>
-                                <div class="col-md-8">
-                                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="Group Name">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="group-users">Group Users</label>
-                                <div class="col-md-6">
-                                    <select id="group-users" name="group-users" class="select-chosen" data-placeholder="Choose Group Users.." style="width: 250px;">
-                                            <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                            <option value="United States">United States</option>
-                                            <option value="United Kingdom">United Kingdom</option>
-                                            <option value="Afghanistan">Afghanistan</option>
-                                        </select>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="checkbox">
-                                        <label for="example-checkbox1">
-                                                <input type="checkbox" id="example-checkbox1" name="example-checkbox1" value="option1"> All
-                                            </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <fieldset>
-                                <legend>Filter details</legend>
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label" for="example-Gender">Gender</label>
-                                    <div class="col-md-6">
-                                        <select id="example-Gender" name="example-Gender" class="select-select2 select2-hidden-accessible" style="width: 100%;" data-placeholder="Choose one..">
-                                                <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
-                                                <option value="HTML">HTML</option>
-                                                <option value="CSS">CSS</option>
-                                                <option value="Javascript">Javascript</option>
-                                                <option value="PHP">PHP</option>
-                                                <option value="MySQL">MySQL</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="checkbox">
-                                            <label for="example-Gender">
-                                                    <input type="checkbox" id="example-Gender" name="example-Gender" value="option1"> All
-                                                </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label" for="example-location">Location</label>
-                                    <div class="col-md-6">
-                                        <select id="example-location" name="example-location" class="select-select2 select2-hidden-accessible" style="width: 100%;" data-placeholder="Choose one..">
-                                                <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
-                                                <option value="HTML">HTML</option>
-                                                <option value="CSS">CSS</option>
-                                                <option value="Javascript">Javascript</option>
-                                                <option value="PHP">PHP</option>
-                                                <option value="MySQL">MySQL</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="checkbox">
-                                            <label for="example-location1">
-                                                    <input type="checkbox" id="example-location1" name="example-location1" value="option1"> All
-                                                </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label" for="example-order">Orders</label>
-                                    <div class="col-md-6">
-                                        <select id="example-order" name="example-order" class="select-select2 select2-hidden-accessible" style="width: 100%;" data-placeholder="Choose one..">
-                                                <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
-                                                <option value="HTML">HTML</option>
-                                                <option value="CSS">CSS</option>
-                                                <option value="Javascript">Javascript</option>
-                                                <option value="PHP">PHP</option>
-                                                <option value="MySQL">MySQL</option>
-                                            </select>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="checkbox">
-                                            <label for="example-order1">
-                                                    <input type="checkbox" id="example-order1" name="example-order1" value="option1"> All
-                                                </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset>
-
-                        </fieldset>
-                        <div class="form-group form-actions">
-                            <div class="col-xs-12 text-right">
-                                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
+                    <div class="text-center">
+                        <div class="star-rating-and-count-container">
+                            <div class="star-rating">
+                                <span style="width:90%"><strong itemprop="ratingValue" class="rating">*/1</strong> out of 5</span>
                             </div>
                         </div>
-                    </form>
+                        <p>Sed porttitor pretium venenatis. Suspendisse potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum.</p>
+                    </div>
                 </div>
                 <!-- END Modal Body -->
             </div>

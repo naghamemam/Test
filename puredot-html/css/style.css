@@ -531,11 +531,19 @@ table .product-meta p {
 }
 
 .complaints-list .media {
-    padding: 10px 10px 0;
+    padding: 15px 15px 0;
 }
 
 .complaints-list .media:nth-child(odd) {
     background: #f9f9f9;
+}
+
+.complaints-list .media p {
+    margin-bottom: 5px;
+}
+
+.complaints-list .media .pull-left i {
+    color: #394263;
 }
 
 @media screen and (min-width: 768px) {

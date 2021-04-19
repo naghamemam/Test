@@ -573,7 +573,7 @@
                     <!-- Quick Stats -->
                     <div class="row text-center">
                         <div class="col-sm-6 col-lg-3">
-                            <a href="offers-edit.html" class="widget widget-hover-effect2">
+                            <a href="#modal-add-complain" data-toggle="modal" class="widget widget-hover-effect2">
                                 <div class="widget-extra themed-background-success">
                                     <h4 class="widget-content-light"><strong>Submit a</strong> Complaint</h4>
                                 </div>
@@ -620,17 +620,14 @@
 
                         <ul class="media-list complaints-list">
                             <li class="media">
-                                <a href="page_ready_user_profile.html" class="pull-left">
+                                <a href="view-complains.html" class="pull-left">
                                     <i class="fa fa-comments fa-4x"></i>
                                 </a>
                                 <div class="media-body">
                                     <div class="media-body-content">
-                                        <a href="page_ready_user_profile.html"><strong>Traveller</strong></a>
-                                        <div class="star-rating-and-count-container pull-right">
-                                            <div class="star-rating">
-                                                <span style="width:90%"><strong itemprop="ratingValue" class="rating">*/1</strong> out of 5</span>
-                                            </div>
-                                            <!-- <span class="product-rating-count"> (1)</span> -->
+                                        <a href="view-complains.html"><strong>Complain #1</strong></a>
+                                        <div class="pull-right">
+                                            <span class="label label-warning"><i class="fa fa-spinner fa-spin"></i> In progress</span>
                                         </div>
                                         <p>Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse potenti. Aliquam quis ligula elit. Aliquam
                                             at orci ac neque semper dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet,
@@ -642,17 +639,14 @@
                                 </div>
                             </li>
                             <li class="media">
-                                <a href="page_ready_user_profile.html" class="pull-left">
-                                    <img src="img/placeholders/avatars/avatar13.jpg" alt="Avatar" class="img-circle">
+                                <a href="view-complains.html" class="pull-left">
+                                    <i class="fa fa-comments fa-4x"></i>
                                 </a>
                                 <div class="media-body">
                                     <div class="media-body-content">
-                                        <a href="page_ready_user_profile.html"><strong>Traveller</strong></a>
-                                        <div class="star-rating-and-count-container pull-right">
-                                            <div class="star-rating">
-                                                <span style="width:80%"><strong itemprop="ratingValue" class="rating">*/1</strong> out of 5</span>
-                                            </div>
-                                            <!-- <span class="product-rating-count"> (1)</span> -->
+                                        <a href="view-complains.html"><strong>Complain #1</strong></a>
+                                        <div class="pull-right">
+                                            <span class="label label-success"><i class="fa fa-check"></i> Resolved</span>
                                         </div>
                                         <p>Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse potenti. Aliquam quis ligula elit. Aliquam
                                             at orci ac neque semper dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet,
@@ -664,17 +658,14 @@
                                 </div>
                             </li>
                             <li class="media">
-                                <a href="page_ready_user_profile.html" class="pull-left">
-                                    <img src="img/placeholders/avatars/avatar13.jpg" alt="Avatar" class="img-circle">
+                                <a href="view-complains.html" class="pull-left">
+                                    <i class="fa fa-comments fa-4x"></i>
                                 </a>
                                 <div class="media-body">
                                     <div class="media-body-content">
-                                        <a href="page_ready_user_profile.html"><strong>Traveller</strong></a>
-                                        <div class="star-rating-and-count-container pull-right">
-                                            <div class="star-rating">
-                                                <span style="width:90%"><strong itemprop="ratingValue" class="rating">*/1</strong> out of 5</span>
-                                            </div>
-                                            <!-- <span class="product-rating-count"> (1)</span> -->
+                                        <a href="view-complains.html"><strong>Complain #1</strong></a>
+                                        <div class="pull-right">
+                                            <span class="label label-success"><i class="fa fa-check"></i> Resolved</span>
                                         </div>
                                         <p>Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse potenti. Aliquam quis ligula elit. Aliquam
                                             at orci ac neque semper dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet,
@@ -778,12 +769,12 @@
     <!-- END User Settings -->
 
     <!-- Add Category Modal -->
-    <div id="modal-add-banner" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div id="modal-add-complain" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header text-center">
-                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Add Banner</h2>
+                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Submit a Complaint</h2>
                 </div>
                 <!-- END Modal Header -->
 
@@ -792,60 +783,41 @@
                     <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered mb-20" onsubmit="return false;">
                         <fieldset>
                             <div class="form-group">
-                                <label class="col-md-4 control-label" for="Banner-text-en">Banner Name (EN)</label>
+                                <label class="col-md-4 control-label" for="complain-title">Title</label>
                                 <div class="col-md-8">
-                                    <input type="text" id="Banner-text-en" name="Banner-text-en" class="form-control" placeholder="Banner Name (EN)">
-                                    <span class="help-block">This is a help text</span>
+                                    <input type="text" id="complain-title" name="complain-title" class="form-control" placeholder="Title">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-4 control-label" for="Banner-text-ar">Banner Name (AR)</label>
+                                <label class="col-md-4 control-label" for="complain-disc">Discription</label>
                                 <div class="col-md-8">
-                                    <input type="text" id="Banner-text-ar" name="Banner-text-ar" class="form-control" placeholder="Banner Name (AR)">
-                                    <span class="help-block">This is a help text</span>
+                                    <textarea id="complain-disc" name="complain-disc" class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="complain-related">Related order</label>
+                                <div class="col-md-8">
+                                    <select id="complain-related" name="complain-related" class="select-chosen" data-placeholder="Choose Order.." style="width: 250px;">
+                                        <option></option>
+                                        <option value="Red">#123</option>
+                                        <option value="Blue">#123</option>
+                                        <option value="Black">#123</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="complain-category">Category</label>
+                                <div class="col-md-8">
+                                    <select id="complain-category" name="complain-category" class="select-chosen" data-placeholder="Choose Category.." style="width: 250px;">
+                                        <option></option>
+                                        <option value="Red">#123</option>
+                                        <option value="Blue">#123</option>
+                                        <option value="Black">#123</option>
+                                    </select>
                                 </div>
                             </div>
                         </fieldset>
                     </form>
-
-                    <div class="block-section">
-                        <!-- Dropzone.js, You can check out https://github.com/enyo/dropzone/wiki for usage examples -->
-                        <form action="page_ecom_product_edit.html" class="dropzone"></form>
-                    </div>
-                    <table class="table table-bordered table-striped table-vcenter">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <a href="img/placeholders/photos/photo11.jpg" data-toggle="lightbox-image">
-                                        <img src="img/placeholders/photos/photo11.jpg" alt="" class="img-responsive center-block" style="max-width: 110px;">
-                                    </a>
-                                </td>
-                                <td class="text-center">
-                                    <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="img/placeholders/photos/photo13.jpg" data-toggle="lightbox-image">
-                                        <img src="img/placeholders/photos/photo13.jpg" alt="" class="img-responsive center-block" style="max-width: 110px;">
-                                    </a>
-                                </td>
-                                <td class="text-center">
-                                    <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="img/placeholders/photos/photo9.jpg" data-toggle="lightbox-image">
-                                        <img src="img/placeholders/photos/photo9.jpg" alt="" class="img-responsive center-block" style="max-width: 110px;">
-                                    </a>
-                                </td>
-                                <td class="text-center">
-                                    <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
 
                     <div class="row form-actions">
                         <div class="col-xs-12 text-right">
