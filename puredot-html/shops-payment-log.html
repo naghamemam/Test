@@ -7,9 +7,9 @@
 <head>
     <meta charset="utf-8">
 
-    <title>PureDot</title>
+    <title>ProUI - Responsive Bootstrap Admin Template</title>
 
-    <meta name="description" content="PureDot.">
+    <meta name="description" content="ProUI is a Responsive Bootstrap Admin Template created by pixelcave and published on Themeforest.">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
@@ -302,10 +302,10 @@
                             </div>
                             <div class="sidebar-user-name">John Doe</div>
                             <div class="sidebar-user-links">
-                                <!-- <a href="page_ready_user_profile.html" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="gi gi-user"></i></a> -->
-                                <!-- <a href="page_ready_inbox.html" data-toggle="tooltip" data-placement="bottom" title="Messages"><i class="gi gi-envelope"></i></a> -->
+                                <a href="page_ready_user_profile.html" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="gi gi-user"></i></a>
+                                <a href="page_ready_inbox.html" data-toggle="tooltip" data-placement="bottom" title="Messages"><i class="gi gi-envelope"></i></a>
                                 <!-- Opens the user settings modal that can be found at the bottom of each page (page_footer.html in PHP version) -->
-                                <a href="javascript:void(0)" class="enable-tooltip" data-placement="bottom" title="Profile" onclick="$('#modal-user-settings').modal('show');"><i class="gi gi-user"></i></a>
+                                <a href="javascript:void(0)" class="enable-tooltip" data-placement="bottom" title="Settings" onclick="$('#modal-user-settings').modal('show');"><i class="gi gi-cogwheel"></i></a>
                                 <a href="login.html" data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="gi gi-exit"></i></a>
                             </div>
                         </div>
@@ -367,22 +367,92 @@
                         <!-- Sidebar Navigation -->
                         <ul class="sidebar-nav">
                             <li>
-                                <a href="dashboard.html"><i class="gi gi-stopwatch sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+                                <a href="dashboard-2.html"><i class="gi gi-stopwatch sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-cogs sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">General Settings</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="countries.html">Countries</a>
+                                    </li>
+                                    <li>
+                                        <a href="cities.html">Cities</a>
+                                    </li>
+                                    <li>
+                                        <a href="currencies.html">Currencies</a>
+                                    </li>
+                                    <li>
+                                        <a href="zipcodes.html">Zipcodes</a>
+                                    </li>
+                                    <li>
+                                        <a href="banners-2.html">Banners</a>
+                                    </li>
+                                    <li>
+                                        <a href="banners-2-pending.html">Pending Banners</a>
+                                    </li>
+                                    <li>
+                                        <a href="financial-settings.html">Financial Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="notification-settings.html">Notifcation Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop-membership.html">Shop Memberships</a>
+                                    </li>
+                                    <li>
+                                        <a href="backup-settings.html">Backup Settings</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-users sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Manage Users</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="admins.html">Admins</a>
+                                    </li>
+                                    <li>
+                                        <a href="roles-permissions.html">Roles & Permissions</a>
+                                    </li>
+                                    <li>
+                                        <a href="shops-join-request.html">Shop join Request</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop-owners.html">Shop Owners</a>
+                                    </li>
+                                    <li>
+                                        <a href="drivers-join-requests.html">Drivers Join Requests</a>
+                                    </li>
+                                    <li>
+                                        <a href="drivers-all.html">Drivers</a>
+                                    </li>
+                                    <li>
+                                        <a href="customers-list.html">Customers</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-shop_window sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Manage Market</span></a>
                                 <ul>
                                     <li>
+                                        <a href="shop-category.html">Shop Category</a>
+                                    </li>
+                                    <li>
+                                        <a href="shops.html">Shops</a>
+                                    </li>
+                                    <li>
                                         <a href="vendors-list.html">Vendors</a>
                                     </li>
                                     <li>
-                                        <a href="categories.html">Categories</a>
+                                        <a href="pending-categories.html">Pending Categories</a>
                                     </li>
                                     <li>
-                                        <a href="products.html">Products</a>
+                                        <a href="manage-categories.html">Manage Categories</a>
                                     </li>
                                     <li>
-                                        <a href="banners.html">Banners</a>
+                                        <a href="products-pending.html">Pending Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="products-2.html">Products</a>
                                     </li>
                                     <li>
                                         <a href="offers.html">Offers</a>
@@ -395,14 +465,17 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class=" active">
+                            <li>
                                 <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-shopping_cart sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Manage Orders</span></a>
                                 <ul>
                                     <li>
-                                        <a href="shop-orders.html">All Orders</a>
+                                        <a href="all-orders.html">All Orders</a>
                                     </li>
                                     <li>
-                                        <a href="delivery-orders.html" class="active">Delivery Orders</a>
+                                        <a href="shop-orders.html">Shop Orders</a>
+                                    </li>
+                                    <li>
+                                        <a href="delivery-orders.html">Delivery Orders</a>
                                     </li>
                                     <li>
                                         <a href="return-delivery.html">Return Delivery</a>
@@ -414,23 +487,64 @@
                                 <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-comments sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Customer Support</span></a>
                                 <ul>
                                     <li>
-                                        <a href="my-complaints.html">My Complaints</a>
+                                        <a href="messages-groups.html">Messages Groups</a>
+                                    </li>
+                                    <li>
+                                        <a href="sms-log.html">SMS Log</a>
+                                    </li>
+                                    <li>
+                                        <a href="transfer-money-receipt.html">Send SMS</a>
                                     </li>
                                     <li>
                                         <a href="chat.html">Chat</a>
                                     </li>
+                                    <li>
+                                        <a href="complains.html">Complains</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-area-chart sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Manage Payments</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="income-log.html">Income Log</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop-wallet.html">Shop Wallet</a>
+                                    </li>
+                                    <li>
+                                        <a href="shops-payment-log.html" class="active">Shop Payment Log</a>
+                                    </li>
+                                    <li>
+                                        <a href="drivers-wallet.html">Drivers Wallet</a>
+                                    </li>
+                                    <li>
+                                        <a href="drivers-payment-log.html">Drivers Payment Log</a>
+                                    </li>
+                                    <li>
+                                        <a href="customers-wallet.html">Customers Wallet</a>
+                                    </li>
+                                    <li>
+                                        <a href="customers-payment-log.html">Customers Payment Log</a>
+                                    </li>
+                                    <li>
+                                        <a href="vat-log.html">Vat Log</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-user sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">My Account</span></a>
+                                <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-star sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Ratings</span></a>
                                 <ul>
                                     <li>
-                                        <a href="account-details.html">Account Details</a>
+                                        <a href="drivers-rating.html">Drivers Rating</a>
                                     </li>
                                     <li>
-                                        <a href="transactions-wallet.html">Transactions and Wallet</a>
+                                        <a href="shops-rating.html">Shops Rating</a>
                                     </li>
                                 </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-bar-chart-o sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Reports</span></a>
                             </li>
                         </ul>
                     </div>
@@ -471,71 +585,111 @@
 
                      
 
+                    <!-- Right Header Navigation -->
+                    <ul class="nav navbar-nav-custom pull-right">
+                        <!-- Alternative Sidebar Toggle Button -->
+                        <li>
+                            <!-- If you do not want the main sidebar to open when the alternative sidebar is closed, just remove the second parameter: App.sidebar('toggle-sidebar-alt'); -->
+                            <a href="javascript:void(0)" onclick="App.sidebar('toggle-sidebar-alt', 'toggle-other');this.blur();">
+                                <i class="gi gi-share_alt"></i>
+                                <span class="label label-primary label-indicator animation-floating">4</span>
+                            </a>
+                        </li>
+                        <!-- END Alternative Sidebar Toggle Button -->
 
+                        <!-- User Dropdown -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar"> <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
+                                <li class="dropdown-header text-center">Account</li>
+                                <li>
+                                    <a href="page_ready_timeline.html">
+                                        <i class="fa fa-clock-o fa-fw pull-right"></i>
+                                        <span class="badge pull-right">10</span> Updates
+                                    </a>
+                                    <a href="page_ready_inbox.html">
+                                        <i class="fa fa-envelope-o fa-fw pull-right"></i>
+                                        <span class="badge pull-right">5</span> Messages
+                                    </a>
+                                    <a href="page_ready_pricing_tables.html"><i class="fa fa-magnet fa-fw pull-right"></i>
+                                            <span class="badge pull-right">3</span>
+                                            Subscriptions
+                                        </a>
+                                    <a href="page_ready_faq.html"><i class="fa fa-question fa-fw pull-right"></i>
+                                            <span class="badge pull-right">11</span>
+                                            FAQ
+                                        </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="page_ready_user_profile.html">
+                                        <i class="fa fa-user fa-fw pull-right"></i> Profile
+                                    </a>
+                                    <!-- Opens the user settings modal that can be found at the bottom of each page (page_footer.html in PHP version) -->
+                                    <a href="#modal-user-settings" data-toggle="modal">
+                                        <i class="fa fa-cog fa-fw pull-right"></i> Settings
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="page_ready_lock_screen.html"><i class="fa fa-lock fa-fw pull-right"></i> Lock Account</a>
+                                    <a href="login.html"><i class="fa fa-ban fa-fw pull-right"></i> Logout</a>
+                                </li>
+                                <li class="dropdown-header text-center">Activity</li>
+                                <li>
+                                    <div class="alert alert-success alert-alt">
+                                        <small>5 min ago</small><br>
+                                        <i class="fa fa-thumbs-up fa-fw"></i> You had a new sale ($10)
+                                    </div>
+                                    <div class="alert alert-info alert-alt">
+                                        <small>10 min ago</small><br>
+                                        <i class="fa fa-arrow-up fa-fw"></i> Upgraded to Pro plan
+                                    </div>
+                                    <div class="alert alert-warning alert-alt">
+                                        <small>3 hours ago</small><br>
+                                        <i class="fa fa-exclamation fa-fw"></i> Running low on space<br><strong>18GB in use</strong> 2GB left
+                                    </div>
+                                    <div class="alert alert-danger alert-alt">
+                                        <small>Yesterday</small><br>
+                                        <i class="fa fa-bug fa-fw"></i> <a href="javascript:void(0)" class="alert-link">New bug submitted</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- END User Dropdown -->
+                    </ul>
+                    <!-- END Right Header Navigation -->
                 </header>
                 <!-- END Header -->
 
                 <!-- Page content -->
                 <div id="page-content">
-                    <!-- eCommerce Admin Header -->
+                    <!-- eCommerce Categories Header -->
                     <div class="content-header">
                         <div class="header-section">
                             <h1>
-                                <i class="gi gi-shopping_cart"></i>Delivery Orders<br><small>Manage and Edit Delivery Orders!</small>
+                                <i class="fa fa-money"></i>Shop Payment Log<br><small>Manage Shop Payment Log!</small>
                             </h1>
                         </div>
                     </div>
-                    <!-- END eCommerce Admin Header -->
+                    <!-- END eCommerce Categories Header -->
 
-                    <!-- Quick Stats -->
-                    <div class="row text-center">
-                        <div class="col-sm-6 col-lg-3">
-                            <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                <div class="widget-extra themed-background">
-                                    <h4 class="widget-content-light"><strong>Pending</strong> Orders</h4>
-                                </div>
-                                <div class="widget-extra-full"><span class="h2 animation-expandOpen">3</span></div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                <div class="widget-extra themed-background-dark">
-                                    <h4 class="widget-content-light"><strong>Orders</strong> Today</h4>
-                                </div>
-                                <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">120</span></div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                <div class="widget-extra themed-background-dark">
-                                    <h4 class="widget-content-light"><strong>Orders</strong> This Month</h4>
-                                </div>
-                                <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">3.200</span></div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <a href="javascript:void(0)" class="widget widget-hover-effect2">
-                                <div class="widget-extra themed-background-dark">
-                                    <h4 class="widget-content-light"><strong>Orders</strong> Last Month</h4>
-                                </div>
-                                <div class="widget-extra-full"><span class="h2 themed-color-dark animation-expandOpen">2.850</span></div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- END Quick Stats -->
-
-                    <!-- All Admin Block -->
+                    <!-- All Categories Block -->
                     <div class="block full">
-                        <!-- All Admin Title -->
+                        <!-- All Categories Title -->
                         <div class="block-title">
                             <div class="block-options pull-right">
-                                <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-alt btn-default" onclick="App.pagePrint();"><i class="fa fa-file-pdf-o"></i> Export</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-alt btn-default" onclick="App.pagePrint();"><i class="fa fa-file-excel-o"></i> Export</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-alt btn-default" onclick="App.pagePrint();"><i class="fa fa-print"></i> Print</a>
                             </div>
-                            <h2><strong>All</strong> Orders</h2>
+                            <h2><strong>All</strong> Payment Log</h2>
                         </div>
-                        <!-- END All Admin Title -->
+                        <!-- END All Categories Title -->
 
-                        <!-- All Admin Content -->
+                        <!-- All Categories Content -->
                         <div id="ecom-products_wrapper" class="dataTables_wrapper form-inline no-footer">
                             <div class="row">
                                 <div class="col-sm-8 col-xs-5">
@@ -549,36 +703,31 @@
                                             </select>
                                         </label>
                                         <label>
-                                            <select name="ecom-products_status" aria-controls="ecom-products" class="form-control">
-                                                <option>Status</option>
+                                            <select name="ecom-products_type" aria-controls="ecom-type" class="form-control">
+                                                <option>Type</option>
+                                                <option value="published">Cash</option>
+                                                <option value="hidden">Transfer</option>
+                                            </select>
+                                        </label>
+                                        <label>
+                                            <select name="ecom-products_transfare" aria-controls="ecom-transfare" class="form-control">
+                                                <option>Transfer to</option>
                                                 <option value="published">published</option>
                                                 <option value="hidden">hidden</option>
                                             </select>
                                         </label>
-                                        <label>
-                                            <select name="ecom-products_driver" aria-controls="ecom-type" class="form-control">
-                                                <option>Driver</option>
-                                                <option value="published">Driver 1</option>
-                                                <option value="hidden">Driver 2</option>
-                                            </select>
-                                        </label>
-                                        <div class="input-group input-daterange" data-date-format="mm/dd/yyyy">
-                                            <input type="text" id="example-daterange1" name="example-daterange1" class="form-control text-center" placeholder="From">
-                                            <span class="input-group-addon"><i class="fa fa-angle-right"></i></span>
-                                            <input type="text" id="example-daterange2" name="example-daterange2" class="form-control text-center" placeholder="To">
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-xs-7">
                                     <div id="ecom-products_filter" class="dataTables_filter">
                                         <label>
-                                            <div class="input-group">
-                                                <input type="search" class="form-control" placeholder="Search" aria-controls="ecom-products">
-                                                <span class="input-group-addon">
-                                                    <i class="fa fa-search"></i>
-                                                </span>
-                                            </div>
-                                        </label>
+                                                <div class="input-group">
+                                                    <input type="search" class="form-control" placeholder="Search" aria-controls="ecom-products">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </label>
                                     </div>
                                 </div>
                             </div>
@@ -587,95 +736,90 @@
                                     <thead>
                                         <tr>
                                             <th class="text-center" style="width: 70px;">ID</th>
-                                            <th>Order Number</th>
-                                            <th class="text-center">Customer Name</th>
-                                            <th class="text-center">Driver Name</th>
-                                            <th class="text-center">From</th>
-                                            <th class="text-center">Destination</th>
-                                            <th class="text-center">Status</th>
-                                            <th class="text-center">related order</th>
+                                            <th>Reciept Number</th>
+                                            <th class="text-center">Date</th>
+                                            <th class="text-center">Transfer to</th>
+                                            <th class="text-center">Transfer type</th>
+                                            <th class="text-center">Amount</th>
                                             <th class="text-center">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="text-center"><a href="view-delivery-order.html"><strong>1</strong></a></td>
-                                            <td><a href="view-delivery-order.html">No.123</a></td>
-                                            <td class="text-center">Ahmed Ahmed</td>
-                                            <td class="text-center">Asmaa Ahmed</td>
-                                            <td class="text-center">Shop - Alexandria Egypt</td>
-                                            <td class="text-center">loran alexandria Egypt</td>
-                                            <td class="text-center"><span class="label label-warning">In Progress</span></td>
-                                            <td class="text-center">#123</td>
+                                            <td class="text-center"><strong>1</strong></td>
+                                            <td><strong>#12356A</strong></td>
+                                            <td class="text-center">25 Dec 2021</td>
+                                            <td class="text-center">ahmed elsayed - Shop1</td>
+                                            <td class="text-center">Cash</td>
+                                            <td class="text-center">12500 SAR</td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="view-delivery-order.html" title="view" class="btn btn-default"><i class="fa fa-eye"></i></a>
+                                                    <a href="javascript:void(0)" onclick="App.pagePrint();" data-toggle="tooltip" title="Print" class="btn btn-xs btn-danger" data-original-title="Print"><i class="fa fa-print"></i></a>
+                                                    <a href="transfer-money-receipt.html" data-toggle="tooltip" title="View" class="btn btn-xs btn-info" data-original-title="View"><i class="fa fa-eye"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center"><a href="view-delivery-order.html"><strong>2</strong></a></td>
-                                            <td><a href="view-delivery-order.html">No.123</a></td>
-                                            <td class="text-center">Ahmed Ahmed</td>
-                                            <td class="text-center"><a href="#modal-add-driver" data-toggle="modal" data-toggle="tooltip" title="Assign Driver">No Driver</a></td>
-                                            <td class="text-center">Shop - Alexandria Egypt</td>
-                                            <td class="text-center">loran alexandria Egypt</td>
-                                            <td class="text-center"><span class="label label-info">pending driver</span></td>
-                                            <td class="text-center">#123</td>
+                                            <td class="text-center"><strong>2</strong></td>
+                                            <td><strong>#12356A</strong></td>
+                                            <td class="text-center">25 Dec 2021</td>
+                                            <td class="text-center">ahmed elsayed - Shop1</td>
+                                            <td class="text-center">Cash</td>
+                                            <td class="text-center">12500 SAR</td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="view-delivery-order.html" title="view" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                    <a href="#modal-add-driver" data-toggle="modal" data-toggle="tooltip" title="Assign Driver" class="btn btn-default"><i class="fa fa-truck"></i></a>
+                                                    <a href="javascript:void(0)" onclick="App.pagePrint();" data-toggle="tooltip" title="Print" class="btn btn-xs btn-danger" data-original-title="Print"><i class="fa fa-print"></i></a>
+                                                    <a href="transfer-money-receipt.html" data-toggle="tooltip" title="View" class="btn btn-xs btn-info" data-original-title="View"><i class="fa fa-eye"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center"><a href="view-delivery-order.html"><strong>3</strong></a></td>
-                                            <td><a href="view-delivery-order.html">No.123</a></td>
-                                            <td class="text-center">Ahmed Ahmed</td>
-                                            <td class="text-center">Asmaa Ahmed</td>
-                                            <td class="text-center">Shop - Alexandria Egypt</td>
-                                            <td class="text-center">loran alexandria Egypt</td>
-                                            <td class="text-center"><span class="label label-warning">In Progress</span></td>
-                                            <td class="text-center">#123</td>
+                                            <td class="text-center"><strong>3</strong></td>
+                                            <td><strong>#12356A</strong></td>
+                                            <td class="text-center">25 Dec 2021</td>
+                                            <td class="text-center">ahmed elsayed - Shop1</td>
+                                            <td class="text-center">Cash</td>
+                                            <td class="text-center">12500 SAR</td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="view-delivery-order.html" title="view" class="btn btn-default"><i class="fa fa-eye"></i></a>
+                                                    <a href="javascript:void(0)" onclick="App.pagePrint();" data-toggle="tooltip" title="Print" class="btn btn-xs btn-danger" data-original-title="Print"><i class="fa fa-print"></i></a>
+                                                    <a href="transfer-money-receipt.html" data-toggle="tooltip" title="View" class="btn btn-xs btn-info" data-original-title="View"><i class="fa fa-eye"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center"><a href="view-delivery-order.html"><strong>4</strong></a></td>
-                                            <td><a href="view-delivery-order.html">No.123</a></td>
-                                            <td class="text-center">Ahmed Ahmed</td>
-                                            <td class="text-center"><a href="#modal-add-driver" data-toggle="modal" data-toggle="tooltip" title="Assign Driver">No Driver</a></td>
-                                            <td class="text-center">Shop - Alexandria Egypt</td>
-                                            <td class="text-center">loran alexandria Egypt</td>
-                                            <td class="text-center"><span class="label label-info">pending driver</span></td>
-                                            <td class="text-center">#123</td>
+                                            <td class="text-center"><strong>4</strong></td>
+                                            <td><strong>#12356A</strong></td>
+                                            <td class="text-center">25 Dec 2021</td>
+                                            <td class="text-center">ahmed elsayed - Shop1</td>
+                                            <td class="text-center">Cash</td>
+                                            <td class="text-center">12500 SAR</td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="view-delivery-order.html" title="view" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                    <a href="#modal-add-driver" data-toggle="modal" data-toggle="tooltip" title="Assign Driver" class="btn btn-default"><i class="fa fa-truck"></i></a>
+                                                    <a href="javascript:void(0)" onclick="App.pagePrint();" data-toggle="tooltip" title="Print" class="btn btn-xs btn-danger" data-original-title="Print"><i class="fa fa-print"></i></a>
+                                                    <a href="transfer-money-receipt.html" data-toggle="tooltip" title="View" class="btn btn-xs btn-info" data-original-title="View"><i class="fa fa-eye"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-center"><a href="view-delivery-order.html"><strong>5</strong></a></td>
-                                            <td><a href="view-delivery-order.html">No.123</a></td>
-                                            <td class="text-center">Ahmed Ahmed</td>
-                                            <td class="text-center">Asmaa Ahmed</td>
-                                            <td class="text-center">Shop - Alexandria Egypt</td>
-                                            <td class="text-center">loran alexandria Egypt</td>
-                                            <td class="text-center"><span class="label label-warning">In Progress</span></td>
-                                            <td class="text-center">#123</td>
+                                            <td class="text-center"><strong>5</strong></td>
+                                            <td><strong>#12356A</strong></td>
+                                            <td class="text-center">25 Dec 2021</td>
+                                            <td class="text-center">ahmed elsayed - Shop1</td>
+                                            <td class="text-center">Cash</td>
+                                            <td class="text-center">12500 SAR</td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="view-delivery-order.html" title="view" class="btn btn-default"><i class="fa fa-eye"></i></a>
+                                                    <a href="javascript:void(0)" onclick="App.pagePrint();" data-toggle="tooltip" title="Print" class="btn btn-xs btn-danger" data-original-title="Print"><i class="fa fa-print"></i></a>
+                                                    <a href="transfer-money-receipt.html" data-toggle="tooltip" title="View" class="btn btn-xs btn-info" data-original-title="View"><i class="fa fa-eye"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
                                     </tbody>
+                                    <tfoot>
+                                        <th colspan="5" class="text-right"><strong>Total</strong></th>
+                                        <td colspan="2" class="text-center"><strong>9000 SAR</strong></td>
+                                    </tfoot>
                                 </table>
                             </div>
                             <div class="row">
@@ -699,9 +843,9 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- END All Admin Content -->
+                        <!-- END All Categories Content -->
                     </div>
-                    <!-- END All Admin Block -->
+                    <!-- END All Categories Block -->
                 </div>
                 <!-- END Page Content -->
 
@@ -792,39 +936,115 @@
     <!-- END User Settings -->
 
     <!-- Add Category Modal -->
-    <div id="modal-add-driver" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div id="modal-add-group" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header text-center">
-                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Assign Driver</h2>
+                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Add Group</h2>
                 </div>
                 <!-- END Modal Header -->
 
                 <!-- Modal Body -->
                 <div class="modal-body">
-                    <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered mb-20" onsubmit="return false;">
+                    <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered" onsubmit="return false;">
                         <fieldset>
                             <div class="form-group">
-                                <label class="col-md-4 control-label" for="assin-driver">Driver</label>
+                                <label class="col-md-4 control-label" for="example-text-input">Group Name</label>
                                 <div class="col-md-8">
-                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
-                                    <select id="assin-driver" name="assin-driver" class="select-chosen" data-placeholder="Choose a Driver.." style="width: 250px;">
-                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                        <option value="United States">Driver 1</option>
-                                        <option value="United Kingdom">Driver 2</option>
-                                    </select>
+                                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="Group Name">
                                 </div>
                             </div>
-                        </fieldset>
-                    </form>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="group-users">Group Users</label>
+                                <div class="col-md-6">
+                                    <select id="group-users" name="group-users" class="select-chosen" data-placeholder="Choose Group Users.." style="width: 250px;">
+                                            <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                            <option value="United States">United States</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="Afghanistan">Afghanistan</option>
+                                        </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="checkbox">
+                                        <label for="example-checkbox1">
+                                                <input type="checkbox" id="example-checkbox1" name="example-checkbox1" value="option1"> All
+                                            </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <fieldset>
+                                <legend>Filter details</legend>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="example-Gender">Gender</label>
+                                    <div class="col-md-6">
+                                        <select id="example-Gender" name="example-Gender" class="select-select2 select2-hidden-accessible" style="width: 100%;" data-placeholder="Choose one..">
+                                                <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
+                                                <option value="HTML">HTML</option>
+                                                <option value="CSS">CSS</option>
+                                                <option value="Javascript">Javascript</option>
+                                                <option value="PHP">PHP</option>
+                                                <option value="MySQL">MySQL</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="checkbox">
+                                            <label for="example-Gender">
+                                                    <input type="checkbox" id="example-Gender" name="example-Gender" value="option1"> All
+                                                </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="example-location">Location</label>
+                                    <div class="col-md-6">
+                                        <select id="example-location" name="example-location" class="select-select2 select2-hidden-accessible" style="width: 100%;" data-placeholder="Choose one..">
+                                                <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
+                                                <option value="HTML">HTML</option>
+                                                <option value="CSS">CSS</option>
+                                                <option value="Javascript">Javascript</option>
+                                                <option value="PHP">PHP</option>
+                                                <option value="MySQL">MySQL</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="checkbox">
+                                            <label for="example-location1">
+                                                    <input type="checkbox" id="example-location1" name="example-location1" value="option1"> All
+                                                </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="example-order">Orders</label>
+                                    <div class="col-md-6">
+                                        <select id="example-order" name="example-order" class="select-select2 select2-hidden-accessible" style="width: 100%;" data-placeholder="Choose one..">
+                                                <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
+                                                <option value="HTML">HTML</option>
+                                                <option value="CSS">CSS</option>
+                                                <option value="Javascript">Javascript</option>
+                                                <option value="PHP">PHP</option>
+                                                <option value="MySQL">MySQL</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="checkbox">
+                                            <label for="example-order1">
+                                                    <input type="checkbox" id="example-order1" name="example-order1" value="option1"> All
+                                                </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
 
-                    <div class="row form-actions">
-                        <div class="col-xs-12 text-right">
-                            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
+                        </fieldset>
+                        <div class="form-group form-actions">
+                            <div class="col-xs-12 text-right">
+                                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <!-- END Modal Body -->
             </div>
