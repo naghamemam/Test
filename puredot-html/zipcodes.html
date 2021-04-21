@@ -954,8 +954,14 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="zipcode-city">City</label>
                                 <div class="col-md-8">
-                                    <input type="text" id="zipcode-city" name="zipcode-city" class="form-control" placeholder="zipcode city">
-                                    <span class="help-block">This is a help text</span>
+                                    <select id="zipcode-city" name="zipcode-city" class="select-chosen" data-placeholder="Choose City.." style="width: 250px;">
+                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                        <option value="1">Egypt </option>
+                                        <option value="2">KSA</option>
+                                        <option value="3">UAE</option>
+                                        <option value="4">USA</option>
+                                        <option value="5">Lebanon</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group">
