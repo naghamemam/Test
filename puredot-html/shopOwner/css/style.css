@@ -556,7 +556,7 @@ table .product-meta p {
     }
     .chatui-talk,
     .chatui-input {
-        right: 320px;
+        right: 0;
     }
     .chatui-people {
         width: 320px;
