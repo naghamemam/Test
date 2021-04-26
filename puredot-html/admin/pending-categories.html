@@ -588,10 +588,43 @@
                     </ul>
                     <!-- END Left Header Navigation -->
 
-                     
+
 
                     <!-- Right Header Navigation -->
+                    <ul class="nav navbar-nav-custom pull-right">
+                        <!-- Alternative Sidebar Toggle Button -->
+                        <!-- END Alternative Sidebar Toggle Button -->
 
+                        <!-- User Dropdown -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell"></i>
+                                <span class="label label-primary label-indicator animation-floating">4</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
+                                <li class="dropdown-header text-center">Activity</li>
+                                <li>
+                                    <div class="alert alert-success alert-alt">
+                                        <small>5 min ago</small><br>
+                                        <i class="fa fa-thumbs-up fa-fw"></i> You had a new sale ($10)
+                                    </div>
+                                    <div class="alert alert-info alert-alt">
+                                        <small>10 min ago</small><br>
+                                        <i class="fa fa-arrow-up fa-fw"></i> Upgraded to Pro plan
+                                    </div>
+                                    <div class="alert alert-warning alert-alt">
+                                        <small>3 hours ago</small><br>
+                                        <i class="fa fa-exclamation fa-fw"></i> Running low on space<br><strong>18GB in use</strong> 2GB left
+                                    </div>
+                                    <div class="alert alert-danger alert-alt">
+                                        <small>Yesterday</small><br>
+                                        <i class="fa fa-bug fa-fw"></i> <a href="javascript:void(0)" class="alert-link">New bug submitted</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- END User Dropdown -->
+                    </ul>
                     <!-- END Right Header Navigation -->
                 </header>
                 <!-- END Header -->
@@ -666,7 +699,7 @@
                                                 <div class="btn-group btn-group-xs">
                                                     <a href="#" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
                                                     <a href="#" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Approve"><i class="fa fa-check"></i></a>
-                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
+                                                    <a href="#modal-reject" data-toggle="modal" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -678,7 +711,7 @@
                                                 <div class="btn-group btn-group-xs">
                                                     <a href="#" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
                                                     <a href="#" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Approve"><i class="fa fa-check"></i></a>
-                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
+                                                    <a href="#modal-reject" data-toggle="modal" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -690,7 +723,7 @@
                                                 <div class="btn-group btn-group-xs">
                                                     <a href="#" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
                                                     <a href="#" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Approve"><i class="fa fa-check"></i></a>
-                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
+                                                    <a href="#modal-reject" data-toggle="modal" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -702,7 +735,7 @@
                                                 <div class="btn-group btn-group-xs">
                                                     <a href="#" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
                                                     <a href="#" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Approve"><i class="fa fa-check"></i></a>
-                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
+                                                    <a href="#modal-reject" data-toggle="modal" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -863,6 +896,42 @@
             </div>
         </div>
     </div>
+
+    <div id="modal-reject" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header text-center">
+                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Reject</h2>
+                </div>
+                <!-- END Modal Header -->
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered" onsubmit="return false;">
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-md-12 control-label text-left" for="reject-reason">Reject Reason</label>
+                                <div class="col-md-12">
+                                    <textarea id="reject-reason" name="reject-reason" class="form-control" rows="3"></textarea>
+                                    <span class="help-block">This is a help text</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-group form-actions">
+                            <div class="col-xs-12 text-right">
+                                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- END Modal Body -->
+            </div>
+        </div>
+    </div>
+
+
     <!-- END Add Category Modal -->
 
     <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->

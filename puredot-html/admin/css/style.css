@@ -561,6 +561,9 @@ table .product-meta p {
     .chatui-people {
         width: 320px;
     }
+    .form-horizontal .control-label.text-left {
+        text-align: left;
+    }
 }
 
 @media (min-width: 992px) {

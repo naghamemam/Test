@@ -588,9 +588,44 @@
                     </ul>
                     <!-- END Left Header Navigation -->
 
-                     
+
 
                     <!-- Right Header Navigation -->
+
+                    <ul class="nav navbar-nav-custom pull-right">
+                        <!-- Alternative Sidebar Toggle Button -->
+                        <!-- END Alternative Sidebar Toggle Button -->
+
+                        <!-- User Dropdown -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell"></i>
+                                <span class="label label-primary label-indicator animation-floating">4</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
+                                <li class="dropdown-header text-center">Activity</li>
+                                <li>
+                                    <div class="alert alert-success alert-alt">
+                                        <small>5 min ago</small><br>
+                                        <i class="fa fa-thumbs-up fa-fw"></i> You had a new sale ($10)
+                                    </div>
+                                    <div class="alert alert-info alert-alt">
+                                        <small>10 min ago</small><br>
+                                        <i class="fa fa-arrow-up fa-fw"></i> Upgraded to Pro plan
+                                    </div>
+                                    <div class="alert alert-warning alert-alt">
+                                        <small>3 hours ago</small><br>
+                                        <i class="fa fa-exclamation fa-fw"></i> Running low on space<br><strong>18GB in use</strong> 2GB left
+                                    </div>
+                                    <div class="alert alert-danger alert-alt">
+                                        <small>Yesterday</small><br>
+                                        <i class="fa fa-bug fa-fw"></i> <a href="javascript:void(0)" class="alert-link">New bug submitted</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- END User Dropdown -->
+                    </ul>
 
                     <!-- END Right Header Navigation -->
                 </header>
@@ -633,7 +668,7 @@
                             <div class="tab-content">
                                 <div id="shop" class="tab-pane fade in active">
                                     <form action="offers-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <label class="col-md-4 control-label" for="transfer-shop-limit">Transfer to Shop Limit</label>
                                             <div class="col-md-5">
                                                 <input type="text" id="transfer-shop-limit" name="transfer-shop-limit" class="form-control" placeholder="">
@@ -648,6 +683,16 @@
                                                         <i class="fa fa-info"></i>
                                                         </button>
                                             </div>
+                                        </div> -->
+
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="transfer-shop-limit">Transfer Every</label>
+                                            <div class="col-md-5">
+                                                <div class="input-group">
+                                                    <input type="text" id="transfer-shop-limit" name="transfer-shop-limit" class="form-control">
+                                                    <div class="input-group-addon">Days</div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div class="form-group form-actions">
@@ -661,7 +706,7 @@
                                 <div id="driver" class="tab-pane fade">
                                     <form action="offers-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
                                         <div class="row row-flex">
-                                            <div class="col-md-12">
+                                            <!-- <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label class="col-md-4 control-label" for="transfer-limit">Transfer to Driver Limit</label>
                                                     <div class="col-md-5">
@@ -678,6 +723,18 @@
                                                         <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="left" data-html="true" data-content="<span>Driver won't receive orders if he reach this limit</span><a href='#'>Drivers shoud pay the money to the application first</a>">
                                                                 <i class="fa fa-info"></i>
                                                                 </button>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label" for="transfer-shop-limit">Transfer Every</label>
+                                                    <div class="col-md-5">
+                                                        <div class="input-group">
+                                                            <input type="text" id="transfer-shop-limit" name="transfer-shop-limit" class="form-control">
+                                                            <div class="input-group-addon">Days</div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

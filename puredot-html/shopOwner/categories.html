@@ -510,8 +510,41 @@
                     </ul>
                     <!-- END Left Header Navigation -->
 
-                     
 
+                    <ul class="nav navbar-nav-custom pull-right">
+                        <!-- Alternative Sidebar Toggle Button -->
+                        <!-- END Alternative Sidebar Toggle Button -->
+
+                        <!-- User Dropdown -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell"></i>
+                                <span class="label label-primary label-indicator animation-floating">4</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
+                                <li class="dropdown-header text-center">Activity</li>
+                                <li>
+                                    <div class="alert alert-success alert-alt">
+                                        <small>5 min ago</small><br>
+                                        <i class="fa fa-thumbs-up fa-fw"></i> You had a new sale ($10)
+                                    </div>
+                                    <div class="alert alert-info alert-alt">
+                                        <small>10 min ago</small><br>
+                                        <i class="fa fa-arrow-up fa-fw"></i> Upgraded to Pro plan
+                                    </div>
+                                    <div class="alert alert-warning alert-alt">
+                                        <small>3 hours ago</small><br>
+                                        <i class="fa fa-exclamation fa-fw"></i> Running low on space<br><strong>18GB in use</strong> 2GB left
+                                    </div>
+                                    <div class="alert alert-danger alert-alt">
+                                        <small>Yesterday</small><br>
+                                        <i class="fa fa-bug fa-fw"></i> <a href="javascript:void(0)" class="alert-link">New bug submitted</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- END User Dropdown -->
+                    </ul>
 
                 </header>
                 <!-- END Header -->
@@ -1629,7 +1662,7 @@
 
                 <!-- Modal Body -->
                 <div class="modal-body">
-                    <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered" onsubmit="return false;">
+                    <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered mb-20" onsubmit="return false;">
                         <fieldset>
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="example-text-input">Category Name (EN)</label>
@@ -1659,13 +1692,34 @@
                                 </div>
                             </div>
                         </fieldset>
-                        <div class="form-group form-actions">
-                            <div class="col-xs-12 text-right">
-                                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
-                            </div>
-                        </div>
                     </form>
+
+                    <div class="block-section">
+                        <!-- Dropzone.js, You can check out https://github.com/enyo/dropzone/wiki for usage examples -->
+                        <form action="product_edit.html" class="dropzone dz-clickable">
+                            <div class="dz-default dz-message"><span>Upload Category Image</span></div>
+                        </form>
+                    </div>
+                    <table class="table table-bordered table-striped table-vcenter">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="img/placeholders/photos/photo11.jpg" data-toggle="lightbox-image">
+                                        <img src="img/placeholders/photos/photo11.jpg" alt="" class="img-responsive center-block" style="max-width: 110px;">
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row form-actions">
+                        <div class="col-xs-12 text-right">
+                            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
+                        </div>
+                    </div>
                 </div>
                 <!-- END Modal Body -->
             </div>
