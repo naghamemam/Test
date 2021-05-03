@@ -8,6 +8,11 @@ body {
     background-color: #ffffff;
 }
 
+html,
+body {
+    min-height: 100%;
+}
+
 .bg-login {
     min-height: 100%;
     height: auto;
@@ -16,6 +21,22 @@ body {
     top: 0;
     left: 0;
     overflow: hidden;
+}
+
+.bg-login:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(102, 47, 143);
+    background: -moz-linear-gradient(0deg, rgba(102, 47, 143, 1) 0%, rgba(28, 117, 187, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(102, 47, 143, 1) 0%, rgba(28, 117, 187, 1) 100%);
+    background: linear-gradient(0deg, rgba(102, 47, 143, 1) 0%, rgba(28, 117, 187, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#662f8f", endColorstr="#1c75bb", GradientType=1);
+    opacity: .9;
 }
 
 .bg-login .full-bg {
@@ -37,8 +58,19 @@ body {
 }
 
 #login-container .login-title h1,
+.text-primary,
+.text-primary:hover,
+a,
+a:hover,
+a:focus,
+a.text-primary,
+a.text-primary:hover,
+a.text-primary:focus {
+    color: var(--blue);
+}
+
 #login-container i {
-    color: var(--cyan);
+    color: #818181;
 }
 
 #login-container .form-actions .btn i {
@@ -55,9 +87,23 @@ body {
     max-width: 200px;
 }
 
+.switch-primary span {
+    border-color: var(--blue);
+}
+
+.switch-primary input:checked+span {
+    background-color: var(--blue);
+}
+
 .btn-primary {
-    background-color: var(--cyan);
-    border-color: var(--cyan);
+    background-color: var(--moov);
+    border-color: var(--moov);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #4c246a;
+    border-color: #4c246a;
 }
 
 .sidebar-brand img {
@@ -95,11 +141,14 @@ body {
     padding-right: 10px;
 }
 
-.table thead th {
+.table thead th,
+.table thead>tr>th {
     background-image: url(../img/jquery.datatables/sort_both.png);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: 19px 19px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .dataTables_wrapper .table-responsive {
@@ -356,6 +405,12 @@ table td .access {
 .block-accordion .panel-default {
     border-color: #394263;
     margin-bottom: 20px;
+    border: 0;
+}
+
+.block-accordion .panel-default .panel-collapse {
+    border: 1px solid #394263;
+    border-radius: 0 0 4px 4px;
 }
 
 .checkboxes-group {
@@ -546,10 +601,17 @@ table .product-meta p {
     color: #394263;
 }
 
+#login-alt-container img {
+    max-width: 95px;
+    width: 100%;
+    display: block;
+}
+
 @media screen and (min-width: 768px) {
     #login-container,
     #login-alt-container {
-        top: 100px;
+        top: 50vh;
+        transform: translateY(-50%);
     }
     .status-timeline .col {
         flex: 1 0 50%;

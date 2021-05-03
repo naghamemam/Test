@@ -441,12 +441,11 @@
                                     <li>
                                         <a href="shop-category.html">Shop Category</a>
                                     </li>
-
                                     <li>
                                         <a href="shops.html">Shops</a>
                                     </li>
                                     <li>
-                                        <a href="branches.html">Branches</a>
+                                        <a href="branches.html" class="active">Branches</a>
                                     </li>
                                     <li>
                                         <a href="vendors-list.html">Vendors</a>
@@ -458,7 +457,7 @@
                                         <a href="manage-categories.html">Manage Categories</a>
                                     </li>
                                     <li>
-                                        <a href="products-pending.html" class="active">Pending Products</a>
+                                        <a href="products-pending.html">Pending Products</a>
                                     </li>
                                     <li>
                                         <a href="products-2.html">Products</a>
@@ -635,180 +634,141 @@
 
                 <!-- Page content -->
                 <div id="page-content">
-                    <!-- eCommerce Products Header -->
+                    <!-- eCommerce Categories Header -->
                     <div class="content-header">
                         <div class="header-section">
                             <h1>
-                                <i class="gi gi-shopping_bag"></i>Pending Products<br><small>Manage and Edit Pending Products!</small>
+                                <i class="gi gi-shop"></i>View Branch<br><small>Manage and Edit Branch Details!</small>
                             </h1>
                         </div>
                     </div>
-                    <!-- END eCommerce Products Header -->
+                    <!-- END eCommerce Categories Header -->
 
-                    <!-- All Products Block -->
-                    <div class="block full">
-                        <!-- All Products Title -->
-                        <div class="block-title">
-                            <div class="block-options pull-right">
-                                <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+                    <!-- All Admin Block -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- General Data Block -->
+                            <div class="block">
+                                <!-- General Data Title -->
+                                <div class="block-title">
+                                    <h2><i class="fa fa-pencil"></i> <strong>Branch</strong> Details</h2>
+                                </div>
+                                <!-- END General Data Title -->
+
+                                <!-- General Data Content -->
+                                <form action="product_edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="Branch-name-en">Branch Name (EN)</label>
+                                        <div class="col-md-9">
+                                            <input type="text" id="Branch-name-en" name="Branch-name-en" class="form-control" placeholder="Branch Name (EN)">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="Branch-name-ar">Branch Name (AR)</label>
+                                        <div class="col-md-9">
+                                            <input type="text" id="Branch-name-ar" name="Branch-name-ar" class="form-control" placeholder="Branch Name (AR)">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="Branch-shop">Shop</label>
+                                        <div class="col-md-9">
+                                            <select id="Branch-shop" name="Branch-shop" class="select-chosen" data-placeholder="Choose a Related Shop.." style="width: 250px;">
+                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                <option value="United States">Shop 1</option>
+                                                <option value="United Kingdom">Shop 2</option>
+                                                <option value="Zimbabwe">Shop 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="Branch-city">Branch City</label>
+                                        <div class="col-md-9">
+                                            <select id="Branch-city" name="Branch-city" class="select-chosen" data-placeholder="Choose a Related city.." style="width: 250px;">
+                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                <option value="United States">City 1</option>
+                                                <option value="United Kingdom">City 2</option>
+                                                <option value="Zimbabwe">city 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group form-actions">
+                                        <div class="col-md-9 col-md-offset-3">
+                                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                            <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- END General Data Content -->
                             </div>
-                            <h2><strong>All</strong> Pending Products</h2>
+                            <!-- END General Data Block -->
                         </div>
-                        <!-- END All Products Title -->
+                        <div class="col-lg-6">
+                            <!-- Stock Block -->
+                            <div class="block">
+                                <!-- Stock Title -->
+                                <div class="block-title">
+                                    <h2><i class="gi gi-shop"></i> <strong>Available</strong> Products</h2>
+                                </div>
+                                <!-- END Stock Title -->
 
-                        <!-- All Products Content -->
+                                <!-- Stock Content -->
+                                <form action="product_edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <div class="variation-container bg-gray">
+                                                <a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a>
+                                                <label class="control-label" for="Offer-product">Select Product</label>
+                                                <div class="variation-content">
+                                                    <select id="Offer-category" name="Offer-product" class="select-chosen" data-placeholder="Choose a Category.." style="width: 250px;">
+                                                            <option value="Product 1">Product 1</option>
+                                                            <option value="Product 2">Product 2</option>
+                                                        </select>
+                                                    <div class="form-group m-15">
+                                                        <label class="col-xs-2 control-label" for="Offer-variation-qty">Qty</label>
+                                                        <div class="col-xs-10">
+                                                            <input type="text" id="Offer-variation-qty" name="Offer-variation-qty" class="form-control" placeholder="1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                        <div class="dataTables_wrapper form-inline no-footer">
-                            <div class="row">
-                                <div class="col-sm-8 col-xs-12">
-                                    <div class="dataTables_length" id="ecom-products_length">
-                                        <label class="products_length">
-                                                <select name="ecom-products_length" aria-controls="ecom-products" class="form-control">
-                                                    <option value="10">10</option>
-                                                    <option value="20">20</option>
-                                                    <option value="30">30</option>
-                                                    <option value="-1">All</option>
-                                                </select>
-                                            </label>
-                                        <label>
-                                                <select name="ecom-products_status" aria-controls="ecom-products" class="form-control">
-                                                    <option>Status</option>
-                                                    <option value="published">published</option>
-                                                    <option value="hidden">hidden</option>
-                                                </select>
-                                            </label>
-                                        <label>
-                                                <select name="ecom-products_category" aria-controls="ecom-products" class="form-control">
-                                                    <option>Category</option>
-                                                    <option value="Category1">Category1</option>
-                                                    <option value="Category2">Category2</option>
-                                                    <option value="Category3">Category3</option>
-                                                </select>
-                                            </label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-xs-12">
-                                    <div id="ecom-products_filter" class="dataTables_filter">
-                                        <label>
-                                                <div class="input-group">
-                                                    <input type="search" class="form-control" placeholder="Search" aria-controls="ecom-products">
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-search"></i>
-                                                    </span>
+                                            <div class="variation-container bg-gray">
+                                                <a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a>
+                                                <label class="control-label" for="Offer-product">Select Product</label>
+                                                <div class="variation-content">
+                                                    <select id="Offer-category" name="Offer-product" class="select-chosen" data-placeholder="Choose a Category.." style="width: 250px;">
+                                                            <option value="Product 1">Product 1</option>
+                                                            <option value="Product 2">Product 2</option>
+                                                        </select>
+                                                    <div class="form-group m-15">
+                                                        <label class="col-xs-2 control-label" for="Offer-variation-qty">Qty</label>
+                                                        <div class="col-xs-10">
+                                                            <input type="text" id="Offer-variation-qty" name="Offer-variation-qty" class="form-control" placeholder="1">
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </label>
+                                            </div>
+
+                                            <div class="add-new-variation">
+                                                <a href="#"><i class="fa fa-plus-circle"></i> add new</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+
+                                    <div class="form-group form-actions">
+                                        <div class="col-md-9 col-md-offset-3">
+                                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                            <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- END Stock Content -->
                             </div>
-                            <div class="table-responsive">
-                                <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center" style="width: 70px;">ID</th>
-                                            <th>Product Name</th>
-                                            <th class="text-center">Category</th>
-                                            <th class="text-center">Shop Name</th>
-                                            <th class="">Quantity</th>
-                                            <th class="text-center">Price</th>
-                                            <th class="text-center">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-center"><a href="product_edit.html"><strong>PID.8799</strong></a></td>
-                                            <td><a href="product_edit.html">Product #99</a></td>
-                                            <td class="text-center">Category</td>
-                                            <td class="text-center"><strong>Electronics</strong></td>
-                                            <td class="">
-                                                <span class="label label-success">Available (7)</span>
-                                            </td>
-                                            <td class="text-center">150 SAR</td>
-                                            <td class="text-center">
-                                                <div class="btn-group btn-group-xs">
-                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="Approve"><i class="fa fa-check"></i></a>
-                                                    <a href="#modal-reject" data-toggle="modal" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center"><a href="product_edit.html"><strong>PID.8798</strong></a></td>
-                                            <td><a href="product_edit.html">Product #98</a></td>
-                                            <td class="text-center">Category</td>
-                                            <td class="text-center"><strong>Electronics</strong></td>
-                                            <td class="">
-                                                <span class="label label-success">Available (227)</span>
-                                            </td>
-                                            <td class="text-center">150 SAR</td>
-                                            <td class="text-center">
-                                                <div class="btn-group btn-group-xs">
-                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="Approve"><i class="fa fa-check"></i></a>
-                                                    <a href="#modal-reject" data-toggle="modal" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center"><a href="product_edit.html"><strong>PID.8784</strong></a></td>
-                                            <td><a href="product_edit.html">Product #84</a></td>
-                                            <td class="text-center">Category</td>
-                                            <td class="text-center"><strong>Electronics</strong></td>
-                                            <td class="">
-                                                <span class="label label-danger">Out of Stock</span>
-                                            </td>
-                                            <td class="text-center">150 SAR</td>
-                                            <td class="text-center">
-                                                <div class="btn-group btn-group-xs">
-                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="Approve"><i class="fa fa-check"></i></a>
-                                                    <a href="#modal-reject" data-toggle="modal" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center"><a href="product_edit.html"><strong>PID.8789</strong></a></td>
-                                            <td><a href="product_edit.html">Product #99</a></td>
-                                            <td class="text-center">Category</td>
-                                            <td class="text-center"><strong>Electronics</strong></td>
-                                            <td class="">
-                                                <span class="label label-success">Available (7)</span>
-                                            </td>
-                                            <td class="text-center">150 SAR</td>
-                                            <td class="text-center">
-                                                <div class="btn-group btn-group-xs">
-                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="Approve"><i class="fa fa-check"></i></a>
-                                                    <a href="#modal-reject" data-toggle="modal" data-toggle="tooltip" title="" class="btn btn-xs btn-danger" data-original-title="Reject"><i class="fa fa-times"></i></a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- END All Products Content -->
-                            <div class="row">
-                                <div class="col-sm-5 hidden-xs">
-                                    <div class="dataTables_info" id="ecom-products_info" role="status" aria-live="polite">
-                                        <strong>1</strong>-<strong>20</strong> of <strong>60</strong>
-                                    </div>
-                                </div>
-                                <div class="col-sm-7 col-xs-12 clearfix">
-                                    <div class="dataTables_paginate paging_bootstrap" id="ecom-products_paginate">
-                                        <ul class="pagination pagination-sm remove-margin">
-                                            <li class="prev disabled"><a href="javascript:void(0)"><i class="fa fa-chevron-left"></i> </a></li>
-                                            <li class="active"><a href="javascript:void(0)">1</a></li>
-                                            <li><a href="javascript:void(0)">2</a></li>
-                                            <li><a href="javascript:void(0)">3</a></li>
-                                            <li class="next">
-                                                <a href="javascript:void(0)"> <i class="fa fa-chevron-right"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- END Stock Block -->
                         </div>
                     </div>
-                    <!-- END All Products Block -->
+                    <!-- END All Admin Block -->
                 </div>
                 <!-- END Page Content -->
 
@@ -898,13 +858,13 @@
     </div>
     <!-- END User Settings -->
 
-    <!-- Add Product Modal -->
-    <div id="modal-reject" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Add Category Modal -->
+    <div id="modal-add-category" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header text-center">
-                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Reject</h2>
+                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Add Branch Category</h2>
                 </div>
                 <!-- END Modal Header -->
 
@@ -913,9 +873,16 @@
                     <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered" onsubmit="return false;">
                         <fieldset>
                             <div class="form-group">
-                                <label class="col-md-12 control-label text-left" for="reject-reason">Reject Reason</label>
-                                <div class="col-md-12">
-                                    <textarea id="reject-reason" name="reject-reason" class="form-control" rows="3"></textarea>
+                                <label class="col-md-4 control-label" for="example-text-input">Category Name (EN)</label>
+                                <div class="col-md-8">
+                                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="Category Name (EN)">
+                                    <span class="help-block">This is a help text</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="example-text-input">Category Name (AR)</label>
+                                <div class="col-md-8">
+                                    <input type="text" id="example-text-input" name="example-text-input" class="form-control" placeholder="Category Name (AR)">
                                     <span class="help-block">This is a help text</span>
                                 </div>
                             </div>
@@ -932,7 +899,7 @@
             </div>
         </div>
     </div>
-    <!-- END Add Product Modal -->
+    <!-- END Add Category Modal -->
 
     <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
     <script src="js/vendor/jquery.min.js"></script>

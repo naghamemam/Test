@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+html,
+body {
+    direction: rtl;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'Tajawal', sans-serif;
+}
+
+ul,
+ol {
+    padding-left: 0;
+}
+
+.nav.navbar-nav-custom,
+.sidebar-themes li,
+.sidebar-user-avatar,
+.cke_toolbar,
+.cke_toolgroup {
+    float: right;
+}
+
+.sidebar-nav a>.sidebar-nav-indicator,
+.dataTables_paginate,
+.header-section h1 i,
+div.dataTables_filter label,
+.panel-heading .accordion-toggle.collapsed:after,
+.panel-heading .accordion-toggle:after {
+    float: left;
+}
+
+.cke_toolgroup {
+    margin: 0 0px 3px 6px;
+}
+
+.cke_combo_button {
+    margin: 0 0px 5px 6px;
+}
+
+.sidebar-user {
+    padding-right: 88px;
+    padding-left: 0;
+}
+
+.sidebar-user-avatar {
+    margin-right: -78px;
+    margin-left: 0;
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.sidebar-nav a>.sidebar-nav-icon {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.content-header .d-flex .header-datepicker .control-label {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.nav-horizontal i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.sidebar-visible-xs #main-container {
+    margin-right: 200px;
+    margin-left: -200px;
+}
+
+.sidebar-themes li {
+    margin: 0 0px 6px 5px;
+}
+
+.bg-login,
+.bg-login .full-bg {
+    left: auto;
+    right: 0;
+}
+
+.form-actions .btn {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form-actions .btn i {
+    padding-left: 5px;
+}
+
+.fa-angle-right {
+    transform: rotate( 180deg);
+    padding-right: 5px;
+    padding-left: 0;
+}
+
+.fa-chevron-left:before,
+.fa-chevron-right:before {
+    transform: rotate( 180deg);
+    display: block;
+}
+
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+    transform: scaleX(-1);
+    display: block;
+}
+
+.star-rating-and-count-container {
+    transform: scaleX(-1);
+}
+
+.header-section h1 i {
+    margin: 0 10px 0 0px;
+}
+
+.table thead th {
+    background-position: center left;
+}
+
+.chosen-container-single .chosen-single {
+    padding: 0 8px 0 0px;
+}
+
+.chosen-container-single .chosen-single span {
+    margin-left: 26px;
+    margin-right: 0;
+}
+
+.chosen-container-single .chosen-single div {
+    right: auto;
+    left: 10px;
+}
+
+.variation-container .close-btn {
+    right: auto;
+    left: 12px;
+}
+
+.timepicker-container .bootstrap-timepicker:first-of-type .label-primary {
+    border-radius: 0 4px 4px 0;
+}
+
+.timepicker-container .bootstrap-timepicker:last-of-type input {
+    border-radius: 4px 0 0 4px !important;
+}
+
+.bootstrap-timepicker.input-group {
+    width: 100%;
+}
+
+.modal-open {
+    padding-left: 17px;
+    padding-right: 0 !important;
+}
+
+.checkboxes-group {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+    .form-horizontal .control-label.text-left {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .sidebar-partial #main-container {
+        margin-right: 65px;
+        margin-left: 0;
+    }
+    .sidebar-partial #sidebar:hover+#main-container,
+    .sidebar-visible-lg #main-container {
+        margin-right: 200px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-horizontal a {
+        text-align: right;
+    }
+}
