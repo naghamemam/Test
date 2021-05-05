@@ -671,3 +671,17 @@ table .product-meta p {
         line-height: 14px;
     }
 }
+
+@media print {
+    a,
+    a::after,
+    a::before {
+        content: none;
+    }
+    a[href]:after {
+        content: none !important;
+    }
+    .hide-print {
+        display: none;
+    }
+}

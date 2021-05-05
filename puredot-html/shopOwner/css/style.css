@@ -141,11 +141,14 @@ a.text-primary:focus {
     padding-right: 10px;
 }
 
-.table thead th {
+.table thead th,
+.table thead>tr>th {
     background-image: url(../img/jquery.datatables/sort_both.png);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: 19px 19px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .dataTables_wrapper .table-responsive {
@@ -402,6 +405,12 @@ table td .access {
 .block-accordion .panel-default {
     border-color: #394263;
     margin-bottom: 20px;
+    border: 0;
+}
+
+.block-accordion .panel-default .panel-collapse {
+    border: 1px solid #394263;
+    border-radius: 0 0 4px 4px;
 }
 
 .checkboxes-group {
@@ -609,7 +618,7 @@ table .product-meta p {
     }
     .chatui-talk,
     .chatui-input {
-        right: 320px;
+        right: 0;
     }
     .chatui-people {
         width: 320px;
@@ -660,5 +669,19 @@ table .product-meta p {
     .star-rating-and-count-container .star-rating .product-rating-count {
         font-size: 10px;
         line-height: 14px;
+    }
+}
+
+@media print {
+    a,
+    a::after,
+    a::before {
+        content: none;
+    }
+    a[href]:after {
+        content: none !important;
+    }
+    .hide-print {
+        display: none;
     }
 }

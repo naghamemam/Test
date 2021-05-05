@@ -1076,13 +1076,17 @@
 
     <!-- Load and execute javascript code used only in this page -->
     <script src="js/pages/ecomProducts.js"></script>
+    <!-- ckeditor.js, load it only in the page you would like to use CKEditor (it's a heavy plugin to include it with the others!) -->
+    <script src="js/helpers/ckeditor/ckeditor.js"></script>
     <script>
         $(function() {
             EcomProducts.init();
+
+            $('.datepicker, .input-discount-daterange input, .input-datepicker-close, .input-datepicker').datepicker({
+                language: 'XX'
+            });
         });
     </script>
-    <!-- ckeditor.js, load it only in the page you would like to use CKEditor (it's a heavy plugin to include it with the others!) -->
-    <script src="js/helpers/ckeditor/ckeditor.js"></script>
 </body>
 
 </html>

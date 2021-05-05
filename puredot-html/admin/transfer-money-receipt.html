@@ -659,7 +659,7 @@
                         <!-- END All Categories Title -->
                         <div class="transfer-logo">
                             <div class="row">
-                                <div class="col-md-9">
+                                <div class="col-md-12">
                                     <div class="text-right">
                                         <img src="img/shop-logo.png" width="120" alt="">
                                     </div>
@@ -668,70 +668,64 @@
                         </div>
 
                         <form action="offers-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
-                            <div class="form-group">
-                                <label class="col-md-4 control-label">Date</label>
-                                <div class="col-md-5">
-                                    <p class="form-control-static">02.02.2021</p>
-                                </div>
-                            </div>
+                            <div class="form-group" style="padding: 10px 15px;">
+                                <table class="table table-striped table-vcenter table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Date</strong></td>
+                                            <td>02.02.2021</td>
+                                        </tr>
+                                        <tr>
 
-                            <div class="form-group">
-                                <label class="col-md-4 control-label">Transfer to</label>
-                                <div class="col-md-5">
-                                    <p class="form-control-static">Mona Ahmed Aly</p>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-md-4 control-label">Receipt Number</label>
-                                <div class="col-md-5">
-                                    <p class="form-control-static">#125389</p>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label">Total Wallet</label>
-                                <div class="col-md-5">
-                                    <p class="form-control-static">5000 EGP</p>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="transfer-type">Transfer Type</label>
-                                <div class="col-md-5">
-                                    <select id="transfer-type" name="transfer-type" class="select-chosen" data-placeholder="Choose Type.." style="width: 250px;">
-                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                        <option value="1">Cash</option>
-                                        <option value="2">Bank Transfer</option>
-                                        <option value="3">Online</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="transfer-currency">Currency</label>
-                                <div class="col-md-5">
-                                    <select id="transfer-currency" name="transfer-currency" class="select-chosen" data-placeholder="Choose Currency.." style="width: 250px;">
-                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                        <option value="1">Currency 1</option>
-                                        <option value="2">Currency 2</option>
-                                        <option value="3">Currency 3</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="transfer-amount">Amount</label>
-                                <div class="col-md-5">
-                                    <div class="input-group">
-                                        <div class="input-group-addon">SAR</div>
-                                        <input type="text" id="transfer-amount" name="transfer-amount" class="form-control" placeholder="0,00">
-                                    </div>
-                                </div>
+                                            <td><strong>Transfer to</strong></td>
+                                            <td>Mona Ahmed Aly</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Receipt Number</strong></td>
+                                            <td>#125389</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Total Wallet</strong></td>
+                                            <td>5000 EGP</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Transfer Type</strong></td>
+                                            <td>
+                                                <select id="transfer-type" name="transfer-type" class="select-chosen" data-placeholder="Choose Type.." style="width: 250px;">
+                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                    <option value="1">Cash</option>
+                                                    <option value="2">Bank Transfer</option>
+                                                    <option value="3">Online</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Currency</strong></td>
+                                            <td>
+                                                <select id="transfer-currency" name="transfer-currency" class="select-chosen" data-placeholder="Choose Currency.." style="width: 250px;">
+                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                    <option value="1">Currency 1</option>
+                                                    <option value="2">Currency 2</option>
+                                                    <option value="3">Currency 3</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Amount</strong></td>
+                                            <td>
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">SAR</div>
+                                                    <input type="text" id="transfer-amount" name="transfer-amount" class="form-control" placeholder="0,00">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
 
                             <div class="form-group form-actions">
                                 <div class="col-md-8 col-md-offset-4">
-                                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Submit</button>
+                                    <button type="submit" class="btn btn-sm btn-primary hide-print"><i class="fa fa-floppy-o"></i> Submit</button>
                                 </div>
                             </div>
                         </form>
