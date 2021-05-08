@@ -34,7 +34,8 @@ ol {
 .cke_inner .cke_toolbar_separator,
 .cke_inner a.cke_button,
 .cke_inner .cke_combo_text,
-.chosen-container-multi .chosen-choices li {
+.chosen-container-multi .chosen-choices li,
+.nav.navbar-nav-custom>li {
     float: right;
 }
 

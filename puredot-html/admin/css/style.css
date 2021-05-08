@@ -607,6 +607,20 @@ table .product-meta p {
     display: block;
 }
 
+.navbar-inverse .nav.navbar-nav-custom>li>a {
+    color: var(--blue);
+}
+
+.navbar-inverse .nav.navbar-nav-custom>li>a:hover {
+    color: #ffffff;
+}
+
+.navbar.navbar-inverse,
+.sidebar-brand {
+    background-color: #ffffff;
+    color: var(--blue);
+}
+
 @media screen and (min-width: 768px) {
     #login-container,
     #login-alt-container {
