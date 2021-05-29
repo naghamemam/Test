@@ -734,7 +734,7 @@
                                             <td class="text-center">30 min</td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="#" title="Reassign" data-toggle="tooltip" class="btn btn-info"><i class="fa fa-refresh"></i></a>
+                                                    <a href="#modal-add-supporter" data-toggle="modal" title="Reassign Supporter" class="btn btn-info"><i class="fa fa-refresh"></i></a>
                                                     <a href="#" title="Mark as resolved" data-toggle="tooltip" class="btn btn-success"><i class="fa fa-check"></i></a>
                                                     <a href="view-complains.html" data-toggle="tooltip" title="View" class="btn btn-xs btn-default" data-original-title="Delete"><i class="fa fa-eye"></i></a>
                                                 </div>
@@ -752,7 +752,7 @@
                                             <td class="text-center">30 min</td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="#" title="Reassign" data-toggle="tooltip" class="btn btn-info"><i class="fa fa-refresh"></i></a>
+                                                    <a href="#modal-add-supporter" data-toggle="modal" title="Reassign Supporter" class="btn btn-info"><i class="fa fa-refresh"></i></a>
                                                     <a href="#" title="Mark as resolved" data-toggle="tooltip" class="btn btn-success"><i class="fa fa-check"></i></a>
                                                     <a href="view-complains.html" data-toggle="tooltip" title="View" class="btn btn-xs btn-default" data-original-title="Delete"><i class="fa fa-eye"></i></a>
                                                 </div>
@@ -770,7 +770,7 @@
                                             <td class="text-center">30 min</td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="#" title="Reassign" data-toggle="tooltip" class="btn btn-info"><i class="fa fa-refresh"></i></a>
+                                                    <a href="#modal-add-supporter" data-toggle="modal" title="Reassign Supporter" class="btn btn-info"><i class="fa fa-refresh"></i></a>
                                                     <a href="#" title="Mark as resolved" data-toggle="tooltip" class="btn btn-success"><i class="fa fa-check"></i></a>
                                                     <a href="view-complains.html" data-toggle="tooltip" title="View" class="btn btn-xs btn-default" data-original-title="Delete"><i class="fa fa-eye"></i></a>
                                                 </div>
@@ -788,7 +788,7 @@
                                             <td class="text-center">30 min</td>
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
-                                                    <a href="#" title="Reassign" data-toggle="tooltip" class="btn btn-info"><i class="fa fa-refresh"></i></a>
+                                                    <a href="#modal-add-supporter" data-toggle="modal" title="Reassign Supporter" class="btn btn-info"><i class="fa fa-refresh"></i></a>
                                                     <a href="#" title="Mark as resolved" data-toggle="tooltip" class="btn btn-success"><i class="fa fa-check"></i></a>
                                                     <a href="view-complains.html" data-toggle="tooltip" title="View" class="btn btn-xs btn-default" data-original-title="Delete"><i class="fa fa-eye"></i></a>
                                                 </div>
@@ -1026,6 +1026,45 @@
         </div>
     </div>
     <!-- END Add Category Modal -->
+
+    <div id="modal-add-supporter" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header text-center">
+                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Assign Customer Support</h2>
+                </div>
+                <!-- END Modal Header -->
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered mb-20" onsubmit="return false;">
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="assin-support">Customer Support</label>
+                                <div class="col-md-8">
+                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                    <select id="assin-support" name="assin-support" class="select-chosen" data-placeholder="Choose a Customer Support.." style="width: 250px;">
+                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                        <option value="United States">support 1</option>
+                                        <option value="United Kingdom">support 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <div class="row form-actions">
+                        <div class="col-xs-12 text-right">
+                            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Modal Body -->
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
     <script src="js/vendor/jquery.min.js"></script>

@@ -733,7 +733,7 @@
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
                                                     <a href="#modal-add-banner" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                                    <a href="#modal-confirmation" data-toggle="modal" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -749,7 +749,7 @@
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
                                                     <a href="#modal-add-banner" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                                    <a href="#modal-confirmation" data-toggle="modal" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -765,7 +765,7 @@
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
                                                     <a href="#modal-add-banner" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                                    <a href="#modal-confirmation" data-toggle="modal" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -781,7 +781,7 @@
                                             <td class="text-center">
                                                 <div class="btn-group btn-group-xs">
                                                     <a href="#modal-add-banner" data-toggle="modal" data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-pencil"></i></a>
-                                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                                    <a href="#modal-confirmation" data-toggle="modal" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -930,14 +930,70 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label class="col-md-4 control-label" for="banner-related-shop">Related Shop</label>
+                                <div class="col-md-8">
+                                    <select id="banner-related-shop" name="banner-related-shop" class="select-chosen" data-placeholder="Choose Shop.." style="width: 250px;">
+                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                        <option value="1">Shop 1</option>
+                                        <option value="2">Shop 1</option>
+                                        <option value="3">Shop 1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label class="col-md-4 control-label" for="banner-location">Location</label>
                                 <div class="col-md-8">
-                                    <select id="banner-location" name="banner-location" class="select-chosen" data-placeholder="Choose Location.." style="width: 250px;">
-                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                        <option value="1">Mobile main slider </option>
-                                        <option value="2">web main slider</option>
-                                        <option value="3">web categories slider</option>
-                                    </select>
+                                    <div class="row d-flex">
+                                        <div class="col-lg-6">
+                                            <select id="banner-location" name="banner-location" class="select-chosen" data-placeholder="Choose Location.." style="width: 250px;">
+                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                <option value="1">Shop</option>
+                                                <option value="2">Category</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <select id="banner-dir-location" name="banner-dir-location" class="select-chosen" data-placeholder="Choose Direct Location.." style="width: 250px;">
+                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                <option value="1">Shop</option>
+                                                <option value="2">Category</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="Banner-order">Banner Order</label>
+                                <div class="col-md-8">
+                                    <input type="text" id="Banner-order" name="Banner-order" class="form-control" placeholder="Ex.1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="banner-Redirect">Redirect to</label>
+                                <div class="col-md-8">
+                                    <div class="row d-flex">
+                                        <div class="col-lg-6">
+                                            <select id="banner-Redirect" name="banner-Redirect" class="select-chosen" data-placeholder="Choose .." style="width: 250px;">
+                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                <option value="1">Shop</option>
+                                                <option value="2">Offer</option>
+                                                <option value="3">Product</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <select id="banner-dir-Redirect" name="banner-dir-Redirect" class="select-chosen" data-placeholder="Choose .." style="width: 250px;">
+                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                <option value="1">Shop</option>
+                                                <option value="2">Offer</option>
+                                                <option value="3">Product</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="Banner-id">Id</label>
+                                <div class="col-md-8">
+                                    <input type="text" id="Banner-id" name="Banner-id" class="form-control" placeholder="Write Id...">
                                 </div>
                             </div>
                         </fieldset>
@@ -994,6 +1050,31 @@
         </div>
     </div>
     <!-- END Add Category Modal -->
+
+    <div id="modal-confirmation" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header text-center">
+                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Confirmation</h2>
+                </div>
+                <!-- END Modal Header -->
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <p class="text-center">Do you want to delete this?</p>
+
+                    <div class="row form-actions">
+                        <div class="col-xs-12 text-right">
+                            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">No</button>
+                            <button type="submit" class="btn btn-sm btn-primary">Yes</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Modal Body -->
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
     <script src="js/vendor/jquery.min.js"></script>
