@@ -747,7 +747,7 @@
                                 <form action="product_edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
                                     <div class="form-group">
                                         <div class="col-md-12">
-                                            <div class="variation-container bg-gray">
+                                            <div class="variation-container bg-gray w-100">
                                                 <a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a>
 
                                                 <div class="radio-wrapper">
@@ -768,7 +768,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="form-group m-15">
-                                                        <label class="col-xs-3 control-label" for="product-variation-price">Fees</label>
+                                                        <label class="col-xs-3 control-label" for="product-variation-price">Cost Per Day</label>
                                                         <div class="col-xs-9">
                                                             <div class="input-group">
                                                                 <div class="input-group-addon">%</div>
@@ -777,7 +777,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group m-15">
-                                                        <label class="col-xs-3 control-label" for="product-variation-qty">Discount</label>
+                                                        <label class="col-xs-3 control-label" for="product-variation-qty">Extra Fees</label>
                                                         <div class="col-xs-9">
                                                             <div class="input-group">
                                                                 <div class="input-group-addon">%</div>
@@ -787,7 +787,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="variation-container bg-gray">
+                                            <div class="variation-container bg-gray w-100">
                                                 <a href="#" class="close-btn"><i class="fa fa-times-circle"></i></a>
 
                                                 <div class="radio-wrapper">
@@ -808,7 +808,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="form-group m-15">
-                                                        <label class="col-xs-3 control-label" for="product-variation-price">Fees</label>
+                                                        <label class="col-xs-3 control-label" for="product-variation-price">Cost Per Day</label>
                                                         <div class="col-xs-9">
                                                             <div class="input-group">
                                                                 <div class="input-group-addon">%</div>
@@ -817,7 +817,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group m-15">
-                                                        <label class="col-xs-3 control-label" for="product-variation-qty">Discount</label>
+                                                        <label class="col-xs-3 control-label" for="product-variation-qty">Extra Fees</label>
                                                         <div class="col-xs-9">
                                                             <div class="input-group">
                                                                 <div class="input-group-addon">%</div>
@@ -842,6 +842,120 @@
                                 <!-- END Stock Content -->
                             </div>
                             <!-- END Stock Block -->
+
+                            <div class="block">
+                                <!-- Product Images Title -->
+                                <div class="block-title">
+                                    <h2><i class="fa fa-cog"></i> <strong>Service</strong> Settings</h2>
+                                </div>
+                                <form action="product_edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Servants Available</label>
+                                        <div class="col-md-9">
+                                            <label class="switch switch-primary">
+                                                <input type="checkbox" id="product-status" name="product-status" checked><span></span>
+                                            </label>
+                                        </div>
+                                        <label class="col-md-3 control-label" for="cost-per-servant">Cost Per Servant</label>
+                                        <div class="col-md-9">
+                                            <div class="input-group">
+                                                <div class="input-group-addon">SAR</div>
+                                                <input type="text" id="cost-per-servant" name="cost-per-servant" class="form-control" placeholder="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Cash on Delivery</label>
+                                        <div class="col-md-9">
+                                            <label class="switch switch-primary">
+                                                <input type="checkbox" id="cash-delivery" name="cash-delivery"><span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Free Shipping</label>
+                                        <div class="col-md-9">
+                                            <label class="switch switch-primary">
+                                                <input type="checkbox" id="cash-delivery" name="cash-delivery"><span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Shipping Fees</label>
+                                        <div class="col-md-9">
+                                            <label class="switch switch-primary">
+                                                <input type="checkbox" id="shipping-fees" name="shipping-fees" checked><span></span>
+                                            </label>
+                                        </div>
+                                        <label class="col-md-3 control-label" for="shipping-cost">shipping Cost</label>
+                                        <div class="col-md-9">
+                                            <div class="input-group">
+                                                <div class="input-group-addon">SAR</div>
+                                                <input type="text" id="shipping-cost" name="shipping-cost" class="form-control" placeholder="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Meta Data Block -->
+                            <div class="block">
+                                <!-- Meta Data Title -->
+                                <div class="block-title">
+                                    <h2><i class="fa fa-google"></i> <strong>Meta</strong> Data</h2>
+                                </div>
+                                <!-- END Meta Data Title -->
+
+                                <!-- Meta Data Content -->
+                                <form action="product_edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="product-meta-title-en">Meta Title (EN)</label>
+                                        <div class="col-md-9">
+                                            <input type="text" id="product-meta-title-en" name="product-meta-title-en" class="form-control" placeholder="Enter meta title EN..">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="product-meta-title-ar">Meta Title (AR)</label>
+                                        <div class="col-md-9">
+                                            <input type="text" id="product-meta-title-ar" name="product-meta-title-ar" class="form-control" placeholder="Enter meta title AR..">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="product-meta-keyword-en">Keywords (EN)</label>
+                                        <div class="col-md-9">
+                                            <input type="text" id="product-meta-keyword-en" name="example-tags" class="input-tags" value="Keyword1, Keyword2, Keyword3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="product-meta-keyword-ar">Keywords (AR)</label>
+                                        <div class="col-md-9">
+                                            <input type="text" id="product-meta-keyword-ar" name="example-tags" class="input-tags" value="Keyword1, Keyword2, Keyword3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="product-meta-description-en">Meta Description (EN)</label>
+                                        <div class="col-md-9">
+                                            <textarea id="product-meta-description-en" name="product-meta-description-en" class="form-control" rows="6" placeholder="Enter meta description.."></textarea>
+                                            <div class="help-block">115 Characters Max</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="product-meta-description-ar">Meta Description (AR)</label>
+                                        <div class="col-md-9">
+                                            <textarea id="product-meta-description-ar" name="product-meta-description-ar" class="form-control" rows="6" placeholder="Enter meta description.."></textarea>
+                                            <div class="help-block">115 Characters Max</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-actions">
+                                        <div class="col-md-9 col-md-offset-3">
+                                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                            <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- END Meta Data Content -->
+                            </div>
+                            <!-- END Meta Data Block -->
 
                             <!-- Product Images Block -->
                             <div class="block">
