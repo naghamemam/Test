@@ -701,7 +701,7 @@
                         <!-- All Categories Content -->
                         <div class="filters-container">
                             <div class="row">
-                                <div class="col-sm-6 col-xs-5">
+                                <div class="col-sm-12">
                                     <div class="dataTables_length" id="ecom-products_length">
                                         <label class="products_length">
                                             <select name="ecom-products_length" aria-controls="ecom-products" class="form-control">
@@ -733,18 +733,23 @@
                                                 <option value="cat2">cat2</option>
                                             </select>
                                         </label>
+                                        <div id="ecom-products_filter" class="dataTables_filter">
+                                            <label>
+                                                <div class="input-group">
+                                                    <input type="search" class="form-control" placeholder="Search" aria-controls="ecom-products">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-search"></i>
+                                                    </span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="btn-filter">
+                                            <button type="submit" class="btn btn-primary">Search</button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-6 col-xs-7">
-                                    <div id="ecom-products_filter" class="dataTables_filter">
-                                        <label>
-                                            <div class="input-group">
-                                                <input type="search" class="form-control" placeholder="Search" aria-controls="ecom-products">
-                                                <span class="input-group-addon">
-                                                    <i class="fa fa-search"></i>
-                                                </span>
-                                            </div>
-                                        </label>
+                                    <div class="searched-filter">
+                                        <span>Filter :</span>
+                                        <span class="label label-info filter-item">Published <a href="#"><i class="fa fa-times"></i></a></span>
                                     </div>
                                 </div>
                             </div>
