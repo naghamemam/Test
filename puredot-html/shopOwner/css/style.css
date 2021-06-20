@@ -166,6 +166,20 @@ a.text-primary:focus {
     background: #f9f9f9;
 }
 
+.filters-container .searched-filter {
+    margin-top: 10px;
+}
+
+.filters-container .searched-filter a {
+    color: #ffffff;
+    padding: 5px;
+    display: inline-block;
+}
+
+.filters-container .searched-filter .filter-item {
+    display: inline-block;
+}
+
 .dataTables_length {
     display: flex;
     flex-wrap: wrap;
@@ -635,6 +649,19 @@ table .product-meta p {
 .sidebar-brand {
     background-color: #ffffff;
     color: var(--blue);
+}
+
+.login-lang {
+    z-index: 99999999;
+    position: relative;
+}
+
+.nav.login-lang>li>a {
+    color: var(--blue);
+}
+
+.login-lang li a:hover {
+    color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
