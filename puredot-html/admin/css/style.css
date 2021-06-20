@@ -651,6 +651,19 @@ table .product-meta p {
     color: var(--blue);
 }
 
+.login-lang {
+    z-index: 99999999;
+    position: relative;
+}
+
+.nav.login-lang>li>a {
+    color: var(--blue);
+}
+
+.login-lang li a:hover {
+    color: #ffffff;
+}
+
 @media screen and (min-width: 768px) {
     #login-container,
     #login-alt-container {
