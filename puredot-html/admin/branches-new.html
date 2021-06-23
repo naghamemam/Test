@@ -694,6 +694,14 @@
                                         </div>
                                     </div>
 
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="branch-location">Branch Location</label>
+                                        <div class="col-md-9">
+                                            <input type="text" id="branch-location" name="branch-location" class="form-control mb-10" placeholder="Elryad, Saudi Arabia">
+                                            <div id="gmap-timeline" class="gmap"></div>
+                                        </div>
+                                    </div>
+
                                     <div class="form-group form-actions">
                                         <div class="col-md-9 col-md-offset-3">
                                             <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
@@ -908,6 +916,18 @@
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/app.js"></script>
+
+    <!-- Google Maps API Key (you will have to obtain a Google Maps API key to use Google Maps) -->
+    <!-- For more info please have a look at https://developers.google.com/maps/documentation/javascript/get-api-key#key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script src="js/helpers/gmaps.min.js"></script>
+
+    <script src="js/pages/index.js"></script>
+    <script>
+        $(function() {
+            Index.init();
+        });
+    </script>
 
     <!-- Load and execute javascript code used only in this page -->
     <!-- <script src="js/pages/ecomProducts.js"></script>

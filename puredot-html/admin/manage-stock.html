@@ -441,11 +441,15 @@
                                     <li>
                                         <a href="shop-category.html">Shop Category</a>
                                     </li>
+
                                     <li>
-                                        <a href="shops.html" class="active">Shops</a>
+                                        <a href="shops.html">Shops</a>
                                     </li>
                                     <li>
                                         <a href="branches.html">Branches</a>
+                                    </li>
+                                    <li>
+                                        <a href="manage-stock.html" class="active">Manage Stock</a>
                                     </li>
                                     <li>
                                         <a href="vendors-list.html">Vendors</a>
@@ -640,231 +644,166 @@
                     <div class="content-header">
                         <div class="header-section">
                             <h1>
-                                <i class="gi gi-shop"></i>View Shop details<br><small>Manage and Edit Shop Details!</small>
+                                <i class="gi gi-shop"></i> Manage Stock
+                                <br><small>Manage and Edit Stocks!</small>
                             </h1>
                         </div>
                     </div>
                     <!-- END eCommerce Categories Header -->
 
-                    <!-- All Admin Block -->
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <!-- General Data Block -->
-                            <div class="block">
-                                <!-- General Data Title -->
-                                <div class="block-title">
-                                    <h2><i class="fa fa-pencil"></i> <strong>Shop</strong> Details</h2>
-                                </div>
-                                <!-- END General Data Title -->
-
-                                <!-- General Data Content -->
-                                <form action="product_edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="Shop-name-en">Shop Name (EN)</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="Shop-name-en" name="Shop-name-en" class="form-control" placeholder="Shop Name (EN)">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="Shop-name-ar">Shop Name (AR)</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="Shop-name-ar" name="Shop-name-ar" class="form-control" placeholder="Shop Name (AR)">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="Shop-country">Shop Country</label>
-                                        <div class="col-md-9">
-                                            <select id="Shop-country" name="Shop-country" class="select-chosen" data-placeholder="Choose a Related country.." style="width: 250px;">
-                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                <option value="United States">Shop-country 1</option>
-                                                <option value="United Kingdom">Shop-country 2</option>
-                                                <option value="Zimbabwe">Shop-country 3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="Shop-city">Shop City</label>
-                                        <div class="col-md-9">
-                                            <select id="Shop-city" name="Shop-city" class="select-chosen" data-placeholder="Choose a Related city.." style="width: 250px;">
-                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                <option value="United States">City 1</option>
-                                                <option value="United Kingdom">City 2</option>
-                                                <option value="Zimbabwe">city 3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="Shop-location">Shop Location</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="Shop-location" name="Shop-location" class="form-control mb-10" placeholder="Elryad, Saudi Arabia">
-                                            <div id="gmap-timeline" class="gmap"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="membership">Membership</label>
-                                        <div class="col-md-9">
-                                            <select id="membership" name="membership" class="select-chosen" data-placeholder="Choose a Membership.." style="width: 250px;">
-                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                    <option value="United States">Membership 1</option>
-                                                    <option value="United Kingdom">Membership 2</option>
-                                                    <option value="Zimbabwe">Membership 3</option>
-                                                </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="Shop-logo">Shop Logo</label>
-                                        <div class="col-md-9">
-                                            <input type="file" id="Shop-logo" name="Shop-logo">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="Shop-category">Shop Category</label>
-                                        <div class="col-md-9">
-                                            <select id="Shop-category" name="Shop-category" class="select-chosen" data-placeholder="Choose a Category.." style="width: 250px;">
-                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                    <option value="1">Category 1</option>
-                                                    <option value="2">Category 2</option>
-                                                    <option value="3">Category 3</option>
-                                                </select>
-                                        </div>
-                                    </div>
-                                    <fieldset>
-                                        <legend>Shop Paper (Commercial Register)</legend>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="crNumber">C.R.Number</label>
-                                            <div class="col-md-9">
-                                                <input type="text" id="crNumber" name="crNumber" class="form-control" placeholder="Commercial Register Number">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="crImage">C.R.Image</label>
-                                            <div class="col-md-9">
-                                                <input type="file" id="crImage" name="crImage">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="crExpiry">C.R.Expiry</label>
-                                            <div class="col-md-9">
-                                                <input type="text" id="crExpiry" name="crExpiry" class="form-control input-datepicker" data-date-format="dd/mm/yy" placeholder="dd/mm/yy">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="crZakat">Certifcate of Zakat and Income</label>
-                                            <div class="col-md-9">
-                                                <input type="file" id="crZakat" name="crZakat">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="crMunicipal">Municipal License</label>
-                                            <div class="col-md-9">
-                                                <input type="file" id="crMunicipal" name="crMunicipal">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="attachment">Attachments</label>
-                                            <div class="col-md-9">
-                                                <input type="file" id="attachment" name="attachment" multiple>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label" for="shop-type">Shop Type</label>
-                                            <div class="col-md-9">
-                                                <select id="shop-type" name="shop-type" class="select-chosen" data-placeholder="Choose a Type.." style="width: 250px;">
-                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                    <option value="United States">Company</option>
-                                                    <option value="United Kingdom">Corporation</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                    <div class="form-group form-actions">
-                                        <div class="col-md-9 col-md-offset-3">
-                                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
-                                            <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <!-- END General Data Content -->
+                    <!-- All Categories Block -->
+                    <div class="block full">
+                        <!-- All Categories Title -->
+                        <div class="block-title">
+                            <div class="block-options pull-right">
+                                <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
                             </div>
-                            <!-- END General Data Block -->
+                            <h2><strong>All</strong> Stocks</h2>
                         </div>
-                        <div class="col-lg-6">
-                            <!-- Stock Block -->
-                            <div class="block">
-                                <!-- Stock Title -->
-                                <div class="block-title">
-                                    <h2><i class="gi gi-shop"></i> <strong>Shop</strong> owner details</h2>
-                                </div>
-                                <!-- END Stock Title -->
+                        <!-- END All Categories Title -->
 
-                                <!-- Stock Content -->
-                                <form action="product_edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="full-name">Full Name</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="full-name" name="full-name" class="form-control" placeholder="Full Name">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="email">Email</label>
-                                        <div class="col-md-9">
-                                            <input type="email" id="email" name="email" class="form-control" placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="phone-number">Phone Number</label>
-                                        <div class="col-md-9">
-                                            <input type="tel" id="phone-number" name="phone-number" class="form-control" placeholder="Phone Number">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="date-of-birth">Date of birth</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="date-of-birth" name="date-of-birth" class="form-control input-datepicker" data-date-format="dd/mm/yy" placeholder="dd/mm/yy">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="gender">Gender</label>
-                                        <div class="col-md-9">
-                                            <select id="gender" name="gender" class="select-chosen" data-placeholder="Choose a Gender.." style="width: 250px;">
-                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                    <option value="United States">Male</option>
-                                                    <option value="United Kingdom">Female</option>
-                                                </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="city">City</label>
-                                        <div class="col-md-9">
-                                            <select id="City" name="City" class="select-chosen" data-placeholder="Choose a Related city.." style="width: 250px;">
-                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
-                                                <option value="United States">City 1</option>
-                                                <option value="United Kingdom">City 2</option>
-                                                <option value="Zimbabwe">city 3</option>
+                        <!-- All Categories Content -->
+                        <div class="filters-container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="dataTables_length" id="ecom-products_length">
+                                        <label>
+                                            <select name="ecom-products_branch" aria-controls="ecom-products" class="form-control">
+                                                <option>Branch</option>
+                                                <option value="Category1">Branch1</option>
+                                                <option value="Category2">Branch2</option>
+                                                <option value="Category3">Branch3</option>
                                             </select>
+                                        </label>
+                                        <label>
+                                            <select name="ecom-products_shop" aria-controls="ecom-products" class="form-control">
+                                                <option>Shop</option>
+                                                <option value="cat1">Shop1</option>
+                                                <option value="cat2">Shop2</option>
+                                            </select>
+                                        </label>
+                                        <div class="btn-filter">
+                                            <button type="submit" class="btn btn-primary btn-search">Search</button>
+                                            <button type="button" class="btn btn-danger btn-clear">Delete</button>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="profile-image">Profile Image</label>
-                                        <div class="col-md-9">
-                                            <input type="file" id="profile-image" name="profile-image">
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-actions">
-                                        <div class="col-md-9 col-md-offset-3">
-                                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
-                                            <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <!-- END Stock Content -->
+                                </div>
                             </div>
-                            <!-- END Stock Block -->
                         </div>
+
+                        <div class="table-responsive">
+                            <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" style="width: 70px;">ID</th>
+                                        <th class="text-center" style="width: 100px;">Image</th>
+                                        <th>Product Name</th>
+                                        <th class="text-center">SKU</th>
+                                        <th class="text-center">Available</th>
+                                        <th class="text-center">Active</th>
+                                        <th class="text-center">Qty</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center"><a href="vendors-add-2.html"><strong>1</strong></a></td>
+                                        <td class="text-center">
+                                            <a href="product_edit.html">
+                                                <img src="img/noimage.jpg" width="60" alt="">
+                                            </a>
+                                        </td>
+                                        <td><a href="product_edit.html">Prod 1 - <span>500 SAR</span></a></td>
+                                        <td class="text-center">WW256MxA</td>
+                                        <td class="text-center"><span class="label label-info">In Stock</span></td>
+                                        <td class="text-center">
+                                            <label class="switch switch-success">
+                                                <input type="checkbox" checked><span></span>
+                                            </label>
+                                        </td>
+                                        <td class="text-center"><input type="number" class="form-control" placeholder="Ex : 10"></td>
+                                        <td class="text-center">
+                                            <div class="btn-group btn-group-xs">
+                                                <a href="product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
+                                                <a href="#modal-confirmation" data-toggle="modal" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="vendors-add-2.html"><strong>2</strong></a></td>
+                                        <td class="text-center">
+                                            <a href="product_edit.html">
+                                                <img src="img/noimage.jpg" width="60" alt="">
+                                            </a>
+                                        </td>
+                                        <td><a href="product_edit.html">Prod 2 - <span>500 SAR</span></a></td>
+                                        <td class="text-center">WW256MxA</td>
+                                        <td class="text-center"><span class="label label-info">In Stock</span></td>
+                                        <td class="text-center">
+                                            <label class="switch switch-success">
+                                                <input type="checkbox" checked><span></span>
+                                            </label>
+                                        </td>
+                                        <td class="text-center"><input type="number" class="form-control" placeholder="Ex : 10"></td>
+                                        <td class="text-center">
+                                            <div class="btn-group btn-group-xs">
+                                                <a href="product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
+                                                <a href="#modal-confirmation" data-toggle="modal" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="vendors-add-2.html"><strong>3</strong></a></td>
+                                        <td class="text-center">
+                                            <a href="product_edit.html">
+                                                <img src="img/noimage.jpg" width="60" alt="">
+                                            </a>
+                                        </td>
+                                        <td><a href="product_edit.html">Prod 3 - <span>500 SAR</span></a></td>
+                                        <td class="text-center">WW256MxA</td>
+                                        <td class="text-center"><span class="label label-info">In Stock</span></td>
+                                        <td class="text-center">
+                                            <label class="switch switch-success">
+                                                <input type="checkbox" checked><span></span>
+                                            </label>
+                                        </td>
+                                        <td class="text-center"><input type="number" class="form-control" placeholder="Ex : 10"></td>
+                                        <td class="text-center">
+                                            <div class="btn-group btn-group-xs">
+                                                <a href="product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
+                                                <a href="#modal-confirmation" data-toggle="modal" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"><a href="vendors-add-2.html"><strong>4</strong></a></td>
+                                        <td class="text-center">
+                                            <a href="product_edit.html">
+                                                <img src="img/noimage.jpg" width="60" alt="">
+                                            </a>
+                                        </td>
+                                        <td><a href="product_edit.html">Prod 4 - <span>500 SAR</span></a></td>
+                                        <td class="text-center">WW256MxA</td>
+                                        <td class="text-center"><span class="label label-info">In Stock</span></td>
+                                        <td class="text-center">
+                                            <label class="switch switch-success">
+                                                <input type="checkbox" checked><span></span>
+                                            </label>
+                                        </td>
+                                        <td class="text-center"><input type="number" class="form-control" placeholder="Ex : 10"></td>
+                                        <td class="text-center">
+                                            <div class="btn-group btn-group-xs">
+                                                <a href="product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
+                                                <a href="#modal-confirmation" data-toggle="modal" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- END All Categories Content -->
                     </div>
-                    <!-- END All Admin Block -->
+                    <!-- END All Categories Block -->
                 </div>
                 <!-- END Page Content -->
 
@@ -997,33 +936,78 @@
     </div>
     <!-- END Add Category Modal -->
 
+    <div id="modal-reject" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header text-center">
+                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Reject</h2>
+                </div>
+                <!-- END Modal Header -->
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered" onsubmit="return false;">
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-md-12 control-label text-left" for="reject-reason">Reject Reason</label>
+                                <div class="col-md-12">
+                                    <textarea id="reject-reason" name="reject-reason" class="form-control" rows="3"></textarea>
+                                    <span class="help-block">This is a help text</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-group form-actions">
+                            <div class="col-xs-12 text-right">
+                                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- END Modal Body -->
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-confirmation" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header text-center">
+                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Confirmation</h2>
+                </div>
+                <!-- END Modal Header -->
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <p class="text-center">Do you want to delete this?</p>
+
+                    <div class="row form-actions">
+                        <div class="col-xs-12 text-right">
+                            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">No</button>
+                            <button type="submit" class="btn btn-sm btn-primary">Yes</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Modal Body -->
+            </div>
+        </div>
+    </div>
+
     <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/app.js"></script>
-    <script>
-        $(function() {
-            $('.datepicker, .input-discount-daterange input, .input-datepicker-close, .input-datepicker').datepicker({
-                language: 'XX'
-            });
-        });
-    </script>
 
-    <!-- Google Maps API Key (you will have to obtain a Google Maps API key to use Google Maps) -->
-    <!-- For more info please have a look at https://developers.google.com/maps/documentation/javascript/get-api-key#key -->
-    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
-    <script src="js/helpers/gmaps.min.js"></script>
-
-    <script src="js/pages/index.js"></script>
-    <script>
-        $(function() {
-            Index.init();
-        });
-    </script>
     <!-- Load and execute javascript code used only in this page -->
-    <!-- <script src="js/pages/ecomProducts.js"></script>
-        <script>$(function(){ EcomProducts.init(); });</script> -->
+    <script src="js/pages/ecomProducts.js"></script>
+    <script>
+        $(function() {
+            EcomProducts.init();
+        });
+    </script>
 </body>
 
 </html>
