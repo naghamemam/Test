@@ -663,11 +663,12 @@
                         <!-- END All Categories Title -->
 
                         <!-- All Categories Content -->
-                        <div class="filters-container">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="dataTables_length" id="ecom-products_length">
-                                        <label>
+                        <form action="manage-stock.html" method="post" class="form-horizontal form-bordered m-0" onsubmit="return false;">
+                            <div class="filters-container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="dataTables_length" id="ecom-products_length">
+                                            <label>
                                             <select name="ecom-products_branch" aria-controls="ecom-products" class="form-control">
                                                 <option>Branch</option>
                                                 <option value="Category1">Branch1</option>
@@ -675,132 +676,118 @@
                                                 <option value="Category3">Branch3</option>
                                             </select>
                                         </label>
-                                        <label>
+                                            <label>
                                             <select name="ecom-products_shop" aria-controls="ecom-products" class="form-control">
                                                 <option>Shop</option>
                                                 <option value="cat1">Shop1</option>
                                                 <option value="cat2">Shop2</option>
                                             </select>
                                         </label>
-                                        <div class="btn-filter">
-                                            <button type="submit" class="btn btn-primary btn-search">Search</button>
-                                            <button type="button" class="btn btn-danger btn-clear">Delete</button>
+                                            <div class="btn-filter">
+                                                <button type="submit" class="btn btn-primary btn-search">Search</button>
+                                                <button type="button" class="btn btn-danger btn-clear">Delete</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="table-responsive">
-                            <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center" style="width: 70px;">ID</th>
-                                        <th class="text-center" style="width: 100px;">Image</th>
-                                        <th>Product Name</th>
-                                        <th class="text-center">SKU</th>
-                                        <th class="text-center">Available</th>
-                                        <th class="text-center">Active</th>
-                                        <th class="text-center">Qty</th>
-                                        <th class="text-center">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center"><a href="vendors-add-2.html"><strong>1</strong></a></td>
-                                        <td class="text-center">
-                                            <a href="product_edit.html">
-                                                <img src="img/noimage.jpg" width="60" alt="">
-                                            </a>
-                                        </td>
-                                        <td><a href="product_edit.html">Prod 1 - <span>500 SAR</span></a></td>
-                                        <td class="text-center">WW256MxA</td>
-                                        <td class="text-center"><span class="label label-info">In Stock</span></td>
-                                        <td class="text-center">
-                                            <label class="switch switch-success">
+                            <div class="table-responsive">
+                                <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center" style="width: 70px;">ID</th>
+                                            <th class="text-center" style="width: 100px;">Image</th>
+                                            <th>Product Name</th>
+                                            <th class="text-center">Price</th>
+                                            <th class="text-center">Available</th>
+                                            <th class="text-center">Active</th>
+                                            <th class="text-center">Qty</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center"><a href="vendors-add-2.html"><strong>1</strong></a></td>
+                                            <td class="text-center">
+                                                <a href="product_edit.html">
+                                                    <img src="img/noimage.jpg" width="60" alt="">
+                                                </a>
+                                            </td>
+                                            <td><a href="product_edit.html">Prod 1 - <span>variation1, variation2, variation3</span></a></td>
+                                            <td class="text-center">500 SAR</td>
+                                            <td class="text-center"><span class="label label-info">In Stock</span></td>
+                                            <td class="text-center">
+                                                <label class="switch switch-success">
                                                 <input type="checkbox" checked><span></span>
                                             </label>
-                                        </td>
-                                        <td class="text-center"><input type="number" class="form-control" placeholder="Ex : 10"></td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
-                                                <a href="#modal-confirmation" data-toggle="modal" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center"><a href="vendors-add-2.html"><strong>2</strong></a></td>
-                                        <td class="text-center">
-                                            <a href="product_edit.html">
-                                                <img src="img/noimage.jpg" width="60" alt="">
-                                            </a>
-                                        </td>
-                                        <td><a href="product_edit.html">Prod 2 - <span>500 SAR</span></a></td>
-                                        <td class="text-center">WW256MxA</td>
-                                        <td class="text-center"><span class="label label-info">In Stock</span></td>
-                                        <td class="text-center">
-                                            <label class="switch switch-success">
+                                            </td>
+                                            <td class="text-center"><input type="number" class="form-control" placeholder="Ex : 10"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><a href="vendors-add-2.html"><strong>2</strong></a></td>
+                                            <td class="text-center">
+                                                <a href="product_edit.html">
+                                                    <img src="img/noimage.jpg" width="60" alt="">
+                                                </a>
+                                            </td>
+                                            <td><a href="product_edit.html">Prod 2 - <span>variation1, variation2, variation3</span></a></td>
+                                            <td class="text-center">500 SAR</td>
+                                            <td class="text-center"><span class="label label-info">In Stock</span></td>
+                                            <td class="text-center">
+                                                <label class="switch switch-success">
                                                 <input type="checkbox" checked><span></span>
                                             </label>
-                                        </td>
-                                        <td class="text-center"><input type="number" class="form-control" placeholder="Ex : 10"></td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
-                                                <a href="#modal-confirmation" data-toggle="modal" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center"><a href="vendors-add-2.html"><strong>3</strong></a></td>
-                                        <td class="text-center">
-                                            <a href="product_edit.html">
-                                                <img src="img/noimage.jpg" width="60" alt="">
-                                            </a>
-                                        </td>
-                                        <td><a href="product_edit.html">Prod 3 - <span>500 SAR</span></a></td>
-                                        <td class="text-center">WW256MxA</td>
-                                        <td class="text-center"><span class="label label-info">In Stock</span></td>
-                                        <td class="text-center">
-                                            <label class="switch switch-success">
+                                            </td>
+                                            <td class="text-center"><input type="number" class="form-control" placeholder="Ex : 10"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><a href="vendors-add-2.html"><strong>3</strong></a></td>
+                                            <td class="text-center">
+                                                <a href="product_edit.html">
+                                                    <img src="img/noimage.jpg" width="60" alt="">
+                                                </a>
+                                            </td>
+                                            <td><a href="product_edit.html">Prod 3 - <span>variation1, variation2, variation3</span></a></td>
+                                            <td class="text-center">500 SAR</td>
+                                            <td class="text-center"><span class="label label-info">In Stock</span></td>
+                                            <td class="text-center">
+                                                <label class="switch switch-success">
                                                 <input type="checkbox" checked><span></span>
                                             </label>
-                                        </td>
-                                        <td class="text-center"><input type="number" class="form-control" placeholder="Ex : 10"></td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
-                                                <a href="#modal-confirmation" data-toggle="modal" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center"><a href="vendors-add-2.html"><strong>4</strong></a></td>
-                                        <td class="text-center">
-                                            <a href="product_edit.html">
-                                                <img src="img/noimage.jpg" width="60" alt="">
-                                            </a>
-                                        </td>
-                                        <td><a href="product_edit.html">Prod 4 - <span>500 SAR</span></a></td>
-                                        <td class="text-center">WW256MxA</td>
-                                        <td class="text-center"><span class="label label-info">In Stock</span></td>
-                                        <td class="text-center">
-                                            <label class="switch switch-success">
+                                            </td>
+                                            <td class="text-center"><input type="number" class="form-control" placeholder="Ex : 10"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"><a href="vendors-add-2.html"><strong>4</strong></a></td>
+                                            <td class="text-center">
+                                                <a href="product_edit.html">
+                                                    <img src="img/noimage.jpg" width="60" alt="">
+                                                </a>
+                                            </td>
+                                            <td><a href="product_edit.html">Prod 4 - <span>variation1, variation2, variation3</span></a></td>
+                                            <td class="text-center">500 SAR</td>
+                                            <td class="text-center"><span class="label label-info">In Stock</span></td>
+                                            <td class="text-center">
+                                                <label class="switch switch-success">
                                                 <input type="checkbox" checked><span></span>
                                             </label>
-                                        </td>
-                                        <td class="text-center"><input type="number" class="form-control" placeholder="Ex : 10"></td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default" data-original-title="View"><i class="fa fa-eye"></i></a>
-                                                <a href="#modal-confirmation" data-toggle="modal" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                            </td>
+                                            <td class="text-center"><input type="number" class="form-control" placeholder="Ex : 10"></td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="form-group form-actions">
+                                <div class="col-md-12 text-right">
+                                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                    <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                </div>
+                            </div>
+                        </form>
                         <!-- END All Categories Content -->
                     </div>
                     <!-- END All Categories Block -->

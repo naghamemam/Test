@@ -269,6 +269,10 @@ a.text-primary:focus {
     margin-bottom: 10px;
 }
 
+.m-0 {
+    margin: 0;
+}
+
 .mfp-bg,
 .mfp-wrap {
     z-index: 1051;
