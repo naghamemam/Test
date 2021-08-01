@@ -672,6 +672,12 @@ table .product-meta p {
     color: #ffffff;
 }
 
+.block-section .img-circle {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
 @media screen and (min-width: 768px) {
     #login-container,
     #login-alt-container {
