@@ -678,6 +678,10 @@ table .product-meta p {
     aspect-ratio: 1 / 1;
 }
 
+.page-404 {
+    background: #222222;
+}
+
 @media screen and (min-width: 768px) {
     #login-container,
     #login-alt-container {
