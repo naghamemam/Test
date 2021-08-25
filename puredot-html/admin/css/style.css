@@ -127,6 +127,7 @@ a.text-primary:focus {
 .content-header .d-flex .header-datepicker form {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     gap: 15px;
 }
 
@@ -681,6 +682,20 @@ table .product-meta p {
 
 .page-404 {
     background: #222222;
+}
+
+.chatui-talk .chatui-talk-msg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.chatui-talk .chatui-talk-msg.chatui-talk-msg-highlight {
+    padding-right: 10px;
+}
+
+.chatui-talk .chatui-talk-msg .badge {
+    min-width: auto;
 }
 
 @media screen and (min-width: 768px) {
