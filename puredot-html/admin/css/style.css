@@ -680,6 +680,12 @@ table .product-meta p {
     max-width: 200px;
 }
 
+.media-list.media-feed li .img-circle {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
 .page-404 {
     background: #222222;
 }
