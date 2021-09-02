@@ -204,7 +204,8 @@ div.dataTables_filter label,
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: calc(100% - 10px);
+    /* width: calc(100% - 10px); */
+    width: 100%;
     border-top: 0;
 }
 
