@@ -932,7 +932,7 @@
                                 <!-- END Latest Orders Content -->
                                 <div class="order-actions text-center">
                                     <a href="#" class="btn btn-sm btn-primary">Confrm Order</a>
-                                    <a href="#" class="btn btn-sm btn-warning">Ready, Request Delivery</a>
+                                    <a href="#modal-request-delivery" data-toggle="modal" class="btn btn-sm btn-warning">Ready, Request Delivery</a>
                                 </div>
                             </div>
                             <!-- END Latest Orders Block -->
@@ -1115,6 +1115,77 @@
         </div>
     </div>
     <!-- END Add Category Modal -->
+
+    <div id="modal-request-delivery" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header text-center">
+                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Package Settings</h2>
+                </div>
+                <!-- END Modal Header -->
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered mb-20" onsubmit="return false;">
+                        <fieldset>
+                            <legend>General Details</legend>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="Package-Length">Package Length</label>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" id="Package-Length" name="Package-Length" class="form-control" placeholder="Package Length">
+                                        <div class="input-group-addon">CM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="Package-width">Package Width</label>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" id="Package-width" name="Package-width" class="form-control" placeholder="Package Width">
+                                        <div class="input-group-addon">CM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="Package-height">Package Height</label>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" id="Package-height" name="Package-height" class="form-control" placeholder="Package Height">
+                                        <div class="input-group-addon">CM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="Package-weight">Package Weight</label>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" id="Package-weight" name="Package-weight" class="form-control" placeholder="Package Weight">
+                                        <div class="input-group-addon">KG</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="Package-description">Package Discription</label>
+                                <div class="col-md-8">
+                                    <textarea id="Package-description" name="Package-description" class="form-control" rows="6" placeholder="Package description.."></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <div class="row form-actions">
+                        <div class="col-xs-12 text-right">
+                            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Modal Body -->
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
     <script src="js/vendor/jquery.min.js"></script>
