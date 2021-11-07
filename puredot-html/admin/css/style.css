@@ -708,6 +708,10 @@ table .product-meta p {
     min-width: auto;
 }
 
+.tabs-content-table-container table {
+    table-layout: fixed;
+}
+
 @media screen and (min-width: 768px) {
     #login-container,
     #login-alt-container {

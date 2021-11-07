@@ -668,6 +668,7 @@
                                     <li><a data-toggle="tab" href="#shipping-co">Shipping Co.</a></li>
                                     <li><a data-toggle="tab" href="#vat">VAT</a></li>
                                     <li><a data-toggle="tab" href="#customer">Customer</a></li>
+                                    <li><a data-toggle="tab" href="#f-integration">Financial Integration</a></li>
                                 </ul>
                             </div>
 
@@ -962,10 +963,10 @@
                                                                 <label class="col-xs-3 control-label" for="order-amount">Order Amount</label>
                                                                 <div class="col-xs-8">
                                                                     <select id="order-amount" name="order-amount" class="select-chosen" data-placeholder="Choose an amount.." style="width: 250px;">
-                                                                            <option value=""></option>
-                                                                            <option value="Product 1">Product 1</option>
-                                                                            <option value="Product 2">Product 2</option>
-                                                                        </select>
+                                                                        <option value=""></option>
+                                                                        <option value="Product 1">Product 1</option>
+                                                                        <option value="Product 2">Product 2</option>
+                                                                    </select>
                                                                     <input type="text" id="order-amount-amount" name="order-amount-amount" class="form-control" placeholder="Amount">
                                                                 </div>
                                                             </div>
@@ -1092,6 +1093,41 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="sh-vendor-acc">Vendor Account</label>
+                                                <div class="col-md-5">
+                                                    <select id="sh-vendor-acc" name="sh-vendor-acc" class="select-chosen" data-placeholder="Choose a Vendor Account.." style="width: 250px;">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                        <option value="United States">Vendor Account 1</option>
+                                                        <option value="United Kingdom">Vendor Account 2</option>
+                                                        <option value="Zimbabwe">Vendor Account 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="sh-delivery-pur-acc">Delivery Purchase Account</label>
+                                                <div class="col-md-5">
+                                                    <select id="sh-delivery-pur-acc" name="sh-delivery-pur-acc" class="select-chosen" data-placeholder="Choose a Delivery Purchase Account.." style="width: 250px;">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                        <option value="United States">Delivery Purchase Account 1</option>
+                                                        <option value="United Kingdom">Delivery Purchase Account 2</option>
+                                                        <option value="Zimbabwe">Delivery Purchase Account 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="sh-delivery-Sales-acc">Delivery Sales Account</label>
+                                                <div class="col-md-5">
+                                                    <select id="sh-delivery-Sales-acc" name="sh-delivery-Sales-acc" class="select-chosen" data-placeholder="Choose a Delivery Sales Account.." style="width: 250px;">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                        <option value="United States">Delivery Sales Account 1</option>
+                                                        <option value="United Kingdom">Delivery Sales Account 2</option>
+                                                        <option value="Zimbabwe">Delivery Sales Account 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </fieldset>
 
                                         <fieldset>
@@ -1122,6 +1158,18 @@
                                                     <div class="input-group-addon">%</div>
                                                     <input type="text" id="value-added-tax-amount" name="value-added-tax-amount" class="form-control">
                                                 </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="Tax-acc">Tax account</label>
+                                            <div class="col-md-5">
+                                                <select id="Tax-acc" name="Tax-acc" class="select-chosen" data-placeholder="Choose a Tax Account.." style="width: 250px;">
+                                                    <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                    <option value="United States">Tax Account 1</option>
+                                                    <option value="United Kingdom">Tax Account 2</option>
+                                                    <option value="Zimbabwe">Tax Account 3</option>
+                                                </select>
                                             </div>
                                         </div>
 
@@ -1159,6 +1207,257 @@
                                                 <label class="switch switch-success"><input type="checkbox"><span></span></label>
                                             </div>
                                         </div>
+                                        <div class="form-group form-actions">
+                                            <div class="col-md-8 col-md-offset-4">
+                                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
+                                                <button type="reset" class="btn btn-sm btn-warning"><i class="fa fa-repeat"></i> Reset</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="f-integration" class="tab-pane fade">
+                                    <form action="offers-edit.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                                        <fieldset>
+                                            <legend>
+                                                <i class="fa fa-angle-right"></i> Financial Integration
+                                            </legend>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="purchase-acc">Purchase account</label>
+                                                <div class="col-md-5">
+                                                    <select id="purchase-acc" name="purchase-acc" class="select-chosen" data-placeholder="Choose a Purchase Account.." style="width: 250px;">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                        <option value="United States">Purchase Account 1</option>
+                                                        <option value="United Kingdom">Purchase Account 2</option>
+                                                        <option value="Zimbabwe">Purchase Account 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="Sales-acc">Sales Account</label>
+                                                <div class="col-md-5">
+                                                    <select id="Sales-acc" name="Sales-acc" class="select-chosen" data-placeholder="Choose a Sales Account.." style="width: 250px;">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                        <option value="United States">Sales Account 1</option>
+                                                        <option value="United Kingdom">Sales Account 2</option>
+                                                        <option value="Zimbabwe">Sales Account 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="delivery-pur-acc">Delivery Purchase Account</label>
+                                                <div class="col-md-5">
+                                                    <select id="delivery-pur-acc" name="delivery-pur-acc" class="select-chosen" data-placeholder="Choose a Delivery Purchase Account.." style="width: 250px;">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                        <option value="United States">Delivery Purchase Account 1</option>
+                                                        <option value="United Kingdom">Delivery Purchase Account 2</option>
+                                                        <option value="Zimbabwe">Delivery Purchase Account 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="delivery-sales-acc">Delivery Sales Account</label>
+                                                <div class="col-md-5">
+                                                    <select id="delivery-sales-acc" name="delivery-sales-acc" class="select-chosen" data-placeholder="Choose a Delivery sales Account.." style="width: 250px;">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                        <option value="United States">Delivery Sales Account 1</option>
+                                                        <option value="United Kingdom">Delivery Sales Account 2</option>
+                                                        <option value="Zimbabwe">Delivery Sales Account 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="Customer-acc">Customer account</label>
+                                                <div class="col-md-5">
+                                                    <select id="Customer-acc" name="Customer-acc" class="select-chosen" data-placeholder="Choose a Customer Account.." style="width: 250px;">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                        <option value="United States">Customer Account 1</option>
+                                                        <option value="United Kingdom">Customer Account 2</option>
+                                                        <option value="Zimbabwe">Customer Account 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="Driver-acc">Driver account</label>
+                                                <div class="col-md-5">
+                                                    <select id="Driver-acc" name="Driver-acc" class="select-chosen" data-placeholder="Choose a Driver Account.." style="width: 250px;">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                        <option value="United States">Driver Account 1</option>
+                                                        <option value="United Kingdom">Driver Account 2</option>
+                                                        <option value="Zimbabwe">Driver Account 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="Vendor-acc">Vendor account</label>
+                                                <div class="col-md-5">
+                                                    <select id="Vendor-acc" name="Vendor-acc" class="select-chosen" data-placeholder="Choose a Vendor Account.." style="width: 250px;">
+                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                        <option value="United States">Vendor Account 1</option>
+                                                        <option value="United Kingdom">Vendor Account 2</option>
+                                                        <option value="Zimbabwe">Vendor Account 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset>
+                                            <legend>
+                                                <i class="fa fa-angle-right"></i> Payment Integration
+                                            </legend>
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Transfer options</label>
+                                                <div class="col-md-8">
+                                                    <div class="tabs-content-table-container">
+                                                        <div class="">
+                                                            <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="text-center" style="width: 70px;">ID</th>
+                                                                        <th>Method</th>
+                                                                        <th class="text-center">Bank</th>
+                                                                        <th class="text-center">Commission %</th>
+                                                                        <th class="text-center">Bank expenses</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-center"><strong>1</strong></td>
+                                                                        <td><strong>Cash</strong></td>
+                                                                        <td>
+                                                                            <select id="bank" name="bank" class="select-chosen" data-placeholder="Choose a Bank.." style="width: 250px;">
+                                                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                                <option value="United States">bank Account 1</option>
+                                                                                <option value="United Kingdom">bank Account 2</option>
+                                                                                <option value="Zimbabwe">bank Account 3</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="input-group">
+                                                                                <input type="text" id="commision" name="commision" class="form-control" placeholder="0">
+                                                                                <div class="input-group-addon">%</div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <select id="bank-ex" name="bank-ex" class="select-chosen" data-placeholder="Choose a Bank Expenses.." style="width: 250px;">
+                                                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                                <option value="United States">bank expenses 1</option>
+                                                                                <option value="United Kingdom">bank expenses 2</option>
+                                                                                <option value="Zimbabwe">bank expenses 3</option>
+                                                                            </select>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><strong>2</strong></td>
+                                                                        <td><strong>Bank transfer</strong></td>
+                                                                        <td>
+                                                                            <select id="bank" name="bank" class="select-chosen" data-placeholder="Choose a Bank.." style="width: 250px;">
+                                                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                                <option value="United States">bank Account 1</option>
+                                                                                <option value="United Kingdom">bank Account 2</option>
+                                                                                <option value="Zimbabwe">bank Account 3</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="input-group">
+                                                                                <input type="text" id="commision" name="commision" class="form-control" placeholder="0">
+                                                                                <div class="input-group-addon">%</div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <select id="bank-ex" name="bank-ex" class="select-chosen" data-placeholder="Choose a Bank Expenses.." style="width: 250px;">
+                                                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                                <option value="United States">bank expenses 1</option>
+                                                                                <option value="United Kingdom">bank expenses 2</option>
+                                                                                <option value="Zimbabwe">bank expenses 3</option>
+                                                                            </select>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><strong>3</strong></td>
+                                                                        <td><strong>Online transfer</strong></td>
+                                                                        <td>
+                                                                            <select id="bank" name="bank" class="select-chosen" data-placeholder="Choose a Bank.." style="width: 250px;">
+                                                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                                <option value="United States">bank Account 1</option>
+                                                                                <option value="United Kingdom">bank Account 2</option>
+                                                                                <option value="Zimbabwe">bank Account 3</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="input-group">
+                                                                                <input type="text" id="commision" name="commision" class="form-control" placeholder="0">
+                                                                                <div class="input-group-addon">%</div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <select id="bank-ex" name="bank-ex" class="select-chosen" data-placeholder="Choose a Bank Expenses.." style="width: 250px;">
+                                                                                <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                                <option value="United States">bank expenses 1</option>
+                                                                                <option value="United Kingdom">bank expenses 2</option>
+                                                                                <option value="Zimbabwe">bank expenses 3</option>
+                                                                            </select>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Payment Options</label>
+                                                <div class="col-md-5">
+                                                    <div class="variation-container w-100 bg-gray">
+                                                        <div class="variation-content">
+                                                            <div class="form-group m-15">
+                                                                <label class="col-md-12 control-label text-left" for="pay-stc">STC</label>
+                                                                <div class="col-md-12">
+                                                                    <select id="pay-stc" name="pay-stc" class="select-chosen" data-placeholder="Choose a STC.." style="width: 250px;">
+                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                        <option value="United States">STC Account 1</option>
+                                                                        <option value="United Kingdom">STC Account 2</option>
+                                                                        <option value="Zimbabwe">STC Account 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group m-15">
+                                                                <label class="col-md-12 control-label text-left" for="pay-Mastercard">Mastercard</label>
+                                                                <div class="col-xs-12">
+                                                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                    <select id="pay-Mastercard" name="pay-Mastercard" class="select-chosen" data-placeholder="Choose a Mastercard.." style="width: 250px;">
+                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                        <option value="United States">Mastercard Account 1</option>
+                                                                        <option value="United Kingdom">Mastercard Account 2</option>
+                                                                        <option value="Zimbabwe">Mastercard Account 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group m-15">
+                                                                <label class="col-md-12 control-label text-left" for="pay-Apple">Apple pay</label>
+                                                                <div class="col-xs-12">
+                                                                    <!-- Chosen plugin (class is initialized in js/app.js -> uiInit()), for extra usage examples you can check out http://harvesthq.github.io/chosen/ -->
+                                                                    <select id="pay-Apple" name="pay-Apple" class="select-chosen" data-placeholder="Choose a Apple pay.." style="width: 250px;">
+                                                                        <option></option><!-- Required for data-placeholder attribute to work with Chosen plugin -->
+                                                                        <option value="United States">Apple Account 1</option>
+                                                                        <option value="United Kingdom">Apple Account 2</option>
+                                                                        <option value="Zimbabwe">Apple Account 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </fieldset>
                                         <div class="form-group form-actions">
                                             <div class="col-md-8 col-md-offset-4">
                                                 <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Save</button>
@@ -1348,6 +1647,14 @@
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/app.js"></script>
+
+    <!-- Load and execute javascript code used only in this page -->
+    <script src="js/pages/ecomProducts.js"></script>
+    <script>
+        $(function() {
+            EcomProducts.init();
+        });
+    </script>
 
     <!-- Load and execute javascript code used only in this page -->
     <!-- <script src="js/pages/ecomProducts.js"></script>
