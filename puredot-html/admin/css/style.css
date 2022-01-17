@@ -256,6 +256,9 @@ a.text-primary:focus {
     flex: 1 0 50%;
     padding: 15px 0 !important;
     border: 0;
+}
+
+.variation-container .variation-content .form-group.m-15.max-50 {
     max-width: calc(50% + 30px);
 }
 
