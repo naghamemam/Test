@@ -304,16 +304,29 @@ a.text-primary:focus {
 .status-timeline {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -5px;
 }
 
 .status-timeline .col {
-    padding: 0 15px;
+    padding: 0 5px;
     flex: 0 0 100%;
     max-width: 100%;
 }
 
 .status-timeline h4 {
-    font-size: 15px;
+    font-size: 14px;
+}
+
+.status-timeline .widget .widget-extra {
+    padding: 1px 5px;
+}
+
+.status-timeline .widget .widget-extra-full {
+    padding: 15px 5px;
+}
+
+.status-timeline .widget .widget-extra-full .h2 {
+    font-size: 25px;
 }
 
 a.widget {
