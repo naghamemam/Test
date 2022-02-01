@@ -204,11 +204,9 @@ div.dataTables_filter label,
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /* width: calc(100% - 10px); */
     width: 100%;
     border-top: 0;
 }
-
 .chosen-container-single .chosen-search input[type="text"] {
     padding: 4px 5px 4px 20px;
     background-position: -30% -20px;
@@ -258,7 +256,6 @@ div.tagsinput input {
     right: -2.14285714em;
     left: auto;
 }
-
 .bootstrap-timepicker-widget table {
     direction: ltr;
 }
