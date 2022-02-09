@@ -250,7 +250,6 @@ a.text-primary:focus {
 }
 
 .variation-container .variation-content .form-group.m-15 {
-    margin: 0 -15px;
     flex: 1 0 50%;
     padding: 15px 0 !important;
     border: 0;
